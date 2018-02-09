@@ -52,6 +52,37 @@ def attributetransfer():
             cursor.updateRow(n)
 
 
+def UpdateFACILITYID():
+    # Find the max value here, if we get nothing then quit.
+    print "Create Search Cursor"
+    rows = arcpy.SearchCursor(patchfeatures, "", "", "", "FACILITYID D")
+    row = rows.next()
+    print row
+    if row == None:
+        del rows
+        del row
+        return
+
+    maxId = row.getValue("FACILITYID")
+    # convert the id to an integer
+    newId = int(maxId) + 1
+
+    # Create update cursor for feature class, only for those features whose FACILITYID is NULL.
+    rows = arcpy.UpdateCursor(patchfeatures, "FACILITYID IS NULL")
+
+    # Now update the FACILITYIDs for those features...
+    for row in rows:
+        row.setValue('FACILITYID', newId)
+        rows.updateRow(row)
+        newId = newId + 1
+
+    # Delete cursor and row objects to remove locks on the data
+    del row
+    del rows
+    return
+
+
+UpdateFACILITYID()
 selectdata()
 joinfeature()
 attributetransfer()
