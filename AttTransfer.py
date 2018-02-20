@@ -1,13 +1,14 @@
 import arcpy
 
 arcpy.env.workspace = "D:/Test.gdb"
+# arcpy.env.workspace = "C:\Users\MiguelTo\AppData\Roaming\ESRI\Desktop10.3\ArcCatalog\PW_Tax_sql_PW.sde"
 arcpy.env.overwriteOutput = True
 #
 roadfeatures = "D:/Test.gdb/roadsSubset"
 patchfeatures = "D:/Test.gdb/patch"
 joinFeatures = r"D:\Test.gdb\roadsSubset"
 targetFeatures = r"D:\Test.gdb\patch"
-outputFeatures = r"D:\Test.gdb\PatchSJPoly3"
+outputFeatures = r"in_memory\tempFeatures"
 # patch_SpatialJoin8 = "C:\\Users\\MiguelTo\\Documents\\ArcGIS\\Default.gdb\\patch_SpatialJoin10"
 
 # select Patches that need to be updated.
@@ -64,6 +65,9 @@ def UpdateFACILITYID():
         return
 
     maxId = row.getValue("FACILITYID")
+    if maxId is None:
+        maxId = 0
+    
     # convert the id to an integer
     newId = int(maxId) + 1
 
