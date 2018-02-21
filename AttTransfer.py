@@ -1,11 +1,10 @@
 import arcpy
 
-arcpy.env.workspace = "D:/Test.gdb"
 arcpy.env.overwriteOutput = True
 
-roadfeatures = "D:/Test.gdb/roadsSubset"
-patchfeatures = "D:/Test.gdb/patch"
-outputFeatures = r"in_memory\tempFeatures"
+roadfeatures = "Database Connections\\A1_durham-gis.sde\\GIS_Data.A1.Road_Features\\GIS_Data.A1.Roads"
+patchfeatures = "Database Connections\\PW_Tax_sql_PW.sde\\PW.PW.PatchingPolygon"
+outputFeatures = r"C:\Users\MiguelTo\Documents\ArcGIS\Default.gdb\arcpyTestJoin"
 
 
 def selectdata():
@@ -24,9 +23,9 @@ def selectdata():
 # Spatial Join on closest road within 30'. Place in the created workspace
 def joinfeature():
     print "Beginning the joining of Roads data to Patches."
-    arcpy.SpatialJoin_analysis("patchlayer", roadfeatures, outputFeatures, "JOIN_ONE_TO_ONE", "KEEP_ALL",
-                               "FACILITYID \"FACILITYID\" true true false 4 Long 0 0 ,First,#,patch,FACILITYID,-1,-1;SHAPE_Length \"SHAPE_Length\" false true true 8 Double 0 0 ,First,#,patch,SHAPE_Length,-1,-1;SHAPE_Area \"SHAPE_Area\" false true true 8 Double 0 0 ,First,#,patch,SHAPE_Area,-1,-1;FACILITYID_1 \"FACILITYID\" true true false 20 Text 0 0 ,First,#,roadsSubset,FACILITYID,-1,-1;LEGACYID \"LegacyID\" true true false 20 Text 0 0 ,First,#,roadsSubset,LEGACYID,-1,-1;FACILITY_1 \"FACILITYID1\" true true false 8 Double 0 0 ,First,#,roadsSubset,FACILITY_1,-1,-1",
-                               "CLOSEST", "30 Feet", "")
+    arcpy.SpatialJoin_analysis(patchfeatures, roadfeatures, outputFeatures, "JOIN_ONE_TO_ONE", "KEEP_ALL",
+                               "FACILITYID \"FACILITYID\" true true false 4 Long 0 10 ,First,#,Database Connections\\PW_Tax_sql_PW.sde\\PW.PW.PatchingPolygon,FACILITYID,-1,-1;ROADID \"ROADID\" true true false 4 Long 0 10 ,First,#,Database Connections\\PW_Tax_sql_PW.sde\\PW.PW.PatchingPolygon,ROADID,-1,-1;FACILITYID_1 \"FACILITYID\" true true false 20 Text 0 0 ,First,#,Database Connections\\A1_durham-gis.sde\\GIS_Data.A1.Road_Features\\GIS_Data.A1.Roads,FACILITYID,-1,-1;FACILITY_1 \"FACILITYID1\" true true false 8 Double 8 38 ,First,#,Database Connections\\A1_durham-gis.sde\\GIS_Data.A1.Road_Features\\GIS_Data.A1.Roads,FACILITY_1,-1,-1",
+                               "CLOSEST", "", "")
     # Attribute Transfer Source New Patches Roads.FACILITY_1 => Patches.ROADID
     print "Data join complete. \n"
 
@@ -36,7 +35,8 @@ def attributetransfer():
     cursor = arcpy.SearchCursor(outputFeatures, fields)
     index = {}
     for n in cursor:
-        index[n.getValue('FACILITYID')] = int(n.getValue('FACILITY_1'))
+        if n.getValue('FACILITY_1') is not None:
+            index[n.getValue('FACILITYID')] = int(n.getValue('FACILITY_1'))
     del cursor
 
     cursor = arcpy.UpdateCursor(patchfeatures)
@@ -51,7 +51,8 @@ def UpdateFACILITYID():
     print "Create Search Cursor"
     rows = arcpy.SearchCursor(patchfeatures, "", "", "", "FACILITYID D")
     row = rows.next()
-    if row == None:
+    print row
+    if row is None:
         del rows
         del row
         return
@@ -59,7 +60,7 @@ def UpdateFACILITYID():
     maxId = row.getValue("FACILITYID")
     if maxId is None:
         maxId = 0
-
+    print row.getValue("FACILITYID")
     # convert the id to an integer
     newId = int(maxId) + 1
 
@@ -79,6 +80,6 @@ def UpdateFACILITYID():
 
 
 UpdateFACILITYID()
-selectdata()
-joinfeature()
-attributetransfer()
+# selectdata()
+# joinfeature()
+# attributetransfer()
