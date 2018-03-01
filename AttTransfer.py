@@ -1,9 +1,5 @@
 import arcpy
 
-# maybe this will work
-# did it work?
-# who knows
-
 arcpy.env.overwriteOutput = True
 # Be sure that roadfeatures and patchfeatures are connecting through your established database connections.
 
