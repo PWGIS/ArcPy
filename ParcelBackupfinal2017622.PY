@@ -1,6 +1,8 @@
 import arcpy
 import sys, string, os, time, shutil, tempfile, logging, datetime
 
+
+print "HERE ARE SOME CHANGES" 
 arcpy.env.overwriteOutput = True
 
 today=time.strftime("%Y%m%d", time.localtime())
