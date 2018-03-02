@@ -7,15 +7,15 @@
 
 MTName = "Miguel"
 EEName = "Erika"
-JBName = "Jason"
 SDName = "Sean"
+JBName = "Jason"
 
 MTTitle = "GIS Technician I"
-EETitle = "GIS Tech II"
 JBTitle = "GIS Analyst"
 SDTitle = "GIS Coordinator"
+EETitle = "GIS Tech II"
 
+JBNum = "13"
 MTNum = "2048"
 EENum = "13"
-JBNum = "13"
 SDNum = "32"
