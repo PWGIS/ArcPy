@@ -18,3 +18,8 @@ print "GIS Tech II"
 print "13"
 
 print "Erika" + " & " + "Miguel" + " & Jason"
+
+print "Wait!  What about me?!"
+print "Sean"
+print "GIS Coordinator"
+print "32"
