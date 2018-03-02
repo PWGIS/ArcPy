@@ -32,3 +32,6 @@ print "GIS Coordinator"
 print "32"
 
 print "Sean's assignment: " + "2048" + "13" + "13" + "32"
+
+print "Jason's assignment: " +" & " + "GIS Coordinator" +" & " + "GIS Tech II" +" & " + "GIS Analyst" +" & " + "GIS Technician I"
+
