@@ -1,3 +1,4 @@
+
 # Write a  print statement that unifies the assigned strings.
 # Erika: unify each person's NAME
 # Jason: Unify each person's JOB TITLE
@@ -34,4 +35,26 @@ print "32"
 print "Sean's assignment: " + "2048" + "13" + "13" + "32"
 
 print "Jason's assignment: "  "GIS Coordinator" +" & " + "GIS Tech II" +" & " + "GIS Analyst" +" & " + "GIS Technician I"
+
+# Use the arguments provided to create an output
+# identical to the ones created in the previous exercise
+# ERIKA:  2106
+# Jason: Erika & Miguel & Jason & Sean
+# Sean:  GIS Coordinator & GIS Tech II & GIS Analyst & GIS Technician I
+# Miguel: 2048131332
+
+MTName = "Miguel"
+EEName = "Erika"
+JBName = "Jason"
+SDName = "Sean"
+
+MTTitle = "GIS Technician I"
+EETitle = "GIS Tech II"
+JBTitle = "GIS Analyst"
+SDTitle = "GIS Coordinator"
+
+MTNum = "2048"
+EENum = "13"
+JBNum = "13"
+SDNum = "32"
 
