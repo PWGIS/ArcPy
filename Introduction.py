@@ -1,8 +1,9 @@
-# Write three print statements.
-# The first should print your first name
-# The second should print your Job Title
-# The third should print your favorite number
-# Sample: print "Hello World!"
+# Write a  print statement that unifies the assigned strings.
+# Erika: unify each person's NAME
+# Jason: Unify each person's JOB TITLE
+# Miguel: Sum each person's favorite number
+# Make sure the script runs correctly before pushing!
+# Sample: print "Hello" + " World!"
 
 print "Miguel"
 print "GIS Technician I"
