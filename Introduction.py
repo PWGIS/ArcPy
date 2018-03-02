@@ -3,3 +3,7 @@
 # The second should print your Job Title
 # The third should print your favorite number
 # Sample: print "Hello World!"
+
+print "Jason"
+print "GIS Analyst"
+print "13"
