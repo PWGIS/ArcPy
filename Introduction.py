@@ -17,4 +17,13 @@ print "Erika"
 print "GIS Tech II"
 print "13"
 
-print 2048 + 13 + 13
+
+print 2048 + 13 + 13 + 32
+
+print "Erika" + " & " + "Miguel" + " & Jason"
+
+print "Wait!  What about me?!"
+print "Sean"
+print "GIS Coordinator"
+print "32"
+
