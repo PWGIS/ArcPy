@@ -21,7 +21,6 @@ print "13"
 print 2048 + 13 + 13 + 32
 
 print "Erika" + " & " + "Miguel" + " & Jason"
-#make a change
 print "Wait!  What about me?!"
 print "Sean"
 print "GIS Coordinator"
