@@ -1,37 +1,21 @@
-# Write a  print statement that unifies the assigned strings.
-# Erika: unify each person's NAME
-# Jason: Unify each person's JOB TITLE
-# Miguel: Sum each person's favorite number
-# Make sure the script runs correctly before pushing!
-# Sample: print "Hello" + " World!"
+# Use the arguments provided to create an output
+# identical to the ones created in the previous exercise
+# ERIKA:  2106
+# Jason: Erika & Miguel & Jason & Sean
+# Sean:  GIS Coordinator & GIS Tech II & GIS Analyst & GIS Technician I
+# Miguel: 2048131332
 
-print "Miguel"
-print "GIS Technician I"
-print "2048"
+MTName = "Miguel"
+EEName = "Erika"
+JBName = "Jason"
+SDName = "Sean"
 
-print "Jason"
-print "GIS Analyst"
-print "13"
+MTTitle = "GIS Technician I"
+EETitle = "GIS Tech II"
+JBTitle = "GIS Analyst"
+SDTitle = "GIS Coordinator"
 
-print "Erika"
-print "GIS Tech II"
-print "13"
-
-
-print 2048 + 13 + 13 + 32
-
-
-print "Erika" + " & " + "Miguel" + " & Jason" + "Lazy Behind the Group Sean"
-#make a change
-#made change
-
-
-print "Wait!  What about me?!"
-print "Sean"
-print "GIS Coordinator"
-print "32"
-
-print "Sean's assignment: " + "2048" + "13" + "13" + "32"
-
-print "Jason's assignment: "  "GIS Coordinator" +" & " + "GIS Tech II" +" & " + "GIS Analyst" +" & " + "GIS Technician I"
-
+MTNum = "2048"
+EENum = "13"
+JBNum = "13"
+SDNum = "32"
