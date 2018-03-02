@@ -19,3 +19,5 @@ JBNum = "13"
 MTNum = "2048"
 EENum = "13"
 SDNum = "32"
+
+print MTNum + JBNum + EENum + SDNum
