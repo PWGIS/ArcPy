@@ -20,8 +20,10 @@ print "13"
 
 print 2048 + 13 + 13 + 32
 
-print "Erika" + " & " + "Miguel" + " & Jason"
+print "Erika" + " & " + "Miguel" + " & Jason" + "Lazy Behind the Group Sean"
 #make a change
+#made change
+
 print "Wait!  What about me?!"
 print "Sean"
 print "GIS Coordinator"
