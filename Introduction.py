@@ -21,7 +21,7 @@ print "13"
 print 2048 + 13 + 13 + 32
 
 
-print "Erika" + " & " + "Miguel" + " & Jason" + "Lazy Behind the Group Sean"
+print "Erika" + " & " + "Miguel" + " & Jason" + " Lazy Behind the Group Sean"
 #make a change
 #made change
 
