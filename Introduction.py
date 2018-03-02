@@ -20,14 +20,12 @@ print "13"
 
 print 2048 + 13 + 13 + 32
 
-<<<<<<< HEAD
+
 print "Erika" + " & " + "Miguel" + " & Jason" + "Lazy Behind the Group Sean"
 #make a change
 #made change
 
-=======
-print "Erika" + " & " + "Miguel" + " & Jason"
->>>>>>> 8e2ab13e29b46dce4a42ad372212aa682cf951c7
+
 print "Wait!  What about me?!"
 print "Sean"
 print "GIS Coordinator"
