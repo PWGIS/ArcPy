@@ -8,7 +8,7 @@
 print "Miguel"
 print "GIS Technician I"
 print "2048"
-=======
+#=======
 print "Jason"
 print "GIS Analyst"
 print "13"
@@ -16,3 +16,5 @@ print "13"
 print "Erika"
 print "GIS Tech II"
 print "13"
+
+print "Erika" + " & " + "Miguel" + " & Jason"
