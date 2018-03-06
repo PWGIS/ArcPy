@@ -26,6 +26,10 @@ print "Here's the number:"
 print Number
 
 
+print JBNum + MTNum + EENum + SDNum
+Number = int(JBNum) + int(MTNum) + int(EENum) + int(SDNum)
+print "The number is....."
+print Number
 
 
 
