@@ -42,7 +42,7 @@ print "Jason's assignment: "  "GIS Coordinator" +" & " + "GIS Tech II" +" & " + 
 # Jason: Erika & Miguel & Jason & Sean
 # Sean:  GIS Coordinator & GIS Tech II & GIS Analyst & GIS Technician I
 # Miguel: 2048131332
-
+print "***********************Start of Assignment 3******************"
 MTName = "Miguel"
 EEName = "Erika"
 SDName = "Sean"
@@ -58,3 +58,5 @@ MTNum = "2048"
 EENum = "13"
 SDNum = "32"
 
+
+print "Sean's assignment: " + SDTitle + " & " + EETitle + " & " + JBTitle + " & " + MTTitle
