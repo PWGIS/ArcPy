@@ -88,3 +88,7 @@ print sum
 #
 # print "And I made you a house you're welcome."
 
+
+Name = SDName + " & " + EEName + " & " + JBName + " & " + MTName
+print "Here are the names"
+print Name
