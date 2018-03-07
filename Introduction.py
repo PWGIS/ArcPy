@@ -30,7 +30,7 @@ print Number
 
 
 print JBNum + MTNum + EENum + SDNum
-sum = int(JBNum) + int(MTNum) + int(EENum) + int(SDNum) + 3 
+sum = int(JBNum) + int(MTNum) + int(EENum) + int(SDNum) + 3
 print "The number is....."
 print sum
 
