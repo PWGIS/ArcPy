@@ -1,94 +1,27 @@
-# Use the arguments provided to create an output
-# identical to the ones created in the previous exercise
-# ERIKA:  2106
-# Jason: Erika & Miguel & Jason & Sean
-# Sean:  GIS Coordinator & GIS Tech II & GIS Analyst & GIS Technician I
-# Miguel: 2048131332
-print "***********************Start of Assignment 3******************"
-MTName = "Miguel"
-EEName = "Erika"
-SDName = "Sean"
-JBName = "Jason"
+# Change the values of the reference variables so the output matches your assigned output
+# ERIKA:    Baby LJ is the size of a Lime!
+# Jason:    Pearl Jam is the best band!
+# Sean:     Finn almost dragged me down the street this morning...
+# Miguel:   I made dairy-free yogurt last night!
+print "***********************Start of Exercise 4******************"
 
-MTTitle = "GIS Technician I"
-JBTitle = "GIS Analyst"
-SDTitle = "GIS Coordinator"
-EETitle = "GIS Tech II"
-
-JBNum = "13"
-MTNum = "2048"
-EENum = "13"
-SDNum = "32"
+# List of reference variables. Change these values to affect the print statements in the section below. 
+adj = "most relevant "
+babyName = "Baby Eno"
+bandName = "Nickleback "
+dogName = "Dori"
+food = "hotpockets"
+fruit = " Cubicle!"
+place = "the Statue of Liberty"
+when = " for breakfast"
+#==================== DO NOT MODIFY ANYTHING BELOW THIS LINE!!! ====================
 
 
-print "Sean's assignment: " + SDTitle + " & " + EETitle + " & " + JBTitle + " & " + MTTitle
-
-print MTNum + JBNum + EENum + SDNum
-Number = int(JBNum) + int(MTNum) + int(EENum) + int(SDNum)
-print "Here's the number:"
-print Number
-
-
-print JBNum + MTNum + EENum + SDNum
-sum = int(JBNum) + int(MTNum) + int(EENum) + int(SDNum) + 3 
-print "The number is....."
-print sum
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-# from turtle import *      # use the turtle library
-# space = Screen()          # create a turtle screen (space)
-# bob = Turtle()            # create a turtle named bob
-#
-# # Make a square
-# bob.forward(100)          # tell bob to move forward by 100 units
-# bob.right(90)             # turn right by 90 degrees
-# bob.forward(100)          # tell bob to move forward by 100 units
-# bob.right(90)             # turn right by 90 degrees
-# bob.forward(100)          # tell bob to move forward by 100 units
-# bob.right(90)             # turn right by 90 degrees
-# bob.forward(100)          # tell bob to move forward by 100 units
-#
-# # Position for roof
-# bob.right(90)
-#
-# # Make a roof
-# bob.forward(100)          # tell bob to move forward by 100 units
-# bob.right(-120)           # turn LEFT by 120 degrees
-# bob.forward(100)          # tell bob to move forward by 100 units
-# bob.right(-120)           # turn LEFT by 120 degrees
-# bob.forward(100)          # tell bob to move forward by 100 units
-# bob.right(-120)           # turn LEFT by 120 degrees
-#
-#
-# print "And I made you a house you're welcome."
-
-
-Name = SDName + " & " + EEName + " & " + JBName + " & " + MTName
-print "Here are the names"
-print Name
+print babyName + " is the size of a" + fruit + "!"
+print "Correct phrase: Baby LJ is the size of a Lime!\n"
+print bandName + "is the " + adj + "band!"
+print "Correct phrase: Pearl Jam is the best band!\n"
+print dogName + " almost dragged me down " + place + " this morning..."
+print "Correct phrase: Finn almost dragged me down the street this morning...\n"
+print "I made " + food + when + "!"
+print "Correct phrase: I made dairy-free yogurt last night!\n"
