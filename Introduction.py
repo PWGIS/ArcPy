@@ -9,7 +9,7 @@ print "***********************Start of Exercise 4******************"
 # List of reference variables. Change these values to affect the print statements in the section below. 
 adj = "most relevant "
 babyName = "Baby LJ"
-bandName = "Nickleback "
+bandName = "Pearl Jam "
 dogName = "Dori"
 food = "hotpockets"
 fruit = " lime"
