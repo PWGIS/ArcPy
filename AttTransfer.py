@@ -18,7 +18,7 @@ def BackupData():
         arcpy.Copy_management(patchfeatures, "D:/BackupRepo.gdb/patches" + time.strftime("%Y%m%d", time.localtime()))
         print "Data backup completed.\n"
     except Exception:
-        pass
+        print "Error: Data backup failed. \nContinuing ID transfer process."
 
 
 def UpdateFACILITYID():
