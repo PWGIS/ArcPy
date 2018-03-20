@@ -14,8 +14,11 @@ outputFeatures = "in_memory/tempJoin"
 
 def BackupData():
     print "Beginning data backup..."
-    arcpy.Copy_management(patchfeatures, "D:/BackupRepo.gdb/patches" + time.strftime("%Y%m%d", time.localtime()))
-    print "Data backup completed.\n"
+    try:
+        arcpy.Copy_management(patchfeatures, "D:/BackupRepo.gdb/patches" + time.strftime("%Y%m%d", time.localtime()))
+        print "Data backup completed.\n"
+    except Exception:
+        pass
 
 
 def UpdateFACILITYID():
