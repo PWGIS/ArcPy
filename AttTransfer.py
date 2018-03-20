@@ -10,6 +10,14 @@ outputFeatures = "in_memory/tempJoin"
 
 # A method that updates the FACILITYID for new patch polygons. It checks for the highest existing integer value and then
 # Takes the next number and begins updating each NULL FACILITYID incrementing by 1.
+
+
+def BackupData():
+    print "Beginning data backup..."
+    arcpy.Copy_management(patchfeatures, "D:/BackupRepo.gdb/patches" + time.strftime("%Y%m%d", time.localtime()))
+    print "Data backup completed.\n"
+
+
 def UpdateFACILITYID():
     # Find the max value here, if we get nothing then quit.
     print "Create Search Cursor"
@@ -88,8 +96,7 @@ def attributetransfer():
             cursor.updateRow(n)
 
 
-
-
+BackupData()
 UpdateFACILITYID()
 selectdata()
 joinfeature()
