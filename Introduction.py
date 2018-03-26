@@ -11,10 +11,10 @@ adj = "Best "
 babyName = "Baby LJ"
 bandName = "Pearl Jam "
 dogName = "Dori"
-food = "hotpockets"
+food = "dairy-free yogurt"
 fruit = " lime"
 place = "the Statue of Liberty"
-when = " for breakfast"
+when = " last night"
 #==================== DO NOT MODIFY ANYTHING BELOW THIS LINE!!! ====================
 
 
