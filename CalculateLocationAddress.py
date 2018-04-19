@@ -16,15 +16,20 @@ arcpy.Workspace="H:/Work"
 
 
 # Global variables: (Created this to work within a version not .gdb)
-versionName = "FireHydrants" + todayhhmm
+versionName = "LocationCalc" + todayhhmm
 inWorkspace = "C:\Users\erikaki\AppData\Roaming\ESRI\Desktop10.3\ArcCatalog\PublicWorks_tax_sql_Erika.sde"
 parentVersion = "Erikaki.UTILEDITS"
 
-##WaterSystem = "Database Connections/A1_durham-gis.sde/gis_data.A1.WaterSystem" #feature dataset
+##Datasets
+WaterSystem = "Database Connections/A1_durham-gis.sde/gis_data.A1.WaterSystem" #feature dataset
+SewerSystem = "Database Connections/A1_durham-gis.sde/gis_data.A1.SewerSystem" #feature dataset
+
+##Feature Classes
 Hydrants = "Database Connections/PublicWorks_tax_sql_Erika.sde/Publicworks.PUBLICWORKS.WaterSystem/Publicworks.PUBLICWORKS.wnHydrant"
-FMZ = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.E911_Layers/gis_data.A1.FMZ"
-FireDistrict = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.E911_Layers/gis_data.A1.Fire_District"
+Manhole = "Database Connections/Publicworks_tax_sql_Erika.sde/Publicworks.PUBLICWORKS.SewerSystem/Publicworks.PUBLICWORKS.snManhole"
+
 AddressPoints = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/gis_data.A1.ActiveAddressPoints"
+Parcels = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/gis_data.A1.Parcels"
 
 #If you want to use a Geodatabase comment this in, once I switched to version I did not need this.
 # You can use this first inorder to create a copy of the Water System before editing. 
@@ -32,31 +37,27 @@ AddressPoints = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatu
 def MakeGDB():
     LogMessage ("***************************START***************************************")
     LogMessage(" Geodatabase creation...")
-    FileGDBName="FireHydrants" + today
+    FileGDBName="SystemBU" + today
     OutputLocation= "H:/Work"
     arcpy.CreateFileGDB_management(OutputLocation, FileGDBName)
     # Set workspace
-    arcpy.env.workspace="H:/Work/FireHydrants" + today + ".gdb"
+    arcpy.env.workspace="H:/Work/SystemBU" + today + ".gdb"
     LogMessage ("Switched Workspace")
     thisWorkspace = arcpy.env.workspace
     LogMessage(" Geodatabase created")
-##    LogMessage( FileGDBName + "/WaterSystem_CopyFeatures")
-##    arcpy.Copy_management(WaterSystem, thisWorkspace + "/WaterSystem", "FeatureDataset")
-##    LogMessage(" Water system copied.")
-    
-    LogMessage(" Copy Hydrant feature datasets...")
-    arcpy.Copy_management(Hydrants, thisWorkspace+ "/Hydrants", "FeatureClass")
-    LogMessage(" Hydrants copied.")
 
-# You dont need to copy the FMZ/District because they are on A1. Not editing them but just hitting the data.     
-##    LogMessage(" Copy FMZ feature datasets...")
-##    arcpy.Copy_management(FMZ, thisWorkspace+ "/FMZ", "FeatureClass")
-##    LogMessage(" FMZ copied.")
-##
-##    LogMessage(" Copy Fire Districts feature datasets...")
-##    arcpy.Copy_management(FireDistrict, thisWorkspace+ "/FireDistrict", "FeatureClass")
-##    LogMessage(" Fire Districts copied.")
-    
+    LogMessage( FileGDBName + "/WaterSystem_CopyFeatures")
+    arcpy.Copy_management(WaterSystem, thisWorkspace + "/WaterSystem", "FeatureDataset")
+    LogMessage(" Water system copied.")
+
+    LogMessage(FileGDBName + "/SewerSystem_CopyFeatures")
+    arcpy.Copy_management(SewerSystem, thisWorkspace + "/SewerSystem", "FeatureDataset")
+    LogMessage(" Sewer system copied.")
+
+    # LogMessage(" Copy Hydrant feature datasets...")
+    # arcpy.Copy_management(Hydrants, thisWorkspace+ "/Hydrants", "FeatureClass")
+    # LogMessage(" Hydrants copied.")
+
     return    
 
 def CreateVersion():
@@ -66,17 +67,17 @@ def CreateVersion():
     # Create Version
     arcpy.CreateVersion_management(inWorkspace, parentVersion, versionName, "PROTECTED")
     LogMessage(" Version created.")
-##    arcpy.env.workspace="C:/Work/FireZone" + today + ".gdb"
 
 # Process: Make Feature Layer in order to run geoprocessing
     arcpy.MakeFeatureLayer_management(Hydrants, "HydrantLayer", "", "", "")
-    arcpy.MakeFeatureLayer_management(FMZ, "FMZLayer", "", "", "")
-    arcpy.MakeFeatureLayer_management(FireDistrict, "FDLayer", "", "", "")
+    arcpy.MakeFeatureLayer_management(Manhole, "ManholeLayer", "", "", "")
+    arcpy.MakeFeatureLayer_management(AddressPoints, "APLayer", "", "", "")
+    arcpy.MakeFeatureLayer_management(Parcels, "ParcelsLayer", "", "", "")
     LogMessage("Made Feature Layers ...")
 
 # Switch to new version    
     LogMessage("Changing version to " + versionName + "...")
-    arcpy.ChangeVersion_management("HydrantLayer", "TRANSACTIONAL", "ERIKAKI." + versionName, "")
+    arcpy.ChangeVersion_management("ManholeLayer", "TRANSACTIONAL", "ERIKAKI." + versionName, "")
    
     
 # Select by Location, and Calculate Field
@@ -134,20 +135,23 @@ def CalculateFMZ():
         print "Zones calculated!"
 
 
-def CalcAddress():
+def CalcAddress(feature, LayerName, LayerField, JoinField):
     LogMessage("Starting Address Calc")
 ##    SpatialJoin_analysis (target_features, join_features, out_feature_class, {join_operation}, {join_type}, {field_mapping}, {match_option}, {search_radius}, {distance_field_name})
 ##    target_features = "C:/TEMP/Utilities/Water.gdb/HydrantBU"
 ##    join_features = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/gis_data.A1.ActiveAddressPoints"
-    out_feature_class = "C:/TEMP/Utilities/Water.gdb/HydrantJoin"
-    arcpy.MakeFeatureLayer_management(Hydrants, "HydrantLayer", "", "", "")
+
+    # out_feature_class = "H:/Work/SystemBU" + today + ".gdb/Join"
+
+    out_feature_class = "H:/Work/SystemBU" + today + ".gdb/ClosestJoin"
+    arcpy.MakeFeatureLayer_management(feature,LayerName, "", "", "")
     
-    arcpy.SpatialJoin_analysis("HydrantLayer", AddressPoints, out_feature_class, "JOIN_ONE_TO_ONE" , "KEEP_ALL","", "CLOSEST","","")
+    arcpy.SpatialJoin_analysis(LayerName, AddressPoints, out_feature_class, "JOIN_ONE_TO_ONE" , "KEEP_ALL","", "CLOSEST","","")
     LogMessage("Join Created")
-    LogMessage("Join Data to Hydrants")
+    LogMessage("Join Data to Layer")
 ##    AddJoin_management (in_layer_or_view, in_field, join_table, join_field, {join_type})
 ##    arcpy.MakeFeatureLayer_management(target_features, "HydrantLayer", "", "", "")
-    arcpy.AddJoin_management("HydrantLayer", "OBJECTID", out_feature_class, "TARGET_FID", "KEEP_ALL")
+    arcpy.AddJoin_management(LayerName, "OBJECTID", out_feature_class, "TARGET_FID", "KEEP_ALL")
     LogMessage("Field Calculate over Site_Address to Location")
 
 
@@ -155,15 +159,15 @@ def CalcAddress():
 
 
 ##CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
-    arcpy.CalculateField_management("HydrantLayer", "Publicworks.PUBLICWORKS.wnHydrant.LOCATIONDESCRIPTION", "[HydrantJoin.SITE_ADDRE]", "VB",)
-    LogMessage("Nearest Addresses Calculated for Hydrants")
+    arcpy.CalculateField_management(LayerName, LayerField, JoinField, "VB",)
+    LogMessage("Nearest Addresses Calculated for Layer")
 
 
 ##It didnt do it on the version 0_0
     
-def Cleanup():
+def Cleanup(layer):
     LogMessage("Switching back to parent version...")
-    arcpy.ChangeVersion_management("HydrantLayer", "TRANSACTIONAL", parentVersion, "")
+    arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", parentVersion, "")
 
 # Reconcile and post version.
     LogMessage("Reconciling/Posting version " + versionName)
@@ -171,9 +175,9 @@ def Cleanup():
     LogMessage( "Finished")
 
     
-##MakeGDB()
+MakeGDB()
 CreateVersion()
 ##CalculateFMZ()
-CalcAddress()
-##Cleanup()
+CalcAddress(Hydrants, "HydrantLayer","Publicworks.PUBLICWORKS.wnHydrant.LOCATIONDESCRIPTION", "[HydrantJoin.SITE_ADDRE]")
+##Cleanup("ManholeLayer")
 
