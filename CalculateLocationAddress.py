@@ -159,6 +159,7 @@ def CalcAddress(feature, LayerName, LayerField, JoinField):
 
 
 ##CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
+    # arcpy.CalculateField_management(LayerName, "Publicworks.PUBLICWORKS.wnHydrant.LOCATIONDESCRIPTION","[HydrantJoin.SITE_ADDRE], "VB",)
     arcpy.CalculateField_management(LayerName, LayerField, JoinField, "VB",)
     LogMessage("Nearest Addresses Calculated for Layer")
 
