@@ -6,6 +6,50 @@ arcpy.env.overwriteOutput = True
 
 today=time.strftime("%Y%m%d", time.localtime())
 todayhhmm = time.strftime("%Y%m%dT%H%M", time.localtime())
+Hydrants = "Database Connections/publiworks_TAX_SQL_Miguelto.sde/Publicworks.PUBLICWORKS.StormWater/Publicworks.PUBLICWORKS.swNodes"
+Directory = "H:/Work/swNodes20180420.gdb"
+
+
+def AddressFromAP():
+    # Create Layers. Nodes, Parcels, Joins, Address Points
+    arcpy.MakeFeatureLayer_management(Hydrants, "swNodes_Layer")
+    print "Stormwater Nodes Created."
+    fc = Directory+"/JoinFinal"
+    print "Joins Layer Created"
+    # JoinsCursor = arcpy.SearchCursor("Joins_Layer", "PARCEL_ID IS NOT NULL", fields="PARCEL_ID; PARCEL_ID_1; FACILITYID")
+    arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/GIS_Data.A1.Parcels", "Parcels_Layer")
+    print "Parcels Layer Created."
+    arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints","AP_Layer")
+
+    print "Addresspoints Layer Created."
+
+    # iterate through features that have a PID IS NOT NULL
+    with arcpy.da.SearchCursor(fc, ["Parcel_ID", "PARCEL_ID_1", "FACILITYID"], where_clause= 'PARCEL_ID IS NOT NULL') as cursor:
+        for row in cursor:
+            # select that parcel
+            arcpy.SelectLayerByAttribute_management("Parcels_Layer", "NEW_SELECTION", "[PARCEl_ID] = " + str(row[0]))
+            # Select APs within the selected parcel
+            arcpy.SelectLayerByLocation_management("AP_Layer", "WITHIN", "Parcels_Layer")
+            print str(row[0]) + " Parcel contains " + str(arcpy.GetCount_management("AP_Layer")) + " Address Point(s)"
+            # If AP Count is 1, move the AP Address to the feature.
+            # print type(arcpy.GetCount_management("AP_Layer"))
+            if int(arcpy.GetCount_management("AP_Layer")[0]) == 1:
+                arcpy.SelectLayerByAttribute_management("swNodes_Layer", "NEW_SELECTION", "[FACILITYID] = " + str(row[2]))
+                # calc/transfer the AP Address to the Feature
+                print "\tTransferring Address to swNode " + str(row[2])
+                APCursor = arcpy.da.SearchCursor("AP_Layer", ["SITE_ADDRE"])
+                for AP in APCursor:
+                    print AP[0]
+                    """Currently having trouble effectively using the CalculateField tool to properly migrate the Address
+                    to the swNodes[LOCATION] field. My issue seems to hinge on the expression itself. Can Calucluate Field
+                    expression interact with the python script that it is being used in? Most of the examples I found online
+                    seemed to be self contained scripts within the greater program, kinda like glorified queries. """
+#   //if AP count is > 1
+#       //select AP nearest to feature from selected AP
+#       //calc/transfer the AP Address to the feature
+#   //else
+#       //calc/transfer the associated parcel address from the ParcelNearestFeature FC
+
 
 def LogMessage( message):
     print time.strftime ("%Y-%m-%dT%H:%M:%S ", time.localtime()) + message
