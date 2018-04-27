@@ -28,7 +28,7 @@ SewerSystem = "Database Connections/A1_durham-gis.sde/gis_data.A1.SewerSystem" #
 Hydrants = "Database Connections/PublicWorks_tax_sql_Erika.sde/Publicworks.PUBLICWORKS.WaterSystem/Publicworks.PUBLICWORKS.wnHydrant"
 Manholes = "Database Connections/Publicworks_tax_sql_Erika.sde/Publicworks.PUBLICWORKS.SewerSystem/Publicworks.PUBLICWORKS.snManhole"
 ControlValve = "Database Connections/Publicworks_tax_sql_Erika.sde/Publicworks.PUBLICWORKS.SewerSystem/Publicworks.PUBLICWORKS.snControlValve"
-
+soCasing =  "Database Connections/Publicworks_tax_sql_Erika.sde/Publicworks.PUBLICWORKS.SewerSystem/Publicworks.PUBLICWORKS.soCasing"
 AddressPoints = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/gis_data.A1.ActiveAddressPoints"
 Parcels = "Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/gis_data.A1.Parcels"
 
@@ -55,9 +55,10 @@ def MakeGDB():
     arcpy.Copy_management(SewerSystem, thisWorkspace + "/SewerSystem", "FeatureDataset")
     LogMessage(" Sewer system copied.")
 
-    # LogMessage(" Copy Hydrant feature datasets...")
-    # arcpy.Copy_management(Hydrants, thisWorkspace+ "/Hydrants", "FeatureClass")
-    # LogMessage(" Hydrants copied.")
+    LogMessage(FileGDBName + "/StormSystem_CopyFeatures")
+    arcpy.Copy_management(StormSystem, thisWorkspace + "/StormSystem", "FeatureDataset")
+    LogMessage(" Storm system copied.")
+
 
     return    
 
@@ -72,52 +73,27 @@ def CreateVersion():
 # Process: Make Feature Layer in order to run geoprocessing
 #     arcpy.MakeFeatureLayer_management(Hydrants, "HydrantLayer", "", "", "")
     arcpy.MakeFeatureLayer_management(Manholes, "ManholeLayer", "", "", "")
-    arcpy.MakeFeatureLayer_management(ControlValve, "CNValveLayer", "", "", "")
+    arcpy.MakeFeatureLayer_management(ControlValve, "CValveLayer", "", "", "")
+    arcpy.MakeFeatureLayer_management(soCasing, "soCasingLayer", "", "", "")
     arcpy.MakeFeatureLayer_management(AddressPoints, "APLayer", "", "", "")
     arcpy.MakeFeatureLayer_management(Parcels, "ParcelsLayer", "", "", "")
     LogMessage("Made Feature Layers ...")
 
 # Switch to new version
     LogMessage("Changing version to " + versionName + "...")
-    arcpy.ChangeVersion_management("CNValveLayer", "TRANSACTIONAL", "ERIKAKI." + versionName, "")
+    arcpy.ChangeVersion_management("soCasingLayer", "TRANSACTIONAL", "ERIKAKI." + versionName, "")
 
 
-
-# def CalcAddress(feature, LayerName, LayerField, JoinField):
-#     LogMessage("Starting Address Calc")
-#     ##    SpatialJoin_analysis (target_features, join_features, out_feature_class, {join_operation}, {join_type}, {field_mapping}, {match_option}, {search_radius}, {distance_field_name})
-#
-# out_feature_class = "H:/Work/SystemBU" + today + ".gdb/ClosestJoin"
-# arcpy.MakeFeatureLayer_management(feature, LayerName, "", "", "")
-#
-# arcpy.SpatialJoin_analysis(LayerName, Parcels, out_feature_class, "JOIN_ONE_TO_ONE", "KEEP_ALL", "", "COMPLETELY_WITHIN","", "")
-#     LogMessage("Spatial Join Within Created")
-#
-# arcpy.SpatialJoin_analysis(LayerName, Parcels, out_feature_class, "JOIN_ONE_TO_ONE", "KEEP_ALL", "", "CLOSEST","", "")
-#
-# LogMessage("Join Closest Created")
-
-# LogMessage("Join Data to Layer")
-# ##    AddJoin_management (in_layer_or_view, in_field, join_table, join_field, {join_type})
-# ##    arcpy.MakeFeatureLayer_management(target_features, "HydrantLayer", "", "", "")
-# arcpy.AddJoin_management(LayerName, "OBJECTID", out_feature_class, "TARGET_FID", "KEEP_ALL")
-# LogMessage("Field Calculate over Site_Address to Location")
-#
-#
-
-# def CalcAddressSub(feature,LayerName,LayerField, JoinField):
-
-# def CalcAddressSub(LayerField, JoinField):
 def CalcAddressSub():
     LogMessage("Starting Address Calc")
-##    SpatialJoin_analysis (target_features, join_features, out_feature_class, {join_operation}, {join_type}, {field_mapping}, {match_option}, {search_radius}, {distance_field_name})
 
-    out_feature_class = "C:/Work/Address.gdb/CNValveWithin1"
-    out_feature_class1 = "C:/Work/Address.gdb/CNValveClosest1"
+    out_feature_class = "C:/Work/Address.gdb/JoinWithin"
+    out_feature_class1 = "C:/Work/Address.gdb/JoinClosest"
 
     # arcpy.MakeFeatureLayer_management(feature,LayerName, "", "", "")
+    LogMessage("Made Outputs")
     
-    arcpy.SpatialJoin_analysis("CNValveLayer", Parcels, out_feature_class, "JOIN_ONE_TO_ONE" , "KEEP_ALL","", "COMPLETELY_WITHIN","","")
+    arcpy.SpatialJoin_analysis("soCasingLayer", Parcels, out_feature_class, "JOIN_ONE_TO_ONE" , "KEEP_ALL","", "COMPLETELY_WITHIN","","")
     LogMessage("Spatial Join Within Created")
     arcpy.SpatialJoin_analysis(out_feature_class, Parcels, out_feature_class1, "JOIN_ONE_TO_ONE", "KEEP_ALL", "", "CLOSEST","","")
 
@@ -125,39 +101,48 @@ def CalcAddressSub():
 
     LogMessage("Start Join Data to Layer")
 ##    AddJoin_management (in_layer_or_view, in_field, join_table, join_field, {join_type})
-##    arcpy.MakeFeatureLayer_management(target_features, "HydrantLayer", "", "", "")
-    arcpy.AddJoin_management("CNValveLayer", "OBJECTID", out_feature_class1, "TARGET_FID", "KEEP_ALL")
-    # LogMessage("Field Calculate over Site_Address to Location")
+    arcpy.AddJoin_management("soCasingLayer", "OBJECTID", out_feature_class1, "TARGET_FID", "KEEP_ALL")
 
+##This isntworking
+    arcpy.SelectLayerByAttribute_management("soCasingLayer", "NEW_SELECTION", "Publicworks.PUBLICWORKS.soCasing.LOCATIONDESCRIPTION IS NULL")
 
-## Add AddressFromAP() Call here
+    result = arcpy.GetCount_management("soCasingLayer")
+    LogMessage("There are %s records with NULL Location values..." % result)
 
-
-##CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
-    # arcpy.CalculateField_management(LayerName, "Publicworks.PUBLICWORKS.wnHydrant.LOCATIONDESCRIPTION","[HydrantJoin.SITE_ADDRE], "VB",)
-    # arcpy.CalculateField_management("ManholeLayer", LayerField, JoinField, "VB",)
-    # LogMessage("Nearest Addresses Calculated for Layer")
-
-def CalcAddress():
-
-    # Must use field Name for Query not alias this doesnt work right now
-    # arcpy.SelectLayerByAttribute_management("ManholeLayer", "NEW_SELECTION", "LOCATIONDESCRIPTION IS NULL")
-    #
-    # result = arcpy.GetCount_management("ManholeLayer")
-    # LogMessage("There are %s records with NULL Location values..." % result)
-
-    Cursor = arcpy.SearchCursor("CNValveLayer")
+    Cursor = arcpy.SearchCursor("soCasingLayer")
 
     for row in Cursor:
         LogMessage("Field Calculate over Site_Address to Location")
-        # Must use field Name for Query not alias this doesnt work right now i bet you cant use this in a search coursor
-        # arcpy.SelectLayerByAttribute_management("ManholeLayer", "NEW_SELECTION", "LOCATIONDESCRIPTION IS NULL")
-        #
-        # result = arcpy.GetCount_management("ManholeLayer")
-        # LogMessage("There are %s records with NULL Location values..." % result)
-
         ##CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
-        arcpy.CalculateField_management("CNValveLayer", "Publicworks.PUBLICWORKS.snControlValve.LOCATIONDESCRIPTION","[CNValveClosest1.SITE_ADDRE_1]", "VB", )
+        arcpy.CalculateField_management("soCasingLayer", "Publicworks.PUBLICWORKS.soCasing.LOCATIONDESCRIPTION","[JoinClosest.SITE_ADDRE_1]", "VB", )
+        LogMessage("Nearest Addresses Calculated for Layer")
+
+#     LogMessage("Field Calculate over Site_Address to Location")
+#
+#
+# # Add AddressFromAP() Call here
+#
+#
+# #CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
+#     arcpy.CalculateField_management(LayerName, "Publicworks.PUBLICWORKS.wnHydrant.LOCATIONDESCRIPTION","[HydrantJoin.SITE_ADDRE], "VB",)
+#     arcpy.CalculateField_management("CValveLayer", "Publicworks.PUBLICWORKS.snControlValve.LOCATIONDESCRIPTION", "[CNValveClosest1.SITE_ADDRE_1]", "VB", )
+#     LogMessage("Nearest Addresses Calculated for Layer")
+
+def CalcAddressField():
+    LogMessage("Start field calc")
+
+    ##Must use field Name for Query not alias this doesnt work right now
+    arcpy.SelectLayerByAttribute_management("soCasingLayer", "NEW_SELECTION", "LOCATIONDESCRIPTION IS NULL")
+
+    result = arcpy.GetCount_management("soCasingLayer")
+    LogMessage("There are %s records with NULL Location values..." % result)
+
+    Cursor = arcpy.SearchCursor("soCasingLayer")
+
+    for row in Cursor:
+        LogMessage("Field Calculate over Site_Address to Location")
+        ##CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
+        arcpy.CalculateField_management("soCasingLayer", "Publicworks.PUBLICWORKS.soCasing.LOCATIONDESCRIPTION","[JoinClosest1.SITE_ADDRE_1]", "VB", )
         LogMessage("Nearest Addresses Calculated for Layer")
 
 ##Miguels Code Portion
@@ -202,13 +187,6 @@ def CalcAddress():
 #                     seemed to be self contained scripts within the greater program, kinda like glorified queries. """
 
 
-#     #   //if AP count is > 1
-#     #       //select AP nearest to feature from selected AP
-#     #       //calc/transfer the AP Address to the feature
-#     #   //else
-#     #       //calc/transfer the associated parcel address from the ParcelNearestFeature FC
-#
-
 def Cleanup(layer):
     LogMessage("Switching back to parent version...")
     arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", parentVersion, "")
@@ -219,13 +197,16 @@ def Cleanup(layer):
     LogMessage( "Finished")
 
 
+def GetCount():
+    arcpy.SelectLayerByAttribute_management("soCasingLayer", "NEW_SELECTION", "LOCATIONDESCRIPTION IS NULL")
+    result = arcpy.GetCount_management("soCasingLayer")
+    LogMessage("There are %s records with NULL Location values..." % result)
+
 # MakeGDB()
 CreateVersion()
 # CalcAddress(Hydrants, "HydrantLayer","Publicworks.PUBLICWORKS.wnHydrant.LOCATIONDESCRIPTION", "[HydrantJoin.SITE_ADDRE]")
-# def CalcAddressSub(feature,LayerName,LayerField, JoinField):
-# CalcAddressSub("Publicworks.PUBLICWORKS.snManhole.LOCATIONDESCRIPTION","[ManholesClosest.SITE_ADDRE_1]")
 CalcAddressSub()
-CalcAddress()
-
-##Cleanup("ManholeLayer")
+# CalcAddressField()
+# GetCount()
+#Cleanup("soCasingLayer")
 
