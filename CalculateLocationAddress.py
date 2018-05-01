@@ -160,12 +160,10 @@ def CalcAddress():
         arcpy.CalculateField_management("CNValveLayer", "Publicworks.PUBLICWORKS.snControlValve.LOCATIONDESCRIPTION","[CNValveClosest1.SITE_ADDRE_1]", "VB", )
         LogMessage("Nearest Addresses Calculated for Layer")
 
-##Miguels Code Portion
 
-
-def AddressFromAP(Featureclass, final_join):
+def AddressInParcel(featureclass, final_join):
     """ ARGS:
-        Featureclass : The Feature class that is being updated.
+        featureclass : The Feature class that is being updated.
         final_join : The dialog path to the join that has the featureclass being updated.
 
         ASSUMPTIONS: The field being updated is literally named "LOCATION"
@@ -176,22 +174,26 @@ def AddressFromAP(Featureclass, final_join):
         If there is more than one Address Point, it will take the nearest address point to the feature. """
     # Create Layers. Nodes, Parcels, Joins, Address Points
 
-    Featureclass = "Database Connections/publiworks_TAX_SQL_Miguelto.sde/Publicworks.PUBLICWORKS.swNodes"
-    Directory = "H:/Work/swNodes20180420.gdb"
-    TestGDB = "D:/Test.gdb"
-    arcpy.MakeFeatureLayer_management(Featureclass, "Feature_Layer")
+    featureclass = "Database Connections/publiworks_TAX_SQL_Miguelto.sde/Publicworks.PUBLICWORKS.swNodes"
+    directory = "H:/Work/swNodes20180420.gdb"
+    TestGDB = "in_memory"
+    arcpy.MakeFeatureLayer_management(featureclass, "Feature_Layer")
     print "Feature Layer Created."
-    final_join = Directory+"/JoinFinal"
+    final_join = directory + "/JoinFinal"
     print "Joins Layer Created"
     # JoinsCursor = arcpy.SearchCursor("Joins_Layer", "PARCEL_ID IS NOT NULL", fields="PARCEL_ID; PARCEL_ID_1; FACILITYID")
-    arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/GIS_Data.A1.Parcels", "Parcels_Layer")
+    arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/GIS_Data.A1.Parcels",
+                                      "Parcels_Layer")
     print "Parcels Layer Created."
-    arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints","AP_Layer")
+    arcpy.MakeFeatureLayer_management(
+        "Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints",
+        "AP_Layer")
 
     print "Addresspoints Layer Created."
 
     # iterate through features that have a PID IS NOT NULL
-    with arcpy.da.SearchCursor(final_join, ["Parcel_ID", "PARCEL_ID_1", "FACILITYID"], where_clause= 'PARCEL_ID IS NOT NULL') as cursor:
+    with arcpy.da.SearchCursor(final_join, ["Parcel_ID", "PARCEL_ID_1", "FACILITYID"],
+                               where_clause='PARCEL_ID IS NOT NULL') as cursor:
         for row in cursor:
             # select that parcel
             arcpy.SelectLayerByAttribute_management("Parcels_Layer", "NEW_SELECTION", "[PARCEl_ID] = " + str(row[0]))
@@ -201,29 +203,34 @@ def AddressFromAP(Featureclass, final_join):
             # If AP Count is 1, move the AP Address to the feature.
             # print type(arcpy.GetCount_management("AP_Layer"))
             if int(arcpy.GetCount_management("AP_Layer")[0]) == 1:
-                print "[FACILITYID] = " + str(row[2])
-                arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION", "[FACILITYID] = '" + str(row[2]) + "'")
+                arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
+                                                        "[FACILITYID] = '" + str(row[2]) + "'")
                 print "\tTransferring Address to swNode " + str(row[2])
-                APCursor = arcpy.da.SearchCursor("AP_Layer", ["SITE_ADDRE"])
-                for AP in APCursor:
-                    print AP[0]
-                    address = AP[0]
-                    # CodeBlock = """return AP[0]"""
-                    arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + address + "\"", "", "")
+                ap_cursor = arcpy.da.SearchCursor("AP_Layer", ["SITE_ADDRE"])
+                for AP in ap_cursor:
+                    print "\t" + AP[0]
+                    arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0] + "\"", "", "")
+                del ap_cursor
             elif int(arcpy.GetCount_management("AP_Layer")[0]) > 1:
                 # Create a spatial join using selected feature and selected address points that only chooses the nearest one
-                arcpy.SpatialJoin_analysis("Feature_Layer", "AP_Layer", TestGDB+"/NearestAP", "JOIN_ONE_TO_ONE", "KEEP_ALL", "", "CLOSEST")
-                arcpy.MakeFeatureLayer_management(TestGDB+"/NearestAP", "NearestAP_Layer")
-                APCursor = arcpy.da.SearchCursor("NearestAP_Layer", ["SITE_ADDRE"])
-                for AP in APCursor:
-                    print AP[0]
-                # calc/transfer the AP Address to the feature
-
+                arcpy.SpatialJoin_analysis("Feature_Layer", "AP_Layer", TestGDB + "/NearestAP", "JOIN_ONE_TO_ONE",
+                                           "KEEP_ALL", "", "CLOSEST")
+                arcpy.MakeFeatureLayer_management(TestGDB + "/NearestAP", "NearestAP_Layer")
+                print "\tTransferring Address to swNode " + str(row[2])
+                ap_cursor = arcpy.da.SearchCursor("NearestAP_Layer", ["SITE_ADDRE"])
+                for AP in ap_cursor:
+                    print "\t" + AP[0]
+                    arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0]+ "\"", "", "")
+                del ap_cursor
                 #       //calc/transfer the associated parcel address from the ParcelNearestFeature FC
             elif int(arcpy.GetCount_management("AP_Layer")[0]) == 0:
-                pass
-
-#   //else
+                arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
+                                                        "[FACILITYID] = '" + str(row[2]) + "'")
+                parcel_cursor = arcpy.da.SearchCursor("Parcel_Layer", ["SITE_ADDRE"])
+                for parcel in parcel_cursor:
+                    print "\t" + parcel[0]
+                    arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + parcel[0] + "\"", "", "")
+                del parcel_cursor
 
 
 def Cleanup(layer):
