@@ -148,9 +148,10 @@ def CalcAddressField():
 
 def AddressInParcel(feature_class, final_join):
     """ ARGS
-        feature_class : The point feature class that is being updated.
+        feature_class : The feature class that is being updated.
         final_join :    The dialog path to the join that has the feature class being updated.
                         Final Join is expected to be joined as follows;
+                        Final Join must be a point feature class.
                         Feature class joined to parcels containing the feature.
                         The result being joined to parcels nearest the feature.
 
@@ -160,12 +161,16 @@ def AddressInParcel(feature_class, final_join):
         it with the site address of the Address Point contained within the same parcel.
         If there is more than one Address Point, it will take the nearest address point to the feature.
         If there are no Address Points, it will take the site address sof the parcel."""
-    # Create Layers; Features, Parcels, Joins, Address Points
-    feature_class = "Database Connections/publiworks_TAX_SQL_Miguelto.sde/Publicworks.PUBLICWORKS.swNodes"
+    # feature_class = "Database Connections/publiworks_TAX_SQL_Miguelto.sde/Publicworks.PUBLICWORKS.swNodes"
+    # final_join = "H:/Work/swNodes20180420.gdb/JoinFinal"
+    # determine if feature_class is a line. if so, convert to centroid.
+    if arcpy.Describe(feature_class).shapeType != "Point":
+        print "Error Second Argument must be a Point Feature Class"
+        return
+
+    # create Layers; Features, Parcels, Address Points
     arcpy.MakeFeatureLayer_management(feature_class, "Feature_Layer")
     print "Feature Layer Created."
-    final_join = "H:/Work/swNodes20180420.gdb/JoinFinal"
-    print "Joins Table Selected."
     arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/GIS_Data.A1.Parcels",
                                       "Parcels_Layer")
     print "Parcels Layer Created."
@@ -192,8 +197,9 @@ def AddressInParcel(feature_class, final_join):
                     print "\t" + AP[0]
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0] + "\"", "", "")
                 del ap_cursor
+            # If AP Count is > 1,
+            # Create a spatial join using selected feature and selected address points, then choose the nearest one
             elif int(arcpy.GetCount_management("AP_Layer")[0]) > 1:
-                # Create a spatial join using selected feature and selected address points, then choose the nearest one
                 arcpy.SpatialJoin_analysis("Feature_Layer", "AP_Layer", "in_memory/NearestAP", "JOIN_ONE_TO_ONE",
                                            "KEEP_ALL", "", "CLOSEST")
                 arcpy.MakeFeatureLayer_management("in_memory/NearestAP", "NearestAP_Layer")
@@ -203,6 +209,7 @@ def AddressInParcel(feature_class, final_join):
                     print "\t" + AP[0]
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0]+ "\"", "", "")
                 del ap_cursor
+            # If AP Count == 0, move the Parcel's Site Address to the feature
             elif int(arcpy.GetCount_management("AP_Layer")[0]) == 0:
                 arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
                                                         "[FACILITYID] = '" + str(row[2]) + "'")
