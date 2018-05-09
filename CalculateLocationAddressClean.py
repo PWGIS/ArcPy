@@ -148,20 +148,21 @@ def AddressInParcel(feature_class, final_join):
     # feature_class = "Database Connections/publiworks_TAX_SQL_Miguelto.sde/Publicworks.PUBLICWORKS.swNodes"
     # final_join = "H:/Work/swNodes20180420.gdb/JoinFinal"
     # determine if feature_class is a line. if so, convert to centroid.
+    file = open("H:/Work/Report" + today + ".txt", "w")
     if arcpy.Describe(feature_class).shapeType != "Point":
-        print "Error Second Argument must be a Point Feature Class"
+        LogMessage( "Error Second Argument must be a Point Feature Class")
         return
 
     # create Layers; Features, Parcels, Address Points
     arcpy.MakeFeatureLayer_management(feature_class, "Feature_Layer")
-    print "Feature Layer Created."
+    LogMessage( "Feature Layer Created.")
     arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/GIS_Data.A1.Parcels",
                                       "Parcels_Layer")
-    print "Parcels Layer Created."
+    LogMessage( "Parcels Layer Created.")
     arcpy.MakeFeatureLayer_management(
         "Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints",
         "AP_Layer")
-    print "Address Points Layer Created."
+    LogMessage( "Address Points Layer Created.")
     # iterate through features that are within a parcel. "PARCEL_ID IS NOT NULL"
     with arcpy.da.SearchCursor(final_join, ["Parcel_ID", "PARCEL_ID_1", "FACILITYID"],
                                where_clause='PARCEL_ID IS NOT NULL') as cursor:
@@ -170,15 +171,16 @@ def AddressInParcel(feature_class, final_join):
             arcpy.SelectLayerByAttribute_management("Parcels_Layer", "NEW_SELECTION", "[PARCEl_ID] = " + str(row[0]))
             # Select APs within the selected parcel
             arcpy.SelectLayerByLocation_management("AP_Layer", "WITHIN", "Parcels_Layer")
-            print str(row[0]) + " Parcel contains " + str(arcpy.GetCount_management("AP_Layer")) + " Address Point(s)"
+            record(str(row[0]) + " Parcel contains " + str(arcpy.GetCount_management("AP_Layer")) + " Address Point(s)")
             # If AP Count is 1, move the AP Address to the feature.
             if int(arcpy.GetCount_management("AP_Layer")[0]) == 1:
                 arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
                                                         "[FACILITYID] = '" + str(row[2]) + "'")
                 print "\tTransferring Address to swNode " + str(row[2])
+                record("\tTransferring Address to swNode " + str(row[2]))
                 ap_cursor = arcpy.da.SearchCursor("AP_Layer", ["SITE_ADDRE"])
                 for AP in ap_cursor:
-                    print "\t" + AP[0]
+                    record("\t" + AP[0])
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0] + "\"", "", "")
                 del ap_cursor
             # If AP Count is > 1,
@@ -187,19 +189,20 @@ def AddressInParcel(feature_class, final_join):
                 arcpy.SpatialJoin_analysis("Feature_Layer", "AP_Layer", "in_memory/NearestAP", "JOIN_ONE_TO_ONE",
                                            "KEEP_ALL", "", "CLOSEST")
                 arcpy.MakeFeatureLayer_management("in_memory/NearestAP", "NearestAP_Layer")
-                print "\tTransferring Address to swNode " + str(row[2])
+                record("\tTransferring Address to swNode " + str(row[2]))
                 ap_cursor = arcpy.da.SearchCursor("NearestAP_Layer", ["SITE_ADDRE"])
                 for AP in ap_cursor:
-                    print "\t" + AP[0]
+                    record("\t" + AP[0])
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0]+ "\"", "", "")
                 del ap_cursor
             # If AP Count == 0, move the Parcel's Site Address to the feature
             elif int(arcpy.GetCount_management("AP_Layer")[0]) == 0:
                 arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
                                                         "[FACILITYID] = '" + str(row[2]) + "'")
+                record("\tTransferring Address to swNode " + str(row[2]))
                 parcel_cursor = arcpy.da.SearchCursor("Parcel_Layer", ["SITE_ADDRE"])
                 for parcel in parcel_cursor:
-                    print "\t" + parcel[0]
+                    record("\t" + parcel[0])
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + parcel[0] + "\"", "", "")
                 del parcel_cursor
 
@@ -213,6 +216,43 @@ def Cleanup(layer):
     arcpy.ReconcileVersions_management(inWorkspace, "ALL_VERSIONS", parentVersion, "ERIKAKI." + versionName,  "LOCK_ACQUIRED", "ABORT_CONFLICTS", "BY_OBJECT", "FAVOR_EDIT_VERSION", "POST", "DELETE_VERSION")
     LogMessage( "Finished")
 
+<<<<<<< HEAD
+=======
+
+def GetCount():
+    arcpy.SelectLayerByAttribute_management("soCasingLayer", "NEW_SELECTION", "LOCATIONDESCRIPTION IS NULL")
+    result = arcpy.GetCount_management("soCasingLayer")
+    LogMessage("There are %s records with NULL Location values..." % result)
+
+
+def record(message):
+    """ DESCRIPTION:
+    Function writes the STRING argument out to a text file.
+    The string is also written to the console.
+    The file name is the name of the program plus the date that it is run.
+    The file is written to the H:/Work directory.
+    The contents include timestamped records of each string as it is provided.
+
+    DEPENDENCIES:
+    Utilizes the LogMessage function to write to console.
+
+    Assumptions:
+    There must be an H: directory.
+    """
+    # Make sure the Work folder exists, if not create it.
+    if not os.path.exists("H:/Work"):
+        os.makedirs("H:/Work")
+        print "Works folder not found\nCreating Directory"
+    # Append message to file, create file if it does not exist
+    # File Name is 'ProgramName' + Date, e.g., foobar_2018-01-30
+    txt_file = open("H:/Work/" + os.path.basename(__file__).replace(".py", "_" + time.strftime("%Y-%m-%d",
+                    time.localtime()) + ".txt"), "a")
+    txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + message + "\n")
+    LogMessage(message)
+    txt_file.close()
+
+
+>>>>>>> 817c2f73eac3666261e714d4ffb42743a65e5aa9
 # MakeGDB()
 CreateVersion()
 CreateJoins()
