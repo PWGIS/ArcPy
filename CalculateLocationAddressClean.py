@@ -248,7 +248,9 @@ def record(message):
     The contents include timestamped records of each string as it is provided.
 
     DEPENDENCIES:
-    Utilizes the the LogMessage function to write to console.
+    Utilizes the LogMessage function to write to console.
+
+    Assumptions:
     There must be an H: directory.
     """
     # Make sure the Work folder exists, if not create it.
