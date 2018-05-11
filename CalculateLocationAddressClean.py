@@ -171,16 +171,16 @@ def AddressInParcel(feature_class, final_join):
             arcpy.SelectLayerByAttribute_management("Parcels_Layer", "NEW_SELECTION", "[PARCEl_ID] = " + str(row[0]))
             # Select APs within the selected parcel
             arcpy.SelectLayerByLocation_management("AP_Layer", "WITHIN", "Parcels_Layer")
-            record(str(row[0]) + " Parcel contains " + str(arcpy.GetCount_management("AP_Layer")) + " Address Point(s)")
+            transcribe(str(row[0]) + " Parcel contains " + str(arcpy.GetCount_management("AP_Layer")) + " Address Point(s)")
             # If AP Count is 1, move the AP Address to the feature.
             if int(arcpy.GetCount_management("AP_Layer")[0]) == 1:
                 arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
                                                         "[FACILITYID] = '" + str(row[2]) + "'")
                 print "\tTransferring Address to swNode " + str(row[2])
-                record("\tTransferring Address to swNode " + str(row[2]))
+                transcribe("\tTransferring Address to swNode " + str(row[2]))
                 ap_cursor = arcpy.da.SearchCursor("AP_Layer", ["SITE_ADDRE"])
                 for AP in ap_cursor:
-                    record("\t" + AP[0])
+                    transcribe("\t" + AP[0])
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0] + "\"", "", "")
                 del ap_cursor
             # If AP Count is > 1,
@@ -189,20 +189,20 @@ def AddressInParcel(feature_class, final_join):
                 arcpy.SpatialJoin_analysis("Feature_Layer", "AP_Layer", "in_memory/NearestAP", "JOIN_ONE_TO_ONE",
                                            "KEEP_ALL", "", "CLOSEST")
                 arcpy.MakeFeatureLayer_management("in_memory/NearestAP", "NearestAP_Layer")
-                record("\tTransferring Address to swNode " + str(row[2]))
+                transcribe("\tTransferring Address to swNode " + str(row[2]))
                 ap_cursor = arcpy.da.SearchCursor("NearestAP_Layer", ["SITE_ADDRE"])
                 for AP in ap_cursor:
-                    record("\t" + AP[0])
+                    transcribe("\t" + AP[0])
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + AP[0]+ "\"", "", "")
                 del ap_cursor
             # If AP Count == 0, move the Parcel's Site Address to the feature
             elif int(arcpy.GetCount_management("AP_Layer")[0]) == 0:
                 arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
                                                         "[FACILITYID] = '" + str(row[2]) + "'")
-                record("\tTransferring Address to swNode " + str(row[2]))
+                transcribe("\tTransferring Address to swNode " + str(row[2]))
                 parcel_cursor = arcpy.da.SearchCursor("Parcel_Layer", ["SITE_ADDRE"])
                 for parcel in parcel_cursor:
-                    record("\t" + parcel[0])
+                    transcribe("\t" + parcel[0])
                     arcpy.CalculateField_management("Feature_Layer", "LOCATION", "\"" + parcel[0] + "\"", "", "")
                 del parcel_cursor
 
@@ -225,7 +225,7 @@ def GetCount():
     LogMessage("There are %s records with NULL Location values..." % result)
 
 
-def record(message):
+def transcribe(message):
     """ DESCRIPTION:
     Function writes the STRING argument out to a text file.
     The string is also written to the console.
@@ -239,14 +239,11 @@ def record(message):
     Assumptions:
     There must be an H: directory.
     """
-    # Make sure the Work folder exists, if not create it.
-    if not os.path.exists("H:/Work"):
-        os.makedirs("H:/Work")
-        print "Works folder not found\nCreating Directory"
     # Append message to file, create file if it does not exist
+    # File location is in the same directory the program is being run from
     # File Name is 'ProgramName' + Date, e.g., foobar_2018-01-30
-    txt_file = open("H:/Work/" + os.path.basename(__file__).replace(".py", "_" + time.strftime("%Y-%m-%d",
-                    time.localtime()) + ".txt"), "a")
+    txt_file = open(os.path.dirname(__file__) + "/" + os.path.basename(__file__).replace(".py",
+                    "_" + time.strftime("%Y-%m-%d",time.localtime()) + ".txt"), "a")
     txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + message + "\n")
     LogMessage(message)
     txt_file.close()
