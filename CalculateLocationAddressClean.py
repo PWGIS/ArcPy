@@ -225,8 +225,13 @@ def GetCount():
     LogMessage("There are %s records with NULL Location values..." % result)
 
 
-def transcribe(message):
-    """ DESCRIPTION:
+def transcribe(message, dir_location = os.path.dirname(__file__)+ "/"):
+    """ ARGS:
+    message: a string variable to be written to the file and console
+    dir_location: the location of the directory to write the file to, assumes '/' notation
+        default location is the same directory that the program is being run from. 
+
+    DESCRIPTION:
     Function writes the STRING argument out to a text file.
     The string is also written to the console.
     The file name is the name of the program plus the date that it is run.
@@ -242,7 +247,7 @@ def transcribe(message):
     # Append message to file, create file if it does not exist
     # File location is in the same directory the program is being run from
     # File Name is 'ProgramName' + Date, e.g., foobar_2018-01-30
-    txt_file = open(os.path.dirname(__file__) + "/" + os.path.basename(__file__).replace(".py",
+    txt_file = open(dir_location + os.path.basename(__file__).replace(".py",
                     "_" + time.strftime("%Y-%m-%d",time.localtime()) + ".txt"), "a")
     txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + message + "\n")
     LogMessage(message)
