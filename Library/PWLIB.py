@@ -16,24 +16,22 @@ def addressinparcel(feature_class, final_join):
         it with the site address of the Address Point contained within the same parcel.
         If there is more than one Address Point, it will take the nearest address point to the feature.
         If there are no Address Points, it will take the site address sof the parcel."""
-    # feature_class = "Database Connections/publiworks_TAX_SQL_Miguelto.sde/Publicworks.PUBLICWORKS.swNodes"
-    # final_join = "H:/Work/swNodes20180420.gdb/JoinFinal"
+
     # determine if feature_class is a line. if so, convert to centroid.
-    file = open("H:/Work/Report" + today + ".txt", "w")
     if arcpy.Describe(feature_class).shapeType != "Point":
-        LogMessage( "Error Second Argument must be a Point Feature Class")
+        logmessage( "Error Second Argument must be a Point Feature Class")
         return
 
     # create Layers; Features, Parcels, Address Points
     arcpy.MakeFeatureLayer_management(feature_class, "Feature_Layer")
-    LogMessage( "Feature Layer Created.")
+    logmessage( "Feature Layer Created.")
     arcpy.MakeFeatureLayer_management("Database Connections/A1_durham-gis.sde/GIS_Data.A1.TaxData/GIS_Data.A1.Parcels",
                                       "Parcels_Layer")
-    LogMessage( "Parcels Layer Created.")
+    logmessage( "Parcels Layer Created.")
     arcpy.MakeFeatureLayer_management(
         "Database Connections/A1_durham-gis.sde/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints",
         "AP_Layer")
-    LogMessage( "Address Points Layer Created.")
+    logmessage( "Address Points Layer Created.")
     # iterate through features that are within a parcel. "PARCEL_ID IS NOT NULL"
     with arcpy.da.SearchCursor(final_join, ["Parcel_ID", "PARCEL_ID_1", "FACILITYID"],
                                where_clause='PARCEL_ID IS NOT NULL') as cursor:
@@ -47,7 +45,7 @@ def addressinparcel(feature_class, final_join):
             if int(arcpy.GetCount_management("AP_Layer")[0]) == 1:
                 arcpy.SelectLayerByAttribute_management("Feature_Layer", "NEW_SELECTION",
                                                         "[FACILITYID] = '" + str(row[2]) + "'")
-                print "\tTransferring Address to swNode " + str(row[2])
+                logmessage("\tTransferring Address to swNode " + str(row[2]))
                 transcribe("\tTransferring Address to swNode " + str(row[2]))
                 ap_cursor = arcpy.da.SearchCursor("AP_Layer", ["SITE_ADDRE"])
                 for AP in ap_cursor:
@@ -89,7 +87,7 @@ def logmessage( message):
     return
 
 
-def transcribe(message, file_path = os.path.dirname(__file__)+ "/"):
+def transcribe(message, file_path=os.path.dirname(__file__) + "/"):
     """ ARGS:
     message: a string variable to be written to the file and console
     file_path: the location of the directory to write the file to, assumes '/' notation
