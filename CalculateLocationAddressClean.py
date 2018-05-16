@@ -216,8 +216,6 @@ def Cleanup(layer):
     arcpy.ReconcileVersions_management(inWorkspace, "ALL_VERSIONS", parentVersion, "ERIKAKI." + versionName,  "LOCK_ACQUIRED", "ABORT_CONFLICTS", "BY_OBJECT", "FAVOR_EDIT_VERSION", "POST", "DELETE_VERSION")
     LogMessage( "Finished")
 
-<<<<<<< HEAD
-=======
 
 def GetCount():
     arcpy.SelectLayerByAttribute_management("soCasingLayer", "NEW_SELECTION", "LOCATIONDESCRIPTION IS NULL")
@@ -229,7 +227,7 @@ def transcribe(message, dir_location = os.path.dirname(__file__)+ "/"):
     """ ARGS:
     message: a string variable to be written to the file and console
     dir_location: the location of the directory to write the file to, assumes '/' notation
-        default location is the same directory that the program is being run from. 
+        default location is the same directory that the program is being run from.
 
     DESCRIPTION:
     Function writes the STRING argument out to a text file.
@@ -254,7 +252,6 @@ def transcribe(message, dir_location = os.path.dirname(__file__)+ "/"):
     txt_file.close()
 
 
->>>>>>> 817c2f73eac3666261e714d4ffb42743a65e5aa9
 # MakeGDB()
 CreateVersion()
 CreateJoins()
