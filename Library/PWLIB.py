@@ -89,24 +89,23 @@ def logmessage( message):
     return
 
 
-def transcribe(message, dir_location = os.path.dirname(__file__)+ "/"):
+def transcribe(message, file_path = os.path.dirname(__file__)+ "/"):
     """ ARGS:
     message: a string variable to be written to the file and console
-    dir_location: the location of the directory to write the file to, assumes '/' notation
+    file_path: the location of the directory to write the file to, assumes '/' notation
         default location is the same directory that the program is being run from.
 
     DESCRIPTION:
-    Function writes the STRING argument out to a text file.
-    The string is also written to the console.
+    Function writes the STRING argument out to a text file and console.
     The file name is the name of the program plus the date that it is run.
-    The file is written to the H:/Work directory.
-    The contents include timestamped records of each string as it is provided.
+    The file_path defaults to the directory of the program being run.
+    Adding a file_path STRING argument will overwrite the defaults
 
     DEPENDENCIES:
     Utilizes the logmessage function to write to console.
     """
 
-    txt_file = open(dir_location + os.path.basename(__file__).replace(".py",
+    txt_file = open(file_path + os.path.basename(__file__).replace(".py",
                     "_" + time.strftime("%Y-%m-%d",time.localtime()) + ".txt"), "a")
     txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + message + "\n")
     logmessage(message)
