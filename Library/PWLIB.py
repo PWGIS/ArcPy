@@ -76,7 +76,7 @@ def addressinparcel(feature_class, final_join):
                 del parcel_cursor
 
 
-def logmessage( message):
+def logmessage(message):
     """ARGS:
     message: a string variable to be written to the file and console
 
@@ -87,10 +87,10 @@ def logmessage( message):
     return
 
 
-def transcribe(message, file_path=os.path.dirname(__file__) + "/"):
+def transcribe(message, _filepath=os.path.dirname(__file__) + "/"):
     """ ARGS:
     message: a string variable to be written to the file and console
-    file_path: the location of the directory to write the file to, assumes '/' notation
+    _filepath: the location of the directory to write the file to, assumes '/' notation
         default location is the same directory that the program is being run from.
 
     DESCRIPTION:
@@ -103,7 +103,7 @@ def transcribe(message, file_path=os.path.dirname(__file__) + "/"):
     Utilizes the logmessage function to write to console.
     """
 
-    txt_file = open(file_path + os.path.basename(__file__).replace(".py",
+    txt_file = open(_filepath + os.path.basename(__file__).replace(".py",
                     "_" + time.strftime("%Y-%m-%d",time.localtime()) + ".txt"), "a")
     txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + message + "\n")
     logmessage(message)
@@ -117,8 +117,7 @@ def updatefacilityid(featurelayer):
     DESCRIPTION:
     Function takes in a feature layer and isolates the highest FACILITYID value.
     Then it searches for records with a FACILITYID of NULL and then updates them
-        in sequential order.
-        """
+        in sequential order."""
     # Find the max value here, if we get nothing then quit.
     print "Create Search Cursor"
     rows = arcpy.SearchCursor(featurelayer, "", "", "", "FACILITYID D")
