@@ -1,7 +1,7 @@
 Version: 0.1.0
 
 Primary Author: Miguel Alan Torres
-
+GIHUB Repo: https://github.com/PWGIS/ArcPy/tree/master/Library
 
 ------------------------------------------------------
 FUNCTIONS
@@ -20,11 +20,11 @@ Function writes the STRING argument to the console.
 String also prepends the argument with a time stamp.
 
 Transcribe
-(STRING, file_path*)
+(STRING, _filepath)
 Function writes the STRING argument out to a text file and console.
 The file name is the name of the program plus the date that it is run.
-The file_path defaults to the directory of the program being run.
-Adding a file_path STRING argument will overwrite the defaults
+The _filepath defaults to the directory of the program being run.
+Adding a _filepath STRING argument will overwrite the defaults
 
 UpdateFacilityID
 (featurelayer)
