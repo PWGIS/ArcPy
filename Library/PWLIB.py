@@ -102,9 +102,10 @@ def transcribe(message, _filepath=os.path.dirname(__file__) + "/"):
     DEPENDENCIES:
     Utilizes the logmessage function to write to console.
     """
-
-    txt_file = open(_filepath + os.path.basename(__file__).replace(".py",
-                    "_" + time.strftime("%Y-%m-%d",time.localtime()) + ".txt"), "a")
+    txt_file = open(_filepath + os.path.splitext(os.path.basename(__file__))[0] +
+                    "_" + time.strftime("%Y-%m-%d", time.localtime()) + ".txt", "a")
+    # txt_file = open(_filepath + os.path.basename(__file__).replace(".py",
+    #                 "_" + time.strftime("%Y-%m-%d",time.localtime()) + ".txt"), "a")
     txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + message + "\n")
     logmessage(message)
     txt_file.close()
