@@ -56,7 +56,6 @@ Calculate a value for the location field for those features where the current va
  1).  What if the list passed into the createLayers function consists of both feature classes and feature datasets?
  2).  Once all the items in a list have been handled we want to break out of the loop and move to the next function.  that isn't working.
  3).  If we pass in a feature dataset, how do we handle feature classes that we want to skip, like soScadaSensor?
- 4).  Join the joinClosest back to the layer based on the facilityID and then calculate the value of the location field from the site address
 
 
  -----------------------------------------------------------------------------
@@ -69,5 +68,7 @@ Calculate a value for the location field for those features where the current va
  201805-torres: wrote initial address in parcel function
  20180607-revisions completed to script, incorporating address in parcel function and changing create layers function so that a variety of data types
           can be passed into the function.
+20180622-Eno: Removed search cursor in the Join the joinClosest back to the layer based on the facilityID and then calculate the value of the location field from the site address
+
 
  ==============================================================================
