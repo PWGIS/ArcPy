@@ -323,28 +323,39 @@ def FeatureNearParcel(layerList):
         for fc in layerList[i]:
             print locationfield
             layer = fc + "Layer"
-            joinClosest = "in_memory/JoinClosest" + fc
+            print layer
+            joinClosest = "in_memory/joinClosest" + fc
+
             arcpy.SelectLayerByAttribute_management(layer, "NEW_SELECTION", "[" + locationfield + "] IS NULL")
 
             arcpy.SpatialJoin_analysis(layer, Parcels, joinClosest, "JOIN_ONE_TO_ONE", "KEEP_COMMON", "", "CLOSEST", "",
                                        "")
 
             result = arcpy.GetCount_management(joinClosest)
-            print result
+
+            arcpy.AddJoin_management(layer, "OBJECTID", joinClosest, "TARGET_FID", "KEEP_ALL")
 
             if result > 0:
-                # iterate through features that are within a parcel. "PARCEL_ID IS NOT NULL"
-                with arcpy.da.SearchCursor(joinClosest, ["Parcel_ID", "FACILITYID", "SITE_ADDRE"]) as cursor:
-                    for row in cursor:
-                        print row
-                        print str(row[2])
+                arcpy.CalculateField_management(layer, locationfield, "[joinClosest" + fc + ".SITE_ADDRE]", "VB", )
 
-                        arcpy.SelectLayerByAttribute_management(layer, "NEW_SELECTION",
-                                                                    "[FACILITYID] = '" + str(row[1]) + "'")
-                        layerResult = arcpy.GetCount_management(layer)
-                        layerCount = int(layerResult.getOutput(0))
-                        arcpy.CalculateField_management(layer, locationfield, "\"" + str(row[2]) + "\"", "", "")
-                        print layerCount
+                ##This is to check field names
+                # fields = arcpy.ListFields(layer)
+                # for field in fields:
+                #     print field.name
+
+            #     # iterate through features that are within a parcel. "PARCEL_ID IS NOT NULL" dont need a search cursor anylonger
+            #     with arcpy.da.SearchCursor(joinClosest, ["Parcel_ID", "FACILITYID", "SITE_ADDRE"]) as cursor:
+            #         for row in cursor:
+            #             print row
+            #             print str(row[2])
+            #
+            #             arcpy.SelectLayerByAttribute_management(layer, "NEW_SELECTION",
+            #                                                         "[FACILITYID] = '" + str(row[1]) + "'")
+            #             layerResult = arcpy.GetCount_management(layer)
+            #             layerCount = int(layerResult.getOutput(0))
+            #             arcpy.CalculateField_management(layer, locationfield, "\"" + str(row[2]) + "\"", "", "")
+            #             print layerCount
+        print "Field Calculated"
         i = i + 1
 
     return
