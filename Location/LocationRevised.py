@@ -11,8 +11,8 @@ todayhhmm = time.strftime("%Y%m%dT%H%M", time.localtime())
 arcpy.env.overwriteOutput = True
 
 #SDE connections
-PWConnection = "C:/Python/Location/Publicworks_SeandoVersion.sde" #building off my version for testing
-A1Connection = "C:/Python/Location/DURHAM-GIS_A1.sde"
+PWConnection = "PUBLICWORKS-PUBLICWORKS.sde" #building off my version for testing
+A1Connection = "DURHAM-GIS_A1.sde"
 
 #we use the workspace in the changeLayerVersion function, but could we just set it there?
 arcpy.env.workspace = PWConnection
@@ -30,9 +30,9 @@ def main():
 
     # layerList = createLayers("snSystemValve", "Feature Class")
 
-    changeLayerVersion("Seando.UTIL_EDITS", layerList)
+    # changeLayerVersion("Seando.UTIL_EDITS", layerList)
 
-    FeatureInParcel(layerList)
+    # FeatureInParcel(layerList)
 
     # return
 
@@ -171,36 +171,39 @@ def createLayers(OriginalData, DataType):
 
     elif (DataType == "List"):   ##loop through feature dataset once and compare it to each item in the list
         print(OriginalData)
-
+        checkCount = 0
         datasets = arcpy.ListDatasets('', 'Feature')
         for fds in datasets:
             print fds
             for fc in arcpy.ListFeatureClasses('', '', fds):
                 # print fc
                 newName = fc.split(".")[2]
-                for x in OriginalData:
-                    if newName == x:
-                        print "Got it!"
-                        fields = arcpy.ListFields(fc) #find the correct location field, make a feature layer, and append the feature class to the correct list
-                        for field in fields:
-                            fieldName = str(field.name)
-                            if fieldName == "LOCATION":
-                                FCLayer = arcpy.MakeFeatureLayer_management(thisWorkspace + "/" + fds + "/" + fc, newName + "Layer", fieldName + " IS NULL")
-                                result = arcpy.GetCount_management(FCLayer)
-                                print result
-                                locationList.append(newName)
-        
-                            elif fieldName == "LOCATIONDESCRIPTION":
-                                FCLayer = arcpy.MakeFeatureLayer_management(thisWorkspace + "/" + fds + "/" + fc,
-                                                                            newName + "Layer",
-                                                                            fieldName + " IS NULL")
-                                result = arcpy.GetCount_management(FCLayer)
-                                print result
-                                descriptionList.append(newName)
-        layerList.append(locationList)
-        layerList.append(descriptionList)
-        print layerList
-        return layerList
+                if newName in OriginalData:
+                    print "Found It!"
+                    fields = arcpy.ListFields(fc) #find the correct location field, make a feature layer, and append the feature class to the correct list
+                    for field in fields:
+                        fieldName = str(field.name)
+                        if fieldName == "LOCATION":
+                            FCLayer = arcpy.MakeFeatureLayer_management(thisWorkspace + "/" + fds + "/" + fc, newName + "Layer", fieldName + " IS NULL")
+                            result = arcpy.GetCount_management(FCLayer)
+                            print result
+                            locationList.append(newName)
+                            checkCount += 1
+                            break
+                        elif fieldName == "LOCATIONDESCRIPTION":
+                            FCLayer = arcpy.MakeFeatureLayer_management(thisWorkspace + "/" + fds + "/" + fc,
+                                                                        newName + "Layer",
+                                                                        fieldName + " IS NULL")
+                            result = arcpy.GetCount_management(FCLayer)
+                            print result
+                            descriptionList.append(newName)
+                            checkCount += 1
+                            break
+                if checkCount >= len(OriginalData):
+                    layerList.append(locationList)
+                    layerList.append(descriptionList)
+                    print layerList
+                    return layerList
         
 
 '''In the function below we loop through the lists and use the spatial join to create an in-memory feature class, named joinWithin, between the layer and the parcel layer where the layer feature sits
