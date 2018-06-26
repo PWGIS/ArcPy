@@ -1,9 +1,8 @@
-
-
-# Import arcpy and other modules
+# MODULE IMPORT
 import arcpy,  time, PWLIB
 
-#i used todayhhmm to create the version below, but we can handle this differently and avoid setting it globally
+# GLOBAL VARIABLES
+# Erika used todayhhmm to create the version below, but we can handle this differently and avoid setting it globally
 today = time.strftime("%Y%m%d", time.localtime())
 todayhhmm = time.strftime("%Y%m%dT%H%M", time.localtime())
 
