@@ -74,7 +74,7 @@ def createLayers(OriginalData, DataType):
     #the workspace is set globally so i don't think it needs to be set here.  Pick one!
     arcpy.env.workspace = PWConnection
 
-    PWLIB.logmessage("Start the create layers function...")
+    PWLIB.logmessage("Creating Layers...")
     
     #the list that will hold the names of the feature classes.  because the location field is not consistent across all the feature classes layerList
     #is actually a list of lists, where the first list, locationList, holds all the feature classes where the field name is LOCATION and the second
@@ -85,6 +85,7 @@ def createLayers(OriginalData, DataType):
 
     if (DataType == "Feature Dataset"):
         #loop through the datasets in thisWorkspace to find the match
+        PWLIB.logmessage("\tProcessing Feature Dataset.")
         datasets = arcpy.ListDatasets('', 'Feature')
         
         for fds in datasets:
@@ -132,16 +133,15 @@ def createLayers(OriginalData, DataType):
 
     #if a single feature class is passed to the function, we use the ListDatasets and ListFeatureClasses to find it.
     elif (DataType == "Feature Class"):
+        PWLIB.logmessage("\tProcessing Feature Class.")
         datasets = arcpy.ListDatasets('', 'Feature')
         # print datasets
         for fds in datasets:
-        # print fds
+            PWLIB.logmessage("Searching " + str(fds))
             for fc in arcpy.ListFeatureClasses('', '', fds):
-                print fc
                 newName = fc.split(".")[2] #the full name of an SDE feature class includes the owner, so we use the split method to parse just the actual feature
                 #class name and then compare that to the feature class name passed to the function.
                 if newName == OriginalData:
-                    print "Got it!"
                     if arcpy.Describe(fc).shapeType == "Point":  #only point feature classes can be used with this function since polygons and lines can cross
                         #multiple parcels.
                         print "it's a point!"
@@ -174,12 +174,10 @@ def createLayers(OriginalData, DataType):
         checkCount = 0
         datasets = arcpy.ListDatasets('', 'Feature')
         for fds in datasets:
-            print fds
             for fc in arcpy.ListFeatureClasses('', '', fds):
                 # print fc
                 newName = fc.split(".")[2]
                 if newName in OriginalData:
-                    print "Found It!"
                     fields = arcpy.ListFields(fc) #find the correct location field, make a feature layer, and append the feature class to the correct list
                     for field in fields:
                         fieldName = str(field.name)
@@ -230,7 +228,7 @@ we do a second in-memory join to find the address point that is nearest the sele
 that site address into the location field.  If there is no address point we use the parcel site address for the location field.'''
 def FeatureInParcel(layerList):
     # first make the address point layer
-    print "Start the features in parcel function"
+    PWLIB.logmessage("Beginning updates for features in parcels.")
     AddressPoints = A1Connection + "/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints"
     arcpy.MakeFeatureLayer_management(AddressPoints, "AP_Layer")
 
