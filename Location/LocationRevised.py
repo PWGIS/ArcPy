@@ -26,14 +26,17 @@ def main():
 
     # layerList = createLayers("SewerSystem", "Feature Dataset")
     #layerList = createLayers(["wnClearWell", "wnSamplingStation"], "List")
-    layerList = createLayers(["wnCldearWell", "wnSamplingStation", "snControlValve"], "List")
+    # layerList = createLayers(["wnClearWell", "wnSamplingStation", "snControlValve"], "List")
+    layerList = createLayers(["wnClearWell", "wnHydrant"], "List")
 
-    # layerList = createLayers("snnSystemValve", "Feature Class")
+    # layerList = createLayers("snSystemValve", "Feature Class")
 
     # changeLayerVersion("Seando.UTIL_EDITS", layerList)
 
     # FeatureInParcel(layerList)
 
+## Do we want to move this to inside last function?
+    cleanUp("PUBLICWORKS.TESTVERSION", layerList)
     # return
 
 '''creates a new version and transfers the layers to the new version.  layers is now a list of lists based on the specific
@@ -43,7 +46,9 @@ def changeLayerVersion(parentVersion, layers):
 
     PWLIB.logmessage("******STARTING*******")
 
-    #versionName =  steal from transcribe
+    #versionName =  steal from transcribe to change time?
+
+    versionName = "LocationTest" + todayhhmm
     # Create Version
     arcpy.CreateVersion_management(thisWorkspace, parentVersion, versionName, "PROTECTED")
     PWLIB.logmessage(" Version created.")
@@ -57,12 +62,36 @@ def changeLayerVersion(parentVersion, layers):
         for fc in layers[i]:
             layer = fc + "Layer"
             print layer
-            arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", "Seando." + versionName, "")
+            arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", "PUBLICWORKS." + versionName, "")
 	i = i+1
 		
     PWLIB.logmessage("Done.")
 
     return
+
+def cleanUp(parentVersion, layers):
+    PWLIB.logmessage("Switching back to parent version...")
+
+    ## Need to update this to be the version name passed in from changeLayerVersion version name so you dont need to make a variable cant use todayhhmm cause it will change by the time you get here.
+    versionName = "LocationTest" + today
+    i = 0
+    layerCount = len(layers)
+    print layerCount
+    while i < layerCount:
+        for fc in layers[i]:
+            layer = fc + "Layer"
+            print layer
+            arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", parentVersion, "")
+
+        # Reconcile and post version.
+            PWLIB.logmessage("Reconciling/Posting version " + versionName)
+            arcpy.ReconcileVersions_management(thisWorkspace, "ALL_VERSIONS", parentVersion, "PUBLICWORKS." + versionName,  "LOCK_ACQUIRED", "ABORT_CONFLICTS", "BY_OBJECT", "FAVOR_EDIT_VERSION", "POST", "DELETE_VERSION")
+
+        i = i + 1
+    PWLIB.logmessage("Finished Reconciling/Posting all layers")
+
+    return
+
 
 ''' Creates layers for the feature classes in the feature dataset, single feature class, or a group of feature classes provided in a list.  the
 two arguments are the data you are passing in and then what type of data it is (feature dataset, feature class, or list).  The function handles each
@@ -377,6 +406,5 @@ def FeatureNearParcel(layerList):
         i = i + 1
 
     return
-
 
 main()
