@@ -233,6 +233,23 @@ def createLayers(OriginalData, DataType):
                     layerList.append(descriptionList)
                     print layerList
                     return layerList
+        if len(locationList) + len(descriptionList) < len(OriginalData):
+            MissingData = []
+            for item in OriginalData:
+                if item not in locationList and item not in descriptionList:
+                    MissingData.append(item)
+                    print "ERROR: Feature classes were not found for following inputs " + str(MissingData)
+            pass
+
+    # Check to see if any layers were created.
+    if len(locationList) == 0 and len(descriptionList) == 0:
+        print "Error: No feature classes were found matching the provided inputs."
+        quit()
+
+    layerList.append(locationList)
+    layerList.append(descriptionList)
+    print layerList
+    return layerList
         
 
 '''In the function below we loop through the lists and use the spatial join to create an in-memory feature class, named joinWithin, between the layer and the parcel layer where the layer feature sits
