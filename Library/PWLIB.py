@@ -83,7 +83,7 @@ def logmessage(message):
     DESCRIPTION:
     Function writes the STRING argument to the console.
     String also prepends the argument with a time stamp."""
-    print time.strftime ("%H:%M", time.localtime()) + "\t" + message
+    print time.strftime ("%H:%M", time.localtime()) + "\t" + str(message)
     return
 
 
@@ -104,9 +104,7 @@ def transcribe(message, _filepath=os.path.dirname(__file__) + "/"):
     """
     txt_file = open(_filepath + os.path.splitext(os.path.basename(__file__))[0] +
                     "_" + time.strftime("%Y-%m-%d", time.localtime()) + ".txt", "a")
-    # txt_file = open(_filepath + os.path.basename(__file__).replace(".py",
-    #                 "_" + time.strftime("%Y-%m-%d",time.localtime()) + ".txt"), "a")
-    txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + message + "\n")
+    txt_file.write(time.strftime("%H:%M", time.localtime()) + "\t" + str(message) + "\n")
     logmessage(message)
     txt_file.close()
 
@@ -149,3 +147,4 @@ def updatefacilityid(featurelayer):
 
 if __name__ == "__main__":
     logmessage("is this working?")
+    transcribe(2+3)

@@ -34,4 +34,6 @@ Then it searches for records with a FACILITYID of NULL and then updates them in 
 ------------------------------------------------------
 UPDATES
 ------------------------------------------------------
+6/26/2018: BUG FIX - Transcribe now converts data argument into String type. 
+6/13/2018: BUG FIX - Transcribe now parces for the file name differently.
 5/17/2018: initial publish to PWGIS
