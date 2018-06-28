@@ -13,10 +13,11 @@ versionName = "LocationTest" + time.strftime("%Y%m%dT%H%M", time.localtime())
 def main():
     # createLayers("SewerSystem", "Feature Dataset")
     # createLayers(["wnClearWell", "wnSamplingStation", "snControlValve"], "List")
+    input = "snCleanOut"
     layers = createLayers("snCleanOut", "Feature Class")
     changeLayerVersion("PUBLICWORKS.PublicWorks_Sandbox", layers)
-    FeatureInParcel(layers)
-    # FeatureNearParcel(layers)
+    # FeatureInParcel(layers)
+    FeatureNearParcel(layers)
     cleanUp("PUBLICWORKS.PublicWorks_Sandbox", layers)
 
 
@@ -57,10 +58,12 @@ def cleanUp(parentVersion, layers):
     i = 0
     layerCount = len(layers)
     while i < layerCount:
-        if i == 0 and len(layers[i]) > 0:
-            PWLIB.logmessage("\tConverting Location Layers")
-        elif i == 1 and len(layers[i]) > 0:
-            PWLIB.logmessage("\tConverting Location Description Layers")
+        if i == 0 and len(layers[i]) == 0:
+            i += 1
+            PWLIB.logmessage("\tFirst list is empty!")
+        if i == 1 and len(layers[i]) == 0:
+            PWLIB.logmessage("\tSecond list is empty!")
+            break
 
         for fc in layers[i]:
             layer = fc + "Layer"
@@ -141,7 +144,7 @@ def createLayers(OriginalData, DataType):
                 # the locationList and descriptionList lists are then appended to the layerList list
                 layerList.append(locationList)
                 layerList.append(descriptionList)
-                PWLIB.logmessage("\tOutput Returned: " + str(layerList) + "\n")
+                PWLIB.logmessage("Output Returned: " + str(layerList) + "\n")
                 return layerList
 
     elif DataType == "Feature Class":
@@ -174,7 +177,7 @@ def createLayers(OriginalData, DataType):
                         # append the locationList and the descriptionList to the layerList and return the layerList
                         layerList.append(locationList)
                         layerList.append(descriptionList)
-                        PWLIB.logmessage("\tOutput Returned: " + str(layerList) + "\n")
+                        PWLIB.logmessage("Output Returned: " + str(layerList) + "\n")
                         return layerList
 
     elif DataType == "List":
@@ -206,7 +209,7 @@ def createLayers(OriginalData, DataType):
                 if checkCount >= len(OriginalData):
                     layerList.append(locationList)
                     layerList.append(descriptionList)
-                    PWLIB.logmessage("\tOutput Returned: " + str(layerList) + "\n")
+                    PWLIB.logmessage("Output Returned: " + str(layerList) + "\n")
                     return layerList
         if len(locationList) + len(descriptionList) < len(OriginalData):
             MissingData = []
@@ -242,7 +245,6 @@ def FeatureInParcel(layerList):
         layerList (list): a list containing two lists of layers to be addressed.
     """
 
-    # first make the address point layer
     PWLIB.logmessage("Beginning updates for features in parcels.")
     AddressPoints = A1Connection + "/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints"
     arcpy.MakeFeatureLayer_management(AddressPoints, "AP_Layer")
@@ -309,9 +311,10 @@ def FeatureInParcel(layerList):
                             # print layerCount
                         count += 1
                         if count >= 10:
+                            PWLIB.logmessage("FeatureInParcel() Complete.\n")
                             return
         i = i + 1
-    # FeatureNearParcel(layerList)
+    PWLIB.logmessage("FeatureInParcel() Complete.\n")
 
 
 def FeatureNearParcel(layerList):
@@ -322,7 +325,7 @@ def FeatureNearParcel(layerList):
     do not sit within a parcel.  The first step is to do a new select by attribute query to select ONLY those features
     that still have a null value in the location field.  Next we do a spatial join with the parcel layer to identify the
     closest parcel. A search cursor is then used to iterate through the resulting in-memory feature class and the site
-    adddress value is returned and used to calculate the value of the individual feature.
+    address value is returned and used to calculate the value of the individual feature.
 
     PARAMETERS:
         layerList (list): a list containing two lists of layers to be addressed.
@@ -331,27 +334,21 @@ def FeatureNearParcel(layerList):
         Function must be run after FeatureNearParcel().
     """
     PWLIB.logmessage("Beginning FeatureNearParcel().")
-    # first make the address point layer
     AddressPoints = A1Connection + "/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints"
     arcpy.MakeFeatureLayer_management(AddressPoints, "AP_Layer")
     Parcels = A1Connection + "/GIS_Data.A1.TaxData/gis_data.A1.Parcels"
 
-    # layerlist is now a list of list, with the first list layerList[0] representing those feature classes where the field name is "LOCATION" and
-    # layerList[1] includes feature classes where the field name is "LOCATIONDESCRIPTION".
-    print layerList
-    print len(layerList)
     i = 0
     for list in layerList:
         if i == 0:
             locationfield = "LOCATION"
         else:
             locationfield = "LOCATIONDESCRIPTION"
-
         for fc in layerList[i]:
             layer = fc + "Layer"
             joinClosest = "in_memory/joinClosest" + fc
             arcpy.SelectLayerByAttribute_management(layer, "NEW_SELECTION", "[" + locationfield + "] IS NULL")
-            arcpy.SpatialJoin_analysis(layer, Parcels, joinClosest, "JOIN_ONE_TO_ONE", "KEEP_COMMON", "", "CLOSEST", "","")
+            arcpy.SpatialJoin_analysis(layer, Parcels, joinClosest, "JOIN_ONE_TO_ONE", "KEEP_COMMON", "", "CLOSEST")
             result = arcpy.GetCount_management(joinClosest)
             arcpy.AddJoin_management(layer, "OBJECTID", joinClosest, "TARGET_FID", "KEEP_ALL")
 
@@ -359,8 +356,7 @@ def FeatureNearParcel(layerList):
                 arcpy.CalculateField_management(layer, locationfield, "[joinClosest" + fc + ".SITE_ADDRE]", "VB", )
             PWLIB.logmessage("\t" + fc + " Calculated")
         i += 1  # shorthand for saying i = i + 1
-
-    return
+    PWLIB.logmessage("FeatureNearParcel() Complete.\n")
 
 
 if __name__ == '__main__':
