@@ -13,11 +13,11 @@ versionName = "LocationTest" + time.strftime("%Y%m%dT%H%M", time.localtime())
 def main():
     # createLayers("SewerSystem", "Feature Dataset")
     # createLayers(["wnClearWell", "wnSamplingStation", "snControlValve"], "List")
-    layers = createLayers("snSystemValve", "Feature Class")
+    layers = createLayers("snCleanOut", "Feature Class")
     changeLayerVersion("PUBLICWORKS.PublicWorks_Sandbox", layers)
     FeatureInParcel(layers)
-    FeatureNearParcel(layers)
-    cleanUp("PUBLICWORKS.TESTVERSION", layers)
+    # FeatureNearParcel(layers)
+    cleanUp("PUBLICWORKS.PublicWorks_Sandbox", layers)
 
 
 def changeLayerVersion(parentVersion, layers):
@@ -57,6 +57,11 @@ def cleanUp(parentVersion, layers):
     i = 0
     layerCount = len(layers)
     while i < layerCount:
+        if i == 0 and len(layers[i]) > 0:
+            PWLIB.logmessage("\tConverting Location Layers")
+        elif i == 1 and len(layers[i]) > 0:
+            PWLIB.logmessage("\tConverting Location Description Layers")
+
         for fc in layers[i]:
             layer = fc + "Layer"
             arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", parentVersion, "")
@@ -258,7 +263,7 @@ def FeatureInParcel(layerList):
             joinWithin = "in_memory/joinWithin" + fc
             arcpy.SpatialJoin_analysis(layer, Parcels, joinWithin, "JOIN_ONE_TO_ONE", "KEEP_COMMON", "",
                                        "COMPLETELY_WITHIN", "", "")
-
+            count = 0
             result = arcpy.GetCount_management(joinWithin)
             if result > 0:
                 # iterate through features that are within a parcel. "PARCEL_ID IS NOT NULL"
@@ -302,6 +307,9 @@ def FeatureInParcel(layerList):
                             # layerCount = int(layerResult.getOutput(0))
                             arcpy.CalculateField_management(layer, locationfield, "\"" + str(row[2]) + "\"", "", "")
                             # print layerCount
+                        count += 1
+                        if count >= 10:
+                            return
         i = i + 1
     # FeatureNearParcel(layerList)
 
