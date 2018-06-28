@@ -3,7 +3,7 @@ import arcpy,  time, PWLIB
 
 # GLOBAL VARIABLES
 arcpy.env.overwriteOutput = True
-PWConnection = "PUBLICWORKS-PUBLICWORKS.sde" #building off my version for testing
+PWConnection = "PUBLICWORKS-PUBLICWORKS.sde"
 A1Connection = "DURHAM-GIS_A1.sde"
 arcpy.env.workspace = PWConnection
 thisWorkspace = arcpy.env.workspace
@@ -11,13 +11,13 @@ versionName = "LocationTest" + time.strftime("%Y%m%dT%H%M", time.localtime())
 
 
 def main():
-    createLayers("SewerSystem", "Feature Dataset")
-    createLayers(["wnClearWell", "wnSamplingStation", "snControlValve"], "List")
-    createLayers("snSystemValve", "Feature Class")
-    # changeLayerVersion("Seando.UTIL_EDITS", layerList)
-    # FeatureInParcel(layerList)
-    # FeatureNearParcel(layerList)
-    # cleanUp("PUBLICWORKS.TESTVERSION", layerList)
+    # createLayers("SewerSystem", "Feature Dataset")
+    # createLayers(["wnClearWell", "wnSamplingStation", "snControlValve"], "List")
+    layers = createLayers("snSystemValve", "Feature Class")
+    changeLayerVersion("PUBLICWORKS.PublicWorks_Sandbox", layers)
+    FeatureInParcel(layers)
+    FeatureNearParcel(layers)
+    cleanUp("PUBLICWORKS.TESTVERSION", layers)
 
 
 def changeLayerVersion(parentVersion, layers):
@@ -41,7 +41,7 @@ def changeLayerVersion(parentVersion, layers):
         for fc in layers[i]:
             layer = fc + "Layer"
             arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", "PUBLICWORKS." + versionName, "")
-        i = i+1
+        i += 1  # shorthand for saying i = i + 1
     PWLIB.logmessage("changeLayerVersion() complete.\n")
 
 
@@ -65,7 +65,7 @@ def cleanUp(parentVersion, layers):
             arcpy.ReconcileVersions_management(thisWorkspace, "ALL_VERSIONS", parentVersion, "PUBLICWORKS." +
                                                versionName,  "LOCK_ACQUIRED", "ABORT_CONFLICTS", "BY_OBJECT",
                                                "FAVOR_EDIT_VERSION", "POST", "DELETE_VERSION")
-        i += 1
+        i += 1  # shorthand for saying i = i + 1
     PWLIB.logmessage("Finished Reconciling/Posting all layers\n")
 
 
@@ -303,7 +303,7 @@ def FeatureInParcel(layerList):
                             arcpy.CalculateField_management(layer, locationfield, "\"" + str(row[2]) + "\"", "", "")
                             # print layerCount
         i = i + 1
-    FeatureNearParcel(layerList)
+    # FeatureNearParcel(layerList)
 
 
 def FeatureNearParcel(layerList):
@@ -328,8 +328,8 @@ def FeatureNearParcel(layerList):
     arcpy.MakeFeatureLayer_management(AddressPoints, "AP_Layer")
     Parcels = A1Connection + "/GIS_Data.A1.TaxData/gis_data.A1.Parcels"
 
-    #layerlist is now a list of list, with the first list layerList[0] representing those feature classes where the field name is "LOCATION" and
-    #layerList[1] includes feature classes where the field name is "LOCATIONDESCRIPTION".
+    # layerlist is now a list of list, with the first list layerList[0] representing those feature classes where the field name is "LOCATION" and
+    # layerList[1] includes feature classes where the field name is "LOCATIONDESCRIPTION".
     print layerList
     print len(layerList)
     i = 0
@@ -350,7 +350,7 @@ def FeatureNearParcel(layerList):
             if result > 0:
                 arcpy.CalculateField_management(layer, locationfield, "[joinClosest" + fc + ".SITE_ADDRE]", "VB", )
             PWLIB.logmessage("\t" + fc + " Calculated")
-        i = i + 1
+        i += 1  # shorthand for saying i = i + 1
 
     return
 
