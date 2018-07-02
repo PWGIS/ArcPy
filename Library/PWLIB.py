@@ -76,6 +76,43 @@ def addressinparcel(feature_class, final_join):
                 del parcel_cursor
 
 
+def createLayers(layers):
+    # Loop through feature dataset once and compare it to each item in the list
+    if type(layers) is str:
+        print "Is a string"
+        for fds in arcpy.ListDatasets('', 'Feature'):
+            for fc in arcpy.ListFeatureClasses('', '', fds):
+                if str.lower(layers) == str.lower(str(fc.split('.')[-1])):
+                    # arcpy.MakeFeatureLayer_management(arcpy.env.workspace + "/" + fds + "/" + fc, layers + "lyr")
+                    return layers + "lyr"
+        else:
+            print "No feature class found matching input: " + layers
+
+    elif type(layers) is list:
+        # convert all items in list to lowercase in order to avoid case errors.
+        layers = [item.lower() for item in layers]
+        lyrList = []
+        # iterate through FDS and FCs
+        for fds in arcpy.ListDatasets('', 'Feature'):
+            for fc in arcpy.ListFeatureClasses('','', fds):
+                if any(str.lower(str(fc.split('.')[-1])) == layer for layer in layers):
+                    print "Found " + fc
+                    # arcpy.MakeFeatureLayer_management(arcpy.env.workspace + "/" + fds + "/" + fc, layers + "lyr")
+                    lyrList.append(str.lower(str(fc.split('.')[-1]) + "lyr"))
+                    if len(lyrList) == len(layers):
+                        return lyrList
+        else:
+            # print incorrect input name
+            if len(lyrList) == 0:
+                print "0 items in the input data matched with feature classes."
+                return
+            else:
+                lyrCheck = [x.replace('lyr', '') for x in lyrList]
+                print str(len(layers) - len(lyrList)) + " feature class(es) were not found."
+                print list(set(layers) - set(lyrCheck))
+                return lyrList
+
+
 def logmessage(message):
     """ARGS:
     message: a string variable to be written to the file and console
@@ -143,6 +180,40 @@ def updatefacilityid(featurelayer):
 
     # Delete cursor and row objects to remove locks on the data
     del rows
+
+
+def versionLayers(layers, parent = arcpy.Describe(arcpy.env.workspace).connectionProperties.version):
+    """
+
+    """
+    # check if version to be created exists first. Skip if that is the case.
+    if type(layers) is not list:
+        print "Argument must be a list of layer names"
+        return
+    print "Print Arguments: " + layers, parent
+    for i, version in enumerate(arcpy.da.ListVersions(arcpy.env.workspace)):
+        print i, version.name
+        verName = os.path.splitext(os.path.basename(__file__))[0] + time.strftime("_%m-%d", time.localtime())
+        if version.name == "PUBLICWORKS." + verName:
+            logmessage ("Version already exists. Skipping version creation.")
+            break
+        elif i == len(arcpy.da.ListVersions(arcpy.env.workspace)) - 1:
+            logmessage("Version Not Found. Creating Version[" + verName + "]")
+            arcpy.CreateVersion_management(arcpy.env.workspace, parent, verName, "PROTECTED")
+    verName = "PUBLICWORKS." + verName
+    # Process data
+    # Check if data is a layer name or a list of layers
+    if type(layers) is str:
+        arcpy.ChangeVersion_management(layers, "TRANSACTIONAL", verName)
+        print "Version Updated for " + layers
+    elif type(layers) is list:
+        for layer in layers:
+            arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", verName)
+        print "Version Updated for " + layers
+    return verName
+
+
+
 
 
 if __name__ == "__main__":
