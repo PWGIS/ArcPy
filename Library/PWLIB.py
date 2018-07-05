@@ -1,6 +1,12 @@
 import arcpy, time, os
 
 
+class Layer_Package:
+    def __init__(self, layers, workspace):
+        self.layers = createLayers(layers)
+        self.workspace = workspace
+
+
 def addressinparcel(feature_class, final_join):
     """ ARGS
         feature_class : The feature class that is being updated.
