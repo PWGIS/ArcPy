@@ -76,17 +76,25 @@ def addressinparcel(feature_class, final_join):
                 del parcel_cursor
 
 
-def createLayers(layers):
+def createLayers(layers, workspace):
+    """
+    Takes the name or list of names of feature classes and creates layers if they exist in the feature datasets.
+
+    PARAMETERS
+    layers (string, list): Name or names of the feature classes to have layers created of them.
+
+    RETURN
+    list of the names of the layers. Names are [FeatureClass] + "lyr"
+    """
     # Loop through feature dataset once and compare it to each item in the list
     if type(layers) is str:
-        print "Is a string"
         for fds in arcpy.ListDatasets('', 'Feature'):
             for fc in arcpy.ListFeatureClasses('', '', fds):
                 if str.lower(layers) == str.lower(str(fc.split('.')[-1])):
-                    # arcpy.MakeFeatureLayer_management(arcpy.env.workspace + "/" + fds + "/" + fc, layers + "lyr")
-                    return layers + "lyr"
+                    arcpy.MakeFeatureLayer_management(workspace + "/" + fds + "/" + fc, layers + "lyr")
+                    return [layers + "lyr"]
         else:
-            print "No feature class found matching input: " + layers
+            transcribe("\tNo feature class found matching input: " + layers)
 
     elif type(layers) is list:
         # convert all items in list to lowercase in order to avoid case errors.
@@ -96,32 +104,54 @@ def createLayers(layers):
         for fds in arcpy.ListDatasets('', 'Feature'):
             for fc in arcpy.ListFeatureClasses('','', fds):
                 if any(str.lower(str(fc.split('.')[-1])) == layer for layer in layers):
-                    print "Found " + fc
-                    # arcpy.MakeFeatureLayer_management(arcpy.env.workspace + "/" + fds + "/" + fc, layers + "lyr")
+                    transcribe("Found " + fc)
+                    arcpy.MakeFeatureLayer_management(workspace + "/" + fds + "/" + fc, layers + "lyr")
                     lyrList.append(str.lower(str(fc.split('.')[-1]) + "lyr"))
                     if len(lyrList) == len(layers):
                         return lyrList
         else:
             # print incorrect input name
             if len(lyrList) == 0:
-                print "0 items in the input data matched with feature classes."
+                transcribe("0 items in the input data matched with feature classes.")
                 return
             else:
                 lyrCheck = [x.replace('lyr', '') for x in lyrList]
-                print str(len(layers) - len(lyrList)) + " feature class(es) were not found."
-                print list(set(layers) - set(lyrCheck))
+                transcribe(str(len(layers) - len(lyrList)) + " feature class(es) were not found.")
+                transcribe(list(set(layers) - set(lyrCheck)))
                 return lyrList
 
 
 def logmessage(message):
-    """ARGS:
-    message: a string variable to be written to the file and console
+    """
+    Function writes the STRING argument to the console with a timestamp.
 
-    DESCRIPTION:
-    Function writes the STRING argument to the console.
-    String also prepends the argument with a time stamp."""
+    PARAMETERS:
+    message (str): a string variable to be written to the file and console
+    """
     print time.strftime ("%H:%M", time.localtime()) + "\t" + str(message)
     return
+
+
+def mergeVersion(layers, workspace):
+    """
+    Removes the provided layers from the version, reconciles, posts, and attempts to delete the version.
+
+    The Parent Version is determined by the version of the current workspace environment GLOBAL variable
+    If there are any layers still attached to the version, the version will not be deleted.
+
+    PARAMETERS:
+    layers (list):  List of layers that were created using versionedLayers() and need to be removed from the the version.
+    Should be identical to the list used in versionedLayers().
+    """
+    parentName = arcpy.Describe(workspace).connectionProperties.version
+    verName = "PUBLICWORKS." + os.path.splitext(os.path.basename(__file__))[0] + time.strftime("_%m-%d", time.localtime())
+    logmessage("Beginning Reconcile")
+    logmessage("Parent Version: " + parentName)
+    logmessage("Child Version: " + verName)
+    for layer in layers:
+        arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", parentName)
+    arcpy.ReconcileVersions_management(workspace, "ALL_VERSIONS", parentName, verName,"LOCK_ACQUIRED", "NO_ABORT",
+                                       "BY_ATTRIBUTE","FAVOR_EDIT_VERSION", "POST", "DELETE_VERSION")
 
 
 def transcribe(message, _filepath=os.path.dirname(__file__) + "/"):
@@ -155,7 +185,7 @@ def updatefacilityid(featurelayer):
     Then it searches for records with a FACILITYID of NULL and then updates them
         in sequential order."""
     # Find the max value here, if we get nothing then quit.
-    print "Create Search Cursor"
+    logmessage("Create Search Cursor")
     rows = arcpy.SearchCursor(featurelayer, "", "", "", "FACILITYID D")
     row = rows.next()
     if row is None:
@@ -182,34 +212,40 @@ def updatefacilityid(featurelayer):
     del rows
 
 
-def versionLayers(layers, parent = arcpy.Describe(arcpy.env.workspace).connectionProperties.version):
+def versionedLayers(layers, workspace):
     """
+    Changes the source of the layers provided to a date-stamped version of the current workspace version.
 
+    If the version already exists, it will not create a version but will still change the source of layers provided.
+
+    PARAMETERS:
+        layers (list):  The list of layers to change the source version.
+        workspace (str):   The current arcpy workspace. Used for determining the parent version.
     """
+    verName = os.path.splitext(os.path.basename(__file__))[0] + time.strftime("_%m-%d", time.localtime())
+    parent = arcpy.Describe(workspace).connectionProperties.version
     # check if version to be created exists first. Skip if that is the case.
     if type(layers) is not list:
-        print "Argument must be a list of layer names"
+        logmessage("Argument must be a list of layer names")
         return
-    print "Print Arguments: " + layers, parent
-    for i, version in enumerate(arcpy.da.ListVersions(arcpy.env.workspace)):
-        print i, version.name
-        verName = os.path.splitext(os.path.basename(__file__))[0] + time.strftime("_%m-%d", time.localtime())
+    logmessage("Print Arguments: " + str(layers) + " | " + parent)
+    for i, version in enumerate(arcpy.da.ListVersions(workspace)):
         if version.name == "PUBLICWORKS." + verName:
             logmessage ("Version already exists. Skipping version creation.")
             break
-        elif i == len(arcpy.da.ListVersions(arcpy.env.workspace)) - 1:
+        elif i == len(arcpy.da.ListVersions(workspace)) - 1:
             logmessage("Version Not Found. Creating Version[" + verName + "]")
-            arcpy.CreateVersion_management(arcpy.env.workspace, parent, verName, "PROTECTED")
-    verName = "PUBLICWORKS." + verName
+            arcpy.CreateVersion_management(workspace, parent, verName, "PROTECTED")
+    verName = "PUBLICWORKS." + str(verName)
     # Process data
     # Check if data is a layer name or a list of layers
     if type(layers) is str:
         arcpy.ChangeVersion_management(layers, "TRANSACTIONAL", verName)
-        print "Version Updated for " + layers
+        logmessage("Version Updated for " + str(layers))
     elif type(layers) is list:
         for layer in layers:
             arcpy.ChangeVersion_management(layer, "TRANSACTIONAL", verName)
-        print "Version Updated for " + layers
+        logmessage("Version Updated for " + str(layers))
     return verName
 
 
