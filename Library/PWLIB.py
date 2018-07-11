@@ -105,7 +105,8 @@ def createLayers(layers, workspace):
             for fc in arcpy.ListFeatureClasses('','', fds):
                 if any(str.lower(str(fc.split('.')[-1])) == layer for layer in layers):
                     transcribe("Found " + fc)
-                    arcpy.MakeFeatureLayer_management(workspace + "/" + fds + "/" + fc, layers + "lyr")
+                    arcpy.MakeFeatureLayer_management(workspace + "/" + fds + "/" + fc, str.lower(str(fc.split('.')[-1])
+                                                                                                  + "lyr"))
                     lyrList.append(str.lower(str(fc.split('.')[-1]) + "lyr"))
                     if len(lyrList) == len(layers):
                         return lyrList
