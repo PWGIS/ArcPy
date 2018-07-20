@@ -1,0 +1,87 @@
+14:18	1:1 Address match error: 
+		ParcelID: 190698, 108 EQUESTRIAN CHASE                                                            
+		AddressPointID: 97863, 108 EQUESTRIAN CHASE N/A 
+14:18	1:1 Address match error: 
+		ParcelID: 190790, 317 SHETLAND RD                                                                 
+		AddressPointID: 156, 13301 QUARTERHORSE RUN 
+14:18	1:1 Address match error: 
+		ParcelID: 190740, 403 LOOKOUT PT                                                                  
+		AddressPointID: 281, 403 LOOKOUT POINT  
+14:18	1:1 Address match error: 
+		ParcelID: 191517, 7513 STAGVILLE RD Unit 00000                                                    
+		AddressPointID: 89615, 7513 STAGVILLE RD 
+14:18	1:1 Address match error: 
+		ParcelID: 191650, 6815 WILEY MANGUM RD                                                            
+		AddressPointID: 2290, 7322 STAGVILLE RD 
+14:18	1:1 Address match error: 
+		ParcelID: 189629, 205 RED MOUNTAIN RD Unit A                                                      
+		AddressPointID: 224870, 205 RED MOUNTAIN RD A
+14:18	1:1 Address match error: 
+		ParcelID: 190734, 402 LOOKOUT PT                                                                  
+		AddressPointID: 295, 402 LOOKOUT POINT  
+14:18	1:1 Address match error: 
+		ParcelID: 189582, 111 HARRIS MILL RD                                                              
+		AddressPointID: 102, 111 HARRIS RD 
+14:18	1:1 Address match error: 
+		ParcelID: 190735, 408 LOOKOUT PT                                                                  
+		AddressPointID: 317, 408 LOOKOUT POINT  
+14:18	1:1 Address match error: 
+		ParcelID: 189697, 2859 RED VALLEY DR                                                              
+		AddressPointID: 99048, 206 RED MOUNTAIN RD 
+14:18	1:1 Address match error: 
+		ParcelID: 205206, 2307 MOORES MILL RD                                                             
+		AddressPointID: 595, 1807 MOORES MILL RD 
+14:18	1:1 Address match error: 
+		ParcelID: 190256, 10221 OLD ROXBORO RD                                                            
+		AddressPointID: 1089, 10221 N OLD ROXBORO RD 
+14:18	1:1 Address match error: 
+		ParcelID: 189653, 13105 N ROXBORO RD                                                              
+		AddressPointID: 98131, 13105 ROXBORO RD 
+14:18	1:1 Address match error: 
+		ParcelID: 191262, 8711 N ROXBORO RD                                                               
+		AddressPointID: 97055, 8711 ROXBORO RD 
+14:18	1:1 Address match error: 
+		ParcelID: 191833, 9827 WILKINS RD                                                                 
+		AddressPointID: 1090, 1827 WILKINS RD 
+14:19	1:1 Address match error: 
+		ParcelID: 191931, 11436 HAMPTON RD                                                                
+		AddressPointID: 786, 11536 HAMPTON RD 
+14:19	1:1 Address match error: 
+		ParcelID: 189503, 1307 BILL POOLE RD                                                              
+		AddressPointID: 830, 1307 HILLSBOROUGH RD 
+14:19	1:1 Address match error: 
+		ParcelID: 193164, 3204 ELLIS CHAPEL RD                                                            
+		AddressPointID: 1351, 3204 BUREN RD 
+14:20	1:1 Address match error: 
+		ParcelID: 190698, 108 EQUESTRIAN CHASE                                                            
+		AddressPointID: 97863, 108 EQUESTRIAN CHASE N/A 
+14:20	1:1 Address match error: 
+		ParcelID: 190790, 317 SHETLAND RD                                                                 
+		AddressPointID: 156, 13301 QUARTERHORSE RUN 
+14:20	1:1 Address match error: 
+		ParcelID: 190740, 403 LOOKOUT PT                                                                  
+		AddressPointID: 281, 403 LOOKOUT POINT  
+14:20	1:1 Address match error: 
+		ParcelID: 191517, 7513 STAGVILLE RD Unit 00000                                                    
+		AddressPointID: 89615, 7513 STAGVILLE RD 
+14:20	1:1 Address match error: 
+		ParcelID: 191650, 6815 WILEY MANGUM RD                                                            
+		AddressPointID: 2290, 7322 STAGVILLE RD 
+14:20	1:1 Address match error: 
+		ParcelID: 189629, 205 RED MOUNTAIN RD Unit A                                                      
+		AddressPointID: 224870, 205 RED MOUNTAIN RD A
+14:20	1:1 Address match error: 
+		ParcelID: 190734, 402 LOOKOUT PT                                                                  
+		AddressPointID: 295, 402 LOOKOUT POINT  
+14:20	1:1 Address match error: 
+		ParcelID: 189582, 111 HARRIS MILL RD                                                              
+		AddressPointID: 102, 111 HARRIS RD 
+14:20	1:1 Address match error: 
+		ParcelID: 190735, 408 LOOKOUT PT                                                                  
+		AddressPointID: 317, 408 LOOKOUT POINT  
+14:20	1:1 Address match error: 
+		ParcelID: 189697, 2859 RED VALLEY DR                                                              
+		AddressPointID: 99048, 206 RED MOUNTAIN RD 
+14:20	1:1 Address match error: 
+		ParcelID: 205206, 2307 MOORES MILL RD                                                             
+		AddressPointID: 595, 1807 MOORES MILL RD 

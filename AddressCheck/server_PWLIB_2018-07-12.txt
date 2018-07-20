@@ -1,0 +1,2778 @@
+11:07	1:1 Address match error: 
+		ParcelID: 190698, 108 EQUESTRIAN CHASE                                                            
+		AddressPointID: 97863.0, 108 EQUESTRIAN CHASE N/A 
+11:07	1:1 Address match error: 
+		ParcelID: 190790, 317 SHETLAND RD                                                                 
+		AddressPointID: 156.0, 13301 QUARTERHORSE RUN 
+11:07	1:1 Address match error: 
+		ParcelID: 190740, 403 LOOKOUT PT                                                                  
+		AddressPointID: 281.0, 403 LOOKOUT POINT  
+11:07	1:1 Address match error: 
+		ParcelID: 191517, 7513 STAGVILLE RD Unit 00000                                                    
+		AddressPointID: 89615.0, 7513 STAGVILLE RD 
+11:07	1:1 Address match error: 
+		ParcelID: 191650, 6815 WILEY MANGUM RD                                                            
+		AddressPointID: 2290.0, 7322 STAGVILLE RD 
+11:07	1:1 Address match error: 
+		ParcelID: 189629, 205 RED MOUNTAIN RD Unit A                                                      
+		AddressPointID: 224870.0, 205 RED MOUNTAIN RD A
+11:08	1:1 Address match error: 
+		ParcelID: 190734, 402 LOOKOUT PT                                                                  
+		AddressPointID: 295.0, 402 LOOKOUT POINT  
+11:08	1:1 Address match error: 
+		ParcelID: 189582, 111 HARRIS MILL RD                                                              
+		AddressPointID: 102.0, 111 HARRIS RD 
+11:08	1:1 Address match error: 
+		ParcelID: 190735, 408 LOOKOUT PT                                                                  
+		AddressPointID: 317.0, 408 LOOKOUT POINT  
+11:08	1:1 Address match error: 
+		ParcelID: 189697, 2859 RED VALLEY DR                                                              
+		AddressPointID: 99048.0, 206 RED MOUNTAIN RD 
+11:08	1:1 Address match error: 
+		ParcelID: 205206, 2307 MOORES MILL RD                                                             
+		AddressPointID: 595.0, 1807 MOORES MILL RD 
+11:08	1:1 Address match error: 
+		ParcelID: 190256, 10221 OLD ROXBORO RD                                                            
+		AddressPointID: 1089.0, 10221 N OLD ROXBORO RD 
+11:08	1:1 Address match error: 
+		ParcelID: 189653, 13105 N ROXBORO RD                                                              
+		AddressPointID: 98131.0, 13105 ROXBORO RD 
+11:09	1:1 Address match error: 
+		ParcelID: 191262, 8711 N ROXBORO RD                                                               
+		AddressPointID: 97055.0, 8711 ROXBORO RD 
+11:09	1:1 Address match error: 
+		ParcelID: 191833, 9827 WILKINS RD                                                                 
+		AddressPointID: 1090.0, 1827 WILKINS RD 
+11:10	1:1 Address match error: 
+		ParcelID: 191931, 11436 HAMPTON RD                                                                
+		AddressPointID: 786.0, 11536 HAMPTON RD 
+11:10	1:1 Address match error: 
+		ParcelID: 189503, 1307 BILL POOLE RD                                                              
+		AddressPointID: 830.0, 1307 HILLSBOROUGH RD 
+11:10	1:1 Address match error: 
+		ParcelID: 193164, 3204 ELLIS CHAPEL RD                                                            
+		AddressPointID: 1351.0, 3204 BUREN RD 
+11:10	1:0 Address Point Count Error!
+		ParcelID:190200, 0 US 501 HWY                                                                    
+		No Address Point in Parcel.
+11:10	1:1 Address match error: 
+		ParcelID: 190015, 8043 LOWELL VALLEY DR                                                           
+		AddressPointID: 99283.0, 8043 LOWELL VALLEY RD 
+11:10	1:0 Address Point Count Error!
+		ParcelID:190457, 0 STRAIGHTAWAY DR                                                               
+		No Address Point in Parcel.
+11:10	1:1 Address match error: 
+		ParcelID: 190414, 30 FINISH LINE RD                                                               
+		AddressPointID: 130177.0, 32 FINISH LINE RD 
+11:11	1:1 Address match error: 
+		ParcelID: 190150, 8603 N ROXBORO RD                                                               
+		AddressPointID: 99317.0, 8603 ROXBORO RD 
+11:11	1:1 Address match error: 
+		ParcelID: 189208, 8018 SOUTH LOWELL RD                                                            
+		AddressPointID: 99355.0, 8018 S LOWELL RD 
+11:11	1:1 Address match error: 
+		ParcelID: 190372, 10001 STALLION WAY                                                              
+		AddressPointID: 1314.0, 9911 SHOEMAKER DR 
+11:11	1:0 Address Point Count Error!
+		ParcelID:190160, 0 PATRICK RD                                                                    
+		No Address Point in Parcel.
+11:11	1:1 Address match error: 
+		ParcelID: 190180, 8723 N ROXBORO RD                                                               
+		AddressPointID: 99304.0, 8723 ROXBORO RD 
+11:11	1:1 Address match error: 
+		ParcelID: 190014, 8101 LOWELL VALLEY DR                                                           
+		AddressPointID: 99287.0, 8101 LOWELL VALLEY RD 
+11:11	1:X Address match error: 
+		ParcelID: 191206, 8900 N ROXBORO RD                                                               
+		Multiple Address Points. (Count: 2
+11:11	1:1 Address match error: 
+		ParcelID: 190165, 8719 N ROXBORO RD                                                               
+		AddressPointID: 99307.0, 8719 ROXBORO RD 
+11:11	1:0 Address Point Count Error!
+		ParcelID:192560, 0 TREYBURN PKWY                                                                 
+		No Address Point in Parcel.
+11:12	1:0 Address Point Count Error!
+		ParcelID:192256, 0 ELLIS CHAPEL RD                                                               
+		No Address Point in Parcel.
+11:12	1:1 Address match error: 
+		ParcelID: 191235, 9500 N ROXBORO RD                                                               
+		AddressPointID: 97290.0, 9500 ROXBORO RD 
+11:12	1:1 Address match error: 
+		ParcelID: 188473, 7301 MATTHEWS RD                                                                
+		AddressPointID: 2557.0, 301 MATTHEWS RD 
+11:12	1:1 Address match error: 
+		ParcelID: 190166, 8701 N ROXBORO RD                                                               
+		AddressPointID: 97373.0, 8701 ROXBORO RD 
+11:12	1:1 Address match error: 
+		ParcelID: 191199, 9006 N ROXBORO RD                                                               
+		AddressPointID: 1926.0, 9010 N ROXBORO RD 
+11:12	1:1 Address match error: 
+		ParcelID: 188643, 2512 MASON RD                                                                   
+		AddressPointID: 3715.0, 2512 ST MARYS
+11:12	1:1 Address match error: 
+		ParcelID: 190221, 9005 N ROXBORO RD                                                               
+		AddressPointID: 128894.0, 9005 ROXBORO RD 
+11:13	1:1 Address match error: 
+		ParcelID: 188499, 28 TERRYBROOK LN                                                                
+		AddressPointID: 99408.0, 28 TERRYBROOK ln 
+11:13	1:1 Address match error: 
+		ParcelID: 188015, 103 OLD ORANGE FACTORY RD                                                       
+		AddressPointID: 3202.0, 103 ORANGE FACTORY RD 
+11:13	1:1 Address match error: 
+		ParcelID: 188418, 6718 LOCKWOOD DR                                                                
+		AddressPointID: 3327.0, 7618 LOCKWOOD DR 
+11:13	1:1 Address match error: 
+		ParcelID: 188001, 6614 CHANTILLY PL                                                               
+		AddressPointID: 3965.0, 6614 CHANTILLEY PL 
+11:14	1:1 Address match error: 
+		ParcelID: 193047, 7405 OLD OXFORD RD                                                              
+		AddressPointID: 99453.0, 7405 OXFORD RD 
+11:14	1:0 Address Point Count Error!
+		ParcelID:187985, 0 CROSS CREEK RD                                                                
+		No Address Point in Parcel.
+11:14	1:1 Address match error: 
+		ParcelID: 188292, 6151 N ROXBORO RD                                                               
+		AddressPointID: 99701.0, 6151 ROXBORO RD 
+11:15	1:1 Address match error: 
+		ParcelID: 188230, 207 TRACY TRL                                                                   
+		AddressPointID: 4297.0, 205 TRACY TRL 
+11:15	1:1 Address match error: 
+		ParcelID: 187435, 6329 GUESS RD                                                                   
+		AddressPointID: 98619.0, 6339 GUESS RD
+11:15	1:1 Address match error: 
+		ParcelID: 187590, 6123 SUMMERFIELD DR                                                             
+		AddressPointID: 4606.0, 105 RAINDROP CIR 
+11:16	1:1 Address match error: 
+		ParcelID: 187434, 6339 GUESS RD                                                                   
+		AddressPointID: 130244.0, 6329 GUESS RD
+11:16	1:1 Address match error: 
+		ParcelID: 187828, 6002 BOYLAN RD                                                                  
+		AddressPointID: 4692.0, 602 BOYLAN RD 
+11:17	1:1 Address match error: 
+		ParcelID: 187884, 6202 N ROXBORO RD                                                               
+		AddressPointID: 99699.0, 6202 ROXBORO RD 
+11:19	1:1 Address match error: 
+		ParcelID: 187180, 7125 CALAIS DR                                                                  
+		AddressPointID: 5560.0, 7187 CALAIS DR 
+11:19	1:1 Address match error: 
+		ParcelID: 185331, 5702 GOLDSTON AVE                                                               
+		AddressPointID: 6152.0, 5705 N ROXBORO RD 
+11:19	1:1 Address match error: 
+		ParcelID: 185569, 5636 N ROXBORO RD                                                               
+		AddressPointID: 99828.0, 5636 ROXBORO RD 
+11:20	1:1 Address match error: 
+		ParcelID: 185609, 5641 LAUREL CREST DR                                                            
+		AddressPointID: 6209.0, 5641 LAUREL DR 
+11:20	1:0 Address Point Count Error!
+		ParcelID:184765, 0 LILLIE DR                                                                     
+		No Address Point in Parcel.
+11:20	1:1 Address match error: 
+		ParcelID: 185998, 5609 CLAREMORE DR                                                               
+		AddressPointID: 5995.0, 1812 TORREDGE RD 
+11:21	1:1 Address match error: 
+		ParcelID: 183366, 5126 LAZYWOOD LN                                                                
+		AddressPointID: 7555.0, 5126 LAZY WOOD LN 
+11:21	1:1 Address match error: 
+		ParcelID: 183299, 5121 LAZYWOOD LN                                                                
+		AddressPointID: 7571.0, 5121 LAZY WOOD LN 
+11:21	1:1 Address match error: 
+		ParcelID: 183300, 5125 LAZYWOOD LN                                                                
+		AddressPointID: 7530.0, 5125 LAZY WOOD LN 
+11:21	1:1 Address match error: 
+		ParcelID: 183298, 5115 LAZYWOOD LN                                                                
+		AddressPointID: 7663.0, 5115 LAZY WOOD LN 
+11:21	1:0 Address Point Count Error!
+		ParcelID:183234, 0 MEADSTON DR                                                                   
+		No Address Point in Parcel.
+11:21	1:1 Address match error: 
+		ParcelID: 183297, 5107 LAZYWOOD LN                                                                
+		AddressPointID: 7763.0, 5107 LAZY WOOD LN 
+11:21	1:1 Address match error: 
+		ParcelID: 183369, 5112 LAZYWOOD LN                                                                
+		AddressPointID: 7878.0, 5112 LAZY WOOD LN 
+11:22	1:1 Address match error: 
+		ParcelID: 181688, 2734 SADDLE RD                                                                  
+		AddressPointID: 9501.0, 2734 SADDLE DR 
+11:22	1:1 Address match error: 
+		ParcelID: 183539, 5448 N ROXBORO RD                                                               
+		AddressPointID: 7796.0, 5448 N ROXBORO ST 
+11:22	1:1 Address match error: 
+		ParcelID: 183309, 1606 GOODWIN RD                                                                 
+		AddressPointID: 7958.0, 1608 GOODWIN RD
+11:22	1:1 Address match error: 
+		ParcelID: 183370, 5106 LAZYWOOD LN                                                                
+		AddressPointID: 8023.0, 5106 LAZY WOOD LN 
+11:22	1:1 Address match error: 
+		ParcelID: 183293, 5011 LAZYWOOD LN                                                                
+		AddressPointID: 8101.0, 5011 LAZY WOOD LN 
+11:22	1:0 Address Point Count Error!
+		ParcelID:171427, 0 HAMLIN RD                                                                     
+		No Address Point in Parcel.
+11:22	1:1 Address match error: 
+		ParcelID: 183361, 5012 LAZYWOOD LN                                                                
+		AddressPointID: 8279.0, 5012 LAZY WOOD LN 
+11:22	1:1 Address match error: 
+		ParcelID: 183371, 5102 LAZYWOOD LN                                                                
+		AddressPointID: 8107.0, 5102 LAZY WOOD LN 
+11:22	1:1 Address match error: 
+		ParcelID: 183294, 5015 LAZYWOOD LN                                                                
+		AddressPointID: 8004.0, 5015 LAZY WOOD LN 
+11:22	1:1 Address match error: 
+		ParcelID: 183359, 5002 LAZYWOOD LN                                                                
+		AddressPointID: 8436.0, 5002 LAZY WOOD LN 
+11:22	1:1 Address match error: 
+		ParcelID: 201621, 5332 WILLOWHAVEN DR                                                             
+		AddressPointID: 8285.0, 5332 N WILLOWHAVEN DR 
+11:23	1:1 Address match error: 
+		ParcelID: 182001, 5808 RUSSELL RD                                                                 
+		AddressPointID: 7642.0, 5814 RUSSELL RD 
+11:23	1:1 Address match error: 
+		ParcelID: 183362, 5016 LAZYWOOD LN                                                                
+		AddressPointID: 8202.0, 5016 LAZY WOOD LN 
+11:23	1:1 Address match error: 
+		ParcelID: 183368, 5120 LAZYWOOD LN                                                                
+		AddressPointID: 7818.0, 5120 LAZY WOOD LN 
+11:23	1:1 Address match error: 
+		ParcelID: 179804, 4912 INFINITY RD                                                                
+		AddressPointID: 8641.0, 4912 SETERRA BND 
+11:23	1:1 Address match error: 
+		ParcelID: 183292, 5007 LAZYWOOD LN                                                                
+		AddressPointID: 8175.0, 5007 LAZY WOOD LN 
+11:23	1:1 Address match error: 
+		ParcelID: 182002, 5814 RUSSELL RD                                                                 
+		AddressPointID: 7504.0, 5808 RUSSELL RD 
+11:24	1:1 Address match error: 
+		ParcelID: 183618, 5398 N ROXBORO RD                                                               
+		AddressPointID: 99894.0, 5398 N ROXBORO ST 
+11:24	1:0 Address Point Count Error!
+		ParcelID:184428, 0 HALLMARK RD                                                                   
+		No Address Point in Parcel.
+11:24	1:1 Address match error: 
+		ParcelID: 181809, 2710 SADDLE RD                                                                  
+		AddressPointID: 9645.0, 2710 SADDLE DR 
+11:24	1:1 Address match error: 
+		ParcelID: 181810, 2706 SADDLE RD                                                                  
+		AddressPointID: 9648.0, 2706 SADDLE DR 
+11:24	1:1 Address match error: 
+		ParcelID: 181662, 2739 SADDLE RD                                                                  
+		AddressPointID: 9775.0, 2739 SADDLE DR 
+11:25	1:1 Address match error: 
+		ParcelID: 182569, 1825 GRADY DR                                                                   
+		AddressPointID: 99918.0, 1825 GRADY RD
+11:25	1:0 Address Point Count Error!
+		ParcelID:171609, 0 E GEER ST                                                                     
+		No Address Point in Parcel.
+11:25	1:1 Address match error: 
+		ParcelID: 183360, 5006 LAZYWOOD LN                                                                
+		AddressPointID: 8355.0, 5006 LAZY WOOD LN 
+11:25	1:1 Address match error: 
+		ParcelID: 180617, 4908 FOX HUNT ST                                                                
+		AddressPointID: 10557.0, 4908 FOX HUNT  
+11:25	1:1 Address match error: 
+		ParcelID: 181301, 433 CONTINENTAL DR                                                              
+		AddressPointID: 12417.0, 431 CONTINENTAL DR 
+11:25	1:1 Address match error: 
+		ParcelID: 181642, 2715 SADDLE DR                                                                  
+		AddressPointID: 9816.0, 2717 SADDLE DR 
+11:26	1:0 Address Point Count Error!
+		ParcelID:180776, 0 LATTA RD                                                                      
+		No Address Point in Parcel.
+11:26	1:0 Address Point Count Error!
+		ParcelID:182085, 0 PINE WAY                                                                      
+		No Address Point in Parcel.
+11:26	1:1 Address match error: 
+		ParcelID: 181835, 2709 SADDLE RD                                                                  
+		AddressPointID: 9845.0, 2709 SADDLE DR 
+11:26	1:1 Address match error: 
+		ParcelID: 180726, 4909 FOX HUNT ST                                                                
+		AddressPointID: 10480.0, 4909 FOX HUNT  
+11:27	1:1 Address match error: 
+		ParcelID: 180725, 4907 FOX HUNT ST                                                                
+		AddressPointID: 10539.0, 4907 FOX HUNT  
+11:27	1:1 Address match error: 
+		ParcelID: 169202, 2815 HAMLIN RD                                                                  
+		AddressPointID: 11956.0, 2809 HAMLIN RD 
+11:27	1:1 Address match error: 
+		ParcelID: 180615, 4914 FOX HUNT ST                                                                
+		AddressPointID: 10453.0, 4914 FOX HUNT  
+11:27	1:1 Address match error: 
+		ParcelID: 181425, 2707 UMSTEAD RD                                                                 
+		AddressPointID: 11044.0, 2707 GREEN LANE DR 
+11:28	1:1 Address match error: 
+		ParcelID: 180616, 4910 FOX HUNT ST                                                                
+		AddressPointID: 10497.0, 4910 FOX HUNT  
+11:28	1:1 Address match error: 
+		ParcelID: 180619, 4900 FOX HUNT ST                                                                
+		AddressPointID: 10655.0, 4900 FOX HUNT  
+11:28	1:0 Address Point Count Error!
+		ParcelID:181236, 0 NOVEMBER DR                                                                   
+		No Address Point in Parcel.
+11:29	1:1 Address match error: 
+		ParcelID: 169201, 2809 HAMLIN RD                                                                  
+		AddressPointID: 100071.0, 2815 HAMLIN RD 
+11:29	1:0 Address Point Count Error!
+		ParcelID:171434, 0 I-85                                                                          
+		No Address Point in Parcel.
+11:29	1:1 Address match error: 
+		ParcelID: 171373, 4110 HAMLIN RD                                                                  
+		AddressPointID: 11882.0, 4016 HAMLIN RD 
+11:29	1:1 Address match error: 
+		ParcelID: 177601, 5001 N ROXBORO ST                                                               
+		AddressPointID: 100081.0, 5001 ROXBORO ST 
+11:29	1:1 Address match error: 
+		ParcelID: 177607, 5152 N ROXBORO ST                                                               
+		AddressPointID: 100026.0, 5152 ROXBORO ST 
+11:30	1:1 Address match error: 
+		ParcelID: 177603, 5021 N ROXBORO ST                                                               
+		AddressPointID: 100055.0, 5021 ROXBORO ST 
+11:31	1:1 Address match error: 
+		ParcelID: 127783, 4412 RHEW DR                                                                    
+		AddressPointID: 13334.0, 212 WELLINGTON DR 
+11:31	1:1 Address match error: 
+		ParcelID: 171438, 5330 E REDWOOD RD                                                               
+		AddressPointID: 220050.0, 5330 REDWOOD RD 
+11:31	1:1 Address match error: 
+		ParcelID: 173630, 2650 HITCHCOCK DR                                                               
+		AddressPointID: 126603.0, 2650 HITCHCOCK DR 9999
+11:31	1:1 Address match error: 
+		ParcelID: 173294, 3775 GUESS RD Unit 43                                                           
+		AddressPointID: 113845.0, 3775 GUESS RD 43
+11:31	1:1 Address match error: 
+		ParcelID: 171249, 3477 BROUGHTON DR                                                               
+		AddressPointID: 100294.0, 3477 N BROUGHTON DR 
+11:32	1:1 Address match error: 
+		ParcelID: 127245, 2420 STADIUM DR                                                                 
+		AddressPointID: 15397.0, 2420 STADIUM DR C
+11:32	1:1 Address match error: 
+		ParcelID: 171278, 4128 RED MILL RD                                                                
+		AddressPointID: 100176.0, 4128 E RED MILL RD 
+11:32	1:1 Address match error: 
+		ParcelID: 173258, 3775 GUESS RD Unit 22                                                           
+		AddressPointID: 112582.0, 3775 GUESS RD 22
+11:32	1:1 Address match error: 
+		ParcelID: 173259, 3775 GUESS RD Unit 21                                                           
+		AddressPointID: 113051.0, 3775 GUESS RD 21
+11:32	1:0 Address Point Count Error!
+		ParcelID:171435, 0 HAMLIN RD                                                                     
+		No Address Point in Parcel.
+11:32	1:1 Address match error: 
+		ParcelID: 173293, 3775 GUESS RD Unit 42                                                           
+		AddressPointID: 114404.0, 3775 GUESS RD 42
+11:32	1:1 Address match error: 
+		ParcelID: 173264, 3775 GUESS RD Unit 17                                                           
+		AddressPointID: 112953.0, 3775 GUESS RD 17
+11:32	1:1 Address match error: 
+		ParcelID: 173227, 2100 PEPPERTREE ST Unit 58                                                      
+		AddressPointID: 122370.0, 2100 PEPPERTREE ST 58
+11:33	1:1 Address match error: 
+		ParcelID: 173273, 3775 GUESS RD Unit 1                                                            
+		AddressPointID: 113927.0, 3775 GUESS RD 1
+11:33	1:X Address match error: 
+		ParcelID: 127317, 1900 PEPPERTREE ST                                                              
+		Multiple Address Points. (Count: 2
+11:33	1:1 Address match error: 
+		ParcelID: 173255, 3775 GUESS RD Unit 25                                                           
+		AddressPointID: 113188.0, 3775 GUESS RD 25
+11:33	1:1 Address match error: 
+		ParcelID: 173257, 3775 GUESS RD Unit 23                                                           
+		AddressPointID: 114254.0, 3775 GUESS RD 23
+11:33	1:1 Address match error: 
+		ParcelID: 173286, 3775 GUESS RD Unit 36                                                           
+		AddressPointID: 113058.0, 3775 GUESS RD 36
+11:33	1:1 Address match error: 
+		ParcelID: 173266, 3775 GUESS RD Unit 19                                                           
+		AddressPointID: 114108.0, 3775 GUESS RD 19
+11:33	1:1 Address match error: 
+		ParcelID: 173267, 3775 GUESS RD Unit 20                                                           
+		AddressPointID: 113642.0, 3775 GUESS RD 20
+11:33	1:1 Address match error: 
+		ParcelID: 173290, 3775 GUESS RD Unit 39                                                           
+		AddressPointID: 113708.0, 3775 GUESS RD 39
+11:33	1:1 Address match error: 
+		ParcelID: 172526, 4314 N ROXBORO ST                                                               
+		AddressPointID: 98333.0, 4314 ROXBORO ST 
+11:33	1:1 Address match error: 
+		ParcelID: 172573, 4404 RYAN ST                                                                    
+		AddressPointID: 14509.0, 4414 RYAN ST
+11:33	1:1 Address match error: 
+		ParcelID: 127778, 4519 N ROXBORO ST                                                               
+		AddressPointID: 100206.0, 4519 ROXBORO ST 
+11:33	1:1 Address match error: 
+		ParcelID: 173276, 3775 GUESS RD Unit 10                                                           
+		AddressPointID: 113225.0, 3775 GUESS RD 10
+11:33	1:1 Address match error: 
+		ParcelID: 173744, 2682 HITCHCOCK DR                                                               
+		AddressPointID: 126622.0, 2682 HITCHCOCK DR 9999
+11:33	1:0 Address Point Count Error!
+		ParcelID:201988, 0 MADRID LN                                                                     
+		No Address Point in Parcel.
+11:33	1:1 Address match error: 
+		ParcelID: 173228, 2100 PEPPERTREE ST Unit 59                                                      
+		AddressPointID: 122600.0, 2100 PEPPERTREE ST 59
+11:33	1:1 Address match error: 
+		ParcelID: 173248, 2100 PEPPERTREE ST Unit 47                                                      
+		AddressPointID: 122031.0, 2100 PEPPERTREE ST 47
+11:33	1:1 Address match error: 
+		ParcelID: 127252, 2504 STADIUM DR                                                                 
+		AddressPointID: 15187.0, 2504 STADIUM DR A
+11:33	1:0 Address Point Count Error!
+		ParcelID:172431, 0 TODD ST                                                                       
+		No Address Point in Parcel.
+11:33	1:1 Address match error: 
+		ParcelID: 127243, 2420 STADIUM DR                                                                 
+		AddressPointID: 15445.0, 2420 STADIUM DR E
+11:34	1:1 Address match error: 
+		ParcelID: 127240, 2414 STADIUM DR                                                                 
+		AddressPointID: 15501.0, 2414 STADIUM DR B
+11:34	1:1 Address match error: 
+		ParcelID: 127238, 2414 STADIUM DR                                                                 
+		AddressPointID: 15527.0, 2414 STADIUM DR D
+11:34	1:1 Address match error: 
+		ParcelID: 127785, 212 WELLINGTON DR                                                               
+		AddressPointID: 13484.0, 4412 RHEW DR 
+11:34	1:1 Address match error: 
+		ParcelID: 173282, 3775 GUESS RD Unit 30                                                           
+		AddressPointID: 113997.0, 3775 GUESS RD 30
+11:34	1:1 Address match error: 
+		ParcelID: 173283, 3775 GUESS RD Unit 29                                                           
+		AddressPointID: 112225.0, 3775 GUESS RD 29
+11:34	1:1 Address match error: 
+		ParcelID: 173263, 3775 GUESS RD Unit 16                                                           
+		AddressPointID: 113423.0, 3775 GUESS RD 16
+11:34	1:1 Address match error: 
+		ParcelID: 173291, 3775 GUESS RD Unit 40                                                           
+		AddressPointID: 113193.0, 3775 GUESS RD 40
+11:34	1:1 Address match error: 
+		ParcelID: 173275, 3775 GUESS RD Unit 11                                                           
+		AddressPointID: 112766.0, 3775 GUESS RD 11
+11:34	1:0 Address Point Count Error!
+		ParcelID:171576, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:34	1:0 Address Point Count Error!
+		ParcelID:171552, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:34	1:1 Address match error: 
+		ParcelID: 127225, 2402 STADIUM DR                                                                 
+		AddressPointID: 15697.0, 2402 STADIUM DR B
+11:34	1:0 Address Point Count Error!
+		ParcelID:171558, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:34	1:1 Address match error: 
+		ParcelID: 173230, 2100 PEPPERTREE ST Unit 61                                                      
+		AddressPointID: 123505.0, 2100 PEPPERTREE ST 61
+11:34	1:1 Address match error: 
+		ParcelID: 173250, 2100 PEPPERTREE ST Unit 45                                                      
+		AddressPointID: 122831.0, 2100 PEPPERTREE ST 45
+11:34	1:1 Address match error: 
+		ParcelID: 173280, 3775 GUESS RD Unit 32                                                           
+		AddressPointID: 112936.0, 3775 GUESS RD 32
+11:34	1:1 Address match error: 
+		ParcelID: 173288, 3775 GUESS RD Unit 34                                                           
+		AddressPointID: 114119.0, 3775 GUESS RD 34
+11:34	1:1 Address match error: 
+		ParcelID: 173244, 2100 PEPPERTREE ST Unit 52                                                      
+		AddressPointID: 123218.0, 2100 PEPPERTREE ST 52
+11:34	1:1 Address match error: 
+		ParcelID: 173284, 3775 GUESS RD Unit 38                                                           
+		AddressPointID: 114262.0, 3775 GUESS RD 38
+11:34	1:1 Address match error: 
+		ParcelID: 173265, 3775 GUESS RD Unit 18                                                           
+		AddressPointID: 112382.0, 3775 GUESS RD 18
+11:34	1:1 Address match error: 
+		ParcelID: 173279, 3775 GUESS RD Unit 7                                                            
+		AddressPointID: 112621.0, 3775 GUESS RD 7
+11:34	1:X Address match error: 
+		ParcelID: 127320, 1911 PEPPERTREE ST                                                              
+		Multiple Address Points. (Count: 2
+11:34	1:1 Address match error: 
+		ParcelID: 173221, 2100 PEPPERTREE ST Unit 56                                                      
+		AddressPointID: 124413.0, 2100 PEPPERTREE ST 56
+11:34	1:1 Address match error: 
+		ParcelID: 173241, 2100 PEPPERTREE ST Unit 55                                                      
+		AddressPointID: 124845.0, 2100 PEPPERTREE ST 55
+11:34	1:1 Address match error: 
+		ParcelID: 173285, 3775 GUESS RD Unit 37                                                           
+		AddressPointID: 112531.0, 3775 GUESS RD 37
+11:34	1:1 Address match error: 
+		ParcelID: 173261, 3775 GUESS RD Unit 14                                                           
+		AddressPointID: 112248.0, 3775 GUESS RD 14
+11:34	1:1 Address match error: 
+		ParcelID: 173709, 28 JUSTIN CT                                                                    
+		AddressPointID: 126616.0, 28 JUSTIN CT 9999
+11:34	1:1 Address match error: 
+		ParcelID: 173666, 2675 HITCHCOCK DR                                                               
+		AddressPointID: 126609.0, 2675 HITCHCOCK DR 9999
+11:34	1:1 Address match error: 
+		ParcelID: 171213, 3913 GORMAN CHURCH RD                                                           
+		AddressPointID: 97584.0, 3913 E GORMAN CHURCH RD 
+11:35	1:1 Address match error: 
+		ParcelID: 171247, 3423 BROUGHTON DR                                                               
+		AddressPointID: 100281.0, 3423 N BROUGHTON DR 
+11:35	1:1 Address match error: 
+		ParcelID: 127251, 2504 STADIUM DR                                                                 
+		AddressPointID: 15221.0, 2504 STADIUM DR B
+11:35	1:1 Address match error: 
+		ParcelID: 127250, 2504 STADIUM DR                                                                 
+		AddressPointID: 15237.0, 2504 STADIUM DR C
+11:35	1:1 Address match error: 
+		ParcelID: 177709, 4412 MOUNT LEVEL RD                                                             
+		AddressPointID: 98067.0, 4412 MOUNT LEVEL DR 
+11:35	1:0 Address Point Count Error!
+		ParcelID:171569, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:35	1:1 Address match error: 
+		ParcelID: 171241, 3357 BROUGHTON DR                                                               
+		AddressPointID: 100304.0, 3357 N BROUGHTON DR 
+11:35	1:0 Address Point Count Error!
+		ParcelID:171567, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:35	1:1 Address match error: 
+		ParcelID: 127247, 2420 STADIUM DR                                                                 
+		AddressPointID: 15346.0, 2420 STADIUM DR A
+11:35	1:1 Address match error: 
+		ParcelID: 127244, 2420 STADIUM DR                                                                 
+		AddressPointID: 15418.0, 2420 STADIUM DR D
+11:35	1:1 Address match error: 
+		ParcelID: 127242, 2420 STADIUM DR                                                                 
+		AddressPointID: 15459.0, 2420 STADIUM DR F
+11:35	1:1 Address match error: 
+		ParcelID: 173685, 88 JUSTIN CT                                                                    
+		AddressPointID: 126612.0, 88 JUSTIN CT 9999
+11:35	1:1 Address match error: 
+		ParcelID: 173546, 2651 HITCHCOCK DR                                                               
+		AddressPointID: 126595.0, 2651 HITCHCOCK DR 9999
+11:35	1:1 Address match error: 
+		ParcelID: 173220, 2100 PEPPERTREE ST Unit 50                                                      
+		AddressPointID: 124039.0, 2100 PEPPERTREE ST 50
+11:35	1:1 Address match error: 
+		ParcelID: 173249, 2100 PEPPERTREE ST Unit 46                                                      
+		AddressPointID: 122437.0, 2100 PEPPERTREE ST 46
+11:35	1:1 Address match error: 
+		ParcelID: 173251, 3775 GUESS RD Unit 28                                                           
+		AddressPointID: 112796.0, 3775 GUESS RD 28
+11:35	1:1 Address match error: 
+		ParcelID: 173253, 3775 GUESS RD Unit 27                                                           
+		AddressPointID: 114403.0, 3775 GUESS RD 27
+11:35	1:1 Address match error: 
+		ParcelID: 173281, 3775 GUESS RD Unit 31                                                           
+		AddressPointID: 113409.0, 3775 GUESS RD 31
+11:35	1:1 Address match error: 
+		ParcelID: 173289, 3775 GUESS RD Unit 33                                                           
+		AddressPointID: 112368.0, 3775 GUESS RD 33
+11:35	1:1 Address match error: 
+		ParcelID: 173243, 2100 PEPPERTREE ST Unit 53                                                      
+		AddressPointID: 122211.0, 2100 PEPPERTREE ST 53
+11:35	1:0 Address Point Count Error!
+		ParcelID:171570, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:35	1:1 Address match error: 
+		ParcelID: 171250, 3467 BROUGHTON DR                                                               
+		AddressPointID: 100298.0, 3467 N BROUGHTON DR 
+11:35	1:1 Address match error: 
+		ParcelID: 171251, 3457 BROUGHTON DR                                                               
+		AddressPointID: 100302.0, 3457 N BROUGHTON DR 
+11:35	1:1 Address match error: 
+		ParcelID: 127246, 2420 STADIUM DR                                                                 
+		AddressPointID: 15373.0, 2420 STADIUM DR B
+11:35	1:1 Address match error: 
+		ParcelID: 127233, 2408 STADIUM DR                                                                 
+		AddressPointID: 15633.0, 2408 STADIUM DR C
+11:35	1:1 Address match error: 
+		ParcelID: 127235, 2408 STADIUM DR                                                                 
+		AddressPointID: 15635.0, 2408 STADIUM DR A
+11:35	1:0 Address Point Count Error!
+		ParcelID:171575, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:35	1:1 Address match error: 
+		ParcelID: 127236, 2414 STADIUM DR                                                                 
+		AddressPointID: 15577.0, 2414 STADIUM DR F
+11:35	1:1 Address match error: 
+		ParcelID: 127232, 2408 STADIUM DR                                                                 
+		AddressPointID: 15632.0, 2408 STADIUM DR D
+11:35	1:1 Address match error: 
+		ParcelID: 127234, 2408 STADIUM DR                                                                 
+		AddressPointID: 15634.0, 2408 STADIUM DR B
+11:35	1:1 Address match error: 
+		ParcelID: 173260, 3775 GUESS RD Unit 13                                                           
+		AddressPointID: 112820.0, 3775 GUESS RD 13
+11:35	1:1 Address match error: 
+		ParcelID: 173262, 3775 GUESS RD Unit 15                                                           
+		AddressPointID: 114013.0, 3775 GUESS RD 15
+11:35	1:1 Address match error: 
+		ParcelID: 173278, 3775 GUESS RD Unit 8                                                            
+		AddressPointID: 114288.0, 3775 GUESS RD 8
+11:35	1:1 Address match error: 
+		ParcelID: 173277, 3775 GUESS RD Unit 9                                                            
+		AddressPointID: 113813.0, 3775 GUESS RD 9
+11:35	1:1 Address match error: 
+		ParcelID: 173269, 3775 GUESS RD Unit 5                                                            
+		AddressPointID: 114067.0, 3775 GUESS RD 5
+11:35	1:1 Address match error: 
+		ParcelID: 173268, 3775 GUESS RD Unit 6                                                            
+		AddressPointID: 113536.0, 3775 GUESS RD 6
+11:35	1:1 Address match error: 
+		ParcelID: 173274, 3775 GUESS RD Unit 12                                                           
+		AddressPointID: 114430.0, 3775 GUESS RD 12
+11:35	1:1 Address match error: 
+		ParcelID: 127473, 4001 HOLT SCHOOL RD                                                             
+		AddressPointID: 129982.0, 4001 S HOLT SCHOOL RD 
+11:35	1:1 Address match error: 
+		ParcelID: 173749, 2666 HITCHCOCK DR                                                               
+		AddressPointID: 126624.0, 2666 HITCHCOCK DR 9999
+11:35	1:1 Address match error: 
+		ParcelID: 173647, 2631 CAMELLIA DR                                                                
+		AddressPointID: 126606.0, 2631 CAMELLIA ST 9999
+11:36	1:0 Address Point Count Error!
+		ParcelID:171557, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:36	1:0 Address Point Count Error!
+		ParcelID:171574, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:36	1:1 Address match error: 
+		ParcelID: 127230, 2408 STADIUM DR                                                                 
+		AddressPointID: 15630.0, 2408 STADIUM DR F
+11:36	1:1 Address match error: 
+		ParcelID: 176544, 131 BALDWIN DR                                                                  
+		AddressPointID: 126666.0, 131 BALDWIN DR 9999
+11:36	1:1 Address match error: 
+		ParcelID: 127239, 2414 STADIUM DR                                                                 
+		AddressPointID: 15513.0, 2414 STADIUM DR C
+11:36	1:0 Address Point Count Error!
+		ParcelID:171568, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:36	1:1 Address match error: 
+		ParcelID: 127464, 3711 N DUKE ST                                                                  
+		AddressPointID: 22664.0, 3811 N DUKE ST 
+11:36	1:1 Address match error: 
+		ParcelID: 173247, 2100 PEPPERTREE ST Unit 48                                                      
+		AddressPointID: 125076.0, 2100 PEPPERTREE ST 48
+11:36	1:1 Address match error: 
+		ParcelID: 173254, 3775 GUESS RD Unit 26                                                           
+		AddressPointID: 112729.0, 3775 GUESS RD 26
+11:36	1:1 Address match error: 
+		ParcelID: 173287, 3775 GUESS RD Unit 35                                                           
+		AddressPointID: 113585.0, 3775 GUESS RD 35
+11:36	1:1 Address match error: 
+		ParcelID: 173295, 3775 GUESS RD Unit 44                                                           
+		AddressPointID: 112220.0, 3775 GUESS RD 44
+11:36	1:0 Address Point Count Error!
+		ParcelID:176977, 0 ROSE OF SHARON RD                                                             
+		No Address Point in Parcel.
+11:36	1:1 Address match error: 
+		ParcelID: 173292, 3775 GUESS RD Unit 41                                                           
+		AddressPointID: 112666.0, 3775 GUESS RD 41
+11:36	1:1 Address match error: 
+		ParcelID: 173272, 3775 GUESS RD Unit 2                                                            
+		AddressPointID: 113393.0, 3775 GUESS RD 2
+11:36	1:1 Address match error: 
+		ParcelID: 173270, 3775 GUESS RD Unit 4                                                            
+		AddressPointID: 112358.0, 3775 GUESS RD 4
+11:36	1:0 Address Point Count Error!
+		ParcelID:171554, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:36	1:0 Address Point Count Error!
+		ParcelID:171556, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:36	1:0 Address Point Count Error!
+		ParcelID:171555, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:36	1:1 Address match error: 
+		ParcelID: 127227, 2402 STADIUM DR                                                                 
+		AddressPointID: 15699.0, 2402 STADIUM DR D
+11:36	1:1 Address match error: 
+		ParcelID: 127228, 2402 STADIUM DR                                                                 
+		AddressPointID: 15700.0, 2402 STADIUM DR E
+11:36	1:0 Address Point Count Error!
+		ParcelID:126830, 0 HERMINE ST                                                                    
+		No Address Point in Parcel.
+11:37	1:1 Address match error: 
+		ParcelID: 171216, 3929 GORMAN CHURCH RD                                                           
+		AddressPointID: 100339.0, 3929 E GORMAN CHURCH RD 
+11:37	1:1 Address match error: 
+		ParcelID: 173716, 20 JUSTIN CT                                                                    
+		AddressPointID: 126617.0, 20 JUSTIN CT 9999
+11:37	1:1 Address match error: 
+		ParcelID: 173727, 2 JUSTIN CT                                                                     
+		AddressPointID: 126619.0, 2 JUSTIN CT 9999
+11:37	1:0 Address Point Count Error!
+		ParcelID:171572, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:37	1:0 Address Point Count Error!
+		ParcelID:171573, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+11:37	1:1 Address match error: 
+		ParcelID: 198344, 1212 LAUREL MEADOWS DR                                                          
+		AddressPointID: 128763.0, 1212 LAUREL MEADOWS DR DR 
+11:37	1:1 Address match error: 
+		ParcelID: 173673, 68 JUSTIN CT                                                                    
+		AddressPointID: 126610.0, 68 JUSTIN CT 9999
+11:37	1:1 Address match error: 
+		ParcelID: 173680, 80 JUSTIN CT                                                                    
+		AddressPointID: 126611.0, 80 JUSTIN CT 9999
+11:37	1:1 Address match error: 
+		ParcelID: 126829, 3808 HERMINE ST                                                                 
+		AddressPointID: 16085.0, 3800 HERMINE ST 
+11:37	1:1 Address match error: 
+		ParcelID: 173702, 40 JUSTIN CT                                                                    
+		AddressPointID: 126615.0, 40 JUSTIN CT 9999
+11:37	1:1 Address match error: 
+		ParcelID: 127241, 2414 STADIUM DR                                                                 
+		AddressPointID: 15483.0, 2414 STADIUM DR A
+11:37	1:1 Address match error: 
+		ParcelID: 127237, 2414 STADIUM DR                                                                 
+		AddressPointID: 15553.0, 2414 STADIUM DR E
+11:38	1:1 Address match error: 
+		ParcelID: 127224, 2402 STADIUM DR                                                                 
+		AddressPointID: 15696.0, 2402 STADIUM DR A
+11:38	1:1 Address match error: 
+		ParcelID: 173646, 2611 CAMELLIA DR                                                                
+		AddressPointID: 126605.0, 2611 CAMELLIA ST 9999
+11:38	1:1 Address match error: 
+		ParcelID: 176633, 4506 MYERS PARK DR                                                              
+		AddressPointID: 16964.0, 4615 MYERS PARK DR 
+11:38	1:1 Address match error: 
+		ParcelID: 127229, 2402 STADIUM DR                                                                 
+		AddressPointID: 15701.0, 2402 STADIUM DR F
+11:38	1:1 Address match error: 
+		ParcelID: 127466, 3801 HORTON RD                                                                  
+		AddressPointID: 100323.0, 3801 N DUKE ST 
+11:38	1:0 Address Point Count Error!
+		ParcelID:171553, 0 EXUM RD                                                                       
+		No Address Point in Parcel.
+11:39	1:1 Address match error: 
+		ParcelID: 171176, 3505 GOOCH RD                                                                   
+		AddressPointID: 17598.0, 3505 COOK RD 
+11:39	1:0 Address Point Count Error!
+		ParcelID:160315, 0 PAUL RD                                                                       
+		No Address Point in Parcel.
+11:39	1:1 Address match error: 
+		ParcelID: 173732, 41 JUSTIN CT                                                                    
+		AddressPointID: 126620.0, 41 JUSTIN CT 9999
+11:39	1:1 Address match error: 
+		ParcelID: 173692, 60 JUSTIN CT                                                                    
+		AddressPointID: 126613.0, 60 JUSTIN CT 9999
+11:39	1:1 Address match error: 
+		ParcelID: 176636, 4512 MYERS PARK DR                                                              
+		AddressPointID: 16959.0, 4512 MYERS PARK RD 
+11:39	1:1 Address match error: 
+		ParcelID: 125851, 1815 BIRMINGHAM AVE                                                             
+		AddressPointID: 21332.0, 1817 BIRMINGHAM AVE 
+11:40	1:1 Address match error: 
+		ParcelID: 173697, 52 JUSTIN CT                                                                    
+		AddressPointID: 126614.0, 52 JUSTIN CT 9999
+11:40	1:1 Address match error: 
+		ParcelID: 173655, 2663 HITCHCOCK DR                                                               
+		AddressPointID: 126607.0, 2663 HITCHCOCK DR 9999
+11:40	1:1 Address match error: 
+		ParcelID: 173661, 2687 HITCHCOCK DR                                                               
+		AddressPointID: 126608.0, 2687 HITCHCOCK DR 9999
+11:40	1:1 Address match error: 
+		ParcelID: 173625, 2650 HITCHCOCK DR                                                               
+		AddressPointID: 126602.0, 2642 HITCHCOCK DR 9999
+11:40	1:1 Address match error: 
+		ParcelID: 176570, 3408 COLE MILL RD                                                               
+		AddressPointID: 126667.0, 3408 COLE MILL RD 9999
+11:40	1:1 Address match error: 
+		ParcelID: 127931, 1014 FERNCREST DR                                                               
+		AddressPointID: 17453.0, 1078 FERNCREST DR 
+11:40	1:1 Address match error: 
+		ParcelID: 176400, 1107 KIMBALL DR                                                                 
+		AddressPointID: 100454.0, 1107 EAST OAK DR 
+11:40	1:1 Address match error: 
+		ParcelID: 174052, 1718 COLE MILL RD                                                               
+		AddressPointID: 130150.0, 1716 COLE MILL RD 
+11:41	1:1 Address match error: 
+		ParcelID: 126721, 3713 BRITT ST                                                                   
+		AddressPointID: 16930.0, 3700 BRITT ST 
+11:41	1:1 Address match error: 
+		ParcelID: 176331, 1203 E OAK DR                                                                   
+		AddressPointID: 17016.0, 1203 EAST OAK DR 
+11:41	1:1 Address match error: 
+		ParcelID: 171146, 3630 GOOCH RD                                                                   
+		AddressPointID: 100403.0, 3630 E GOOCH RD 
+11:42	1:1 Address match error: 
+		ParcelID: 168867, 2817 DAVIE RD                                                                   
+		AddressPointID: 100421.0, 2817 DAVIE DR 
+11:42	1:1 Address match error: 
+		ParcelID: 171704, 626 HOYLE ST                                                                    
+		AddressPointID: 18755.0, 664 HOYLE ST 
+11:42	1:1 Address match error: 
+		ParcelID: 168802, 2806 DAVIE RD                                                                   
+		AddressPointID: 100434.0, 2806 DAVIE DR 
+11:42	1:1 Address match error: 
+		ParcelID: 174040, 4110 W CARVER ST                                                                
+		AddressPointID: 18176.0, 4110 CARVER ST 
+11:42	1:1 Address match error: 
+		ParcelID: 128367, 2802 ASHLEY ST                                                                  
+		AddressPointID: 20707.0, 2800 ASHLEY ST 
+11:43	1:1 Address match error: 
+		ParcelID: 168803, 2802 DAVIE RD                                                                   
+		AddressPointID: 100439.0, 2802 DAVIE DR 
+11:43	1:1 Address match error: 
+		ParcelID: 128283, 503 W CARVER ST                                                                 
+		AddressPointID: 19598.0, 503 CARVER ST 
+11:44	1:1 Address match error: 
+		ParcelID: 176018, 2708 FREEMONT RD                                                                
+		AddressPointID: 18264.0, 2706 FREEMONT RD
+11:44	1:1 Address match error: 
+		ParcelID: 129815, 708 USHER ST                                                                    
+		AddressPointID: 19874.0, 700 USHER ST 
+11:44	1:1 Address match error: 
+		ParcelID: 129816, 706 USHER ST                                                                    
+		AddressPointID: 19966.0, 700 USHER ST 
+11:44	1:1 Address match error: 
+		ParcelID: 128284, 501 W CARVER ST                                                                 
+		AddressPointID: 19603.0, 501 CARVER ST 
+11:44	1:1 Address match error: 
+		ParcelID: 168930, 3642 WESTMINSTER AVE                                                            
+		AddressPointID: 100530.0, 3642 WESTMINISTER AVE 
+11:45	1:1 Address match error: 
+		ParcelID: 126664, 3510 GUESS RD                                                                   
+		AddressPointID: 18744.0, 3508 GUESS RD 
+11:45	1:1 Address match error: 
+		ParcelID: 128390, 2817 ASHLEY ST                                                                  
+		AddressPointID: 20355.0, 2800 ASHLEY ST 
+11:45	1:1 Address match error: 
+		ParcelID: 168896, 3641 WESTMINSTER AVE                                                            
+		AddressPointID: 100513.0, 3641 WESTMINISTER AVE 
+11:45	1:1 Address match error: 
+		ParcelID: 128391, 2819 ASHLEY ST                                                                  
+		AddressPointID: 20296.0, 2800 ASHLEY ST 
+11:45	1:1 Address match error: 
+		ParcelID: 160172, 3003 RUTH ST                                                                    
+		AddressPointID: 20312.0, 3001 RUTH ST
+11:46	1:1 Address match error: 
+		ParcelID: 169418, 3219 INTERCROSS RD                                                              
+		AddressPointID: 20277.0, 3219 INTERCROSS  
+11:46	1:1 Address match error: 
+		ParcelID: 168939, 3612 WESTMINSTER AVE                                                            
+		AddressPointID: 97035.0, 3612 WESTMINISTER AVE 
+11:46	1:1 Address match error: 
+		ParcelID: 128282, 505 W CARVER ST                                                                 
+		AddressPointID: 19754.0, 505 CARVER ST 
+11:46	1:1 Address match error: 
+		ParcelID: 126581, 2606 W CARVER ST                                                                
+		AddressPointID: 20309.0, 2608 W CARVER ST 
+11:46	1:X Address match error: 
+		ParcelID: 126580, 2604 W CARVER ST                                                                
+		Multiple Address Points. (Count: 5
+11:46	1:1 Address match error: 
+		ParcelID: 128365, 2806 ASHLEY ST                                                                  
+		AddressPointID: 20577.0, 2800 ASHLEY ST 
+11:46	1:1 Address match error: 
+		ParcelID: 128281, 507 W CARVER ST                                                                 
+		AddressPointID: 19831.0, 507 CARVER ST 
+11:46	1:1 Address match error: 
+		ParcelID: 128295, 601 W CARVER ST                                                                 
+		AddressPointID: 19658.0, 601 CARVER ST 
+11:46	1:1 Address match error: 
+		ParcelID: 129814, 710 USHER ST                                                                    
+		AddressPointID: 19721.0, 700 USHER ST 
+11:47	1:1 Address match error: 
+		ParcelID: 128386, 2803 ASHLEY ST                                                                  
+		AddressPointID: 20661.0, 2800 ASHLEY ST 
+11:47	1:1 Address match error: 
+		ParcelID: 169414, 3217 INTERCROSS RD                                                              
+		AddressPointID: 129804.0, 3217 INTERCROSS ST 
+11:47	1:0 Address Point Count Error!
+		ParcelID:126690, 0 PRESTON AVE                                                                   
+		No Address Point in Parcel.
+11:47	1:1 Address match error: 
+		ParcelID: 128310, 2903 ASHLEY ST                                                                  
+		AddressPointID: 20160.0, 2900 ASHLEY ST 
+11:47	1:1 Address match error: 
+		ParcelID: 128360, 2820 ASHLEY ST                                                                  
+		AddressPointID: 20269.0, 2800 ASHLEY ST 
+11:47	1:1 Address match error: 
+		ParcelID: 128308, 2904 ELDORADO ST                                                                
+		AddressPointID: 19936.0, 713 W CARVER ST 
+11:47	1:1 Address match error: 
+		ParcelID: 128362, 2816 ASHLEY ST                                                                  
+		AddressPointID: 20399.0, 2800 ASHLEY ST 
+11:48	1:1 Address match error: 
+		ParcelID: 128389, 2815 ASHLEY ST                                                                  
+		AddressPointID: 20441.0, 2800 ASHLEY ST 
+11:48	1:1 Address match error: 
+		ParcelID: 128364, 2808 ASHLEY ST                                                                  
+		AddressPointID: 20516.0, 2800 ASHLEY ST 
+11:48	1:1 Address match error: 
+		ParcelID: 169433, 2921 INTERCROSS RD                                                              
+		AddressPointID: 21639.0, 2921 INTERCROSS  
+11:48	1:1 Address match error: 
+		ParcelID: 129817, 704 USHER ST                                                                    
+		AddressPointID: 20070.0, 700 USHER ST 
+11:48	1:0 Address Point Count Error!
+		ParcelID:129693, 0 BELVIN AVE                                                                    
+		No Address Point in Parcel.
+11:48	1:0 Address Point Count Error!
+		ParcelID:175211, 0 I-85                                                                          
+		No Address Point in Parcel.
+11:48	1:0 Address Point Count Error!
+		ParcelID:129692, 0 BELVIN AVE                                                                    
+		No Address Point in Parcel.
+11:48	1:1 Address match error: 
+		ParcelID: 125852, 1817 BIRMINGHAM AVE                                                             
+		AddressPointID: 21331.0, 1815 BIRMINGHAM AVE 
+11:48	1:1 Address match error: 
+		ParcelID: 125548, 2904 OMAH ST                                                                    
+		AddressPointID: 100639.0, 2904 OMAH AVE 
+11:48	1:1 Address match error: 
+		ParcelID: 175216, 4400 Hillsborough Rd                                                            
+		AddressPointID: 21712.0, 4400 HILLSBOROUGH RD
+11:49	1:0 Address Point Count Error!
+		ParcelID:129392, 0 ROANOKE ST                                                                    
+		No Address Point in Parcel.
+11:49	1:0 Address Point Count Error!
+		ParcelID:173775, 0 HAYFIELD DR                                                                   
+		No Address Point in Parcel.
+11:50	1:0 Address Point Count Error!
+		ParcelID:169432, 0 I-85                                                                          
+		No Address Point in Parcel.
+11:50	1:1 Address match error: 
+		ParcelID: 128361, 2818 ASHLEY ST                                                                  
+		AddressPointID: 20332.0, 2800 ASHLEY ST 
+11:50	1:1 Address match error: 
+		ParcelID: 171080, 2427 BULLOCK RD                                                                 
+		AddressPointID: 98221.0, 2427 BULLOCK DR 
+11:50	1:1 Address match error: 
+		ParcelID: 175227, 2334 OPERATIONS DR                                                              
+		AddressPointID: 22220.0, 2344 OPERATIONS DR 
+11:50	1:1 Address match error: 
+		ParcelID: 129864, 2701 THELMA ST                                                                  
+		AddressPointID: 22356.0, 2700 THELMA ST 
+11:50	1:X Address match error: 
+		ParcelID: 130678, 1903 FRONT ST                                                                   
+		Multiple Address Points. (Count: 9
+11:50	1:1 Address match error: 
+		ParcelID: 128387, 2805 ASHLEY ST                                                                  
+		AddressPointID: 20591.0, 2800 ASHLEY ST 
+11:50	1:1 Address match error: 
+		ParcelID: 128366, 2804 ASHLEY ST                                                                  
+		AddressPointID: 20647.0, 2800 ASHLEY ST 
+11:51	1:1 Address match error: 
+		ParcelID: 169442, 3205 INTERCROSS RD                                                              
+		AddressPointID: 129803.0, 3205 E INTERCROSS ST 
+11:51	1:1 Address match error: 
+		ParcelID: 125566, 3203 OMAH ST                                                                    
+		AddressPointID: 21098.0, 3023 OMAH ST 
+11:51	1:1 Address match error: 
+		ParcelID: 169435, 3029 INTERCROSS RD                                                              
+		AddressPointID: 21081.0, 3029 INTERCROSS  
+11:52	1:1 Address match error: 
+		ParcelID: 128991, 2811 DOMINION ST                                                                
+		AddressPointID: 42370.0, 2800 DOMINION ST 
+11:52	1:1 Address match error: 
+		ParcelID: 128993, 2806 DOMINION ST                                                                
+		AddressPointID: 42443.0, 2800 DOMINION ST 
+11:52	1:1 Address match error: 
+		ParcelID: 168681, 2118 FERRELL RD                                                                 
+		AddressPointID: 100718.0, 2118 FERRELL DR 
+11:53	1:1 Address match error: 
+		ParcelID: 125553, 2810 OMAH ST                                                                    
+		AddressPointID: 100646.0, 2810 OMAH AVE 
+11:53	1:0 Address Point Count Error!
+		ParcelID:169551, 0 FERRELL RD                                                                    
+		No Address Point in Parcel.
+11:53	1:1 Address match error: 
+		ParcelID: 168680, 1777 GLENN SCHOOL RD                                                            
+		AddressPointID: 100700.0, 1777 GLEN SCHOOL RD 
+11:54	1:1 Address match error: 
+		ParcelID: 129916, 1349 MAPLEWOOD DR                                                               
+		AddressPointID: 22068.0, 1351 MAPLEWOOD DR 
+11:54	1:0 Address Point Count Error!
+		ParcelID:169545, 0 FERRELL RD                                                                    
+		No Address Point in Parcel.
+11:54	1:1 Address match error: 
+		ParcelID: 128968, 915 E MAYNARD AVE                                                               
+		AddressPointID: 42046.0, 900 E MAYNARD AVE 
+11:54	1:1 Address match error: 
+		ParcelID: 128967, 907 E MAYNARD AVE                                                               
+		AddressPointID: 42036.0, 900 E MAYNARD AVE 
+11:55	1:0 Address Point Count Error!
+		ParcelID:129600, 0 HINSON DR                                                                     
+		No Address Point in Parcel.
+11:55	1:1 Address match error: 
+		ParcelID: 128969, 917 E MAYNARD AVE                                                               
+		AddressPointID: 42102.0, 900 E MAYNARD AVE 
+11:55	1:1 Address match error: 
+		ParcelID: 174315, 3736 SHOCCOREE DR                                                               
+		AddressPointID: 42012.0, 3736 SHOCOREE DR 
+11:56	1:1 Address match error: 
+		ParcelID: 174316, 3800 SHOCCOREE DR                                                               
+		AddressPointID: 97835.0, 3800 SHOCOREE DR 
+11:56	1:1 Address match error: 
+		ParcelID: 174423, 4019 NEAL RD                                                                    
+		AddressPointID: 42649.0, 4019 NEAL RD C
+11:56	1:1 Address match error: 
+		ParcelID: 128966, 911 E MAYNARD AVE                                                               
+		AddressPointID: 42035.0, 900 E MAYNARD AVE 
+11:56	1:1 Address match error: 
+		ParcelID: 129573, 919 E MAYNARD AVE                                                               
+		AddressPointID: 42052.0, 2600 HINSON DR 
+11:56	1:1 Address match error: 
+		ParcelID: 128975, 819 E MAYNARD AVE                                                               
+		AddressPointID: 42042.0, 800 E MAYNARD AVE 
+11:56	1:1 Address match error: 
+		ParcelID: 128974, 815 E MAYNARD AVE                                                               
+		AddressPointID: 42043.0, 800 E MAYNARD AVE 
+11:56	1:1 Address match error: 
+		ParcelID: 106307, 1422 EAST HUDSON AVE                                                            
+		AddressPointID: 42830.0, 1422 HUDSON AVE 
+11:56	1:1 Address match error: 
+		ParcelID: 128982, 902 E MAYNARD AVE                                                               
+		AddressPointID: 42182.0, 900 E MAYNARD AVE 
+11:57	1:1 Address match error: 
+		ParcelID: 106295, 1306 EAST HUDSON AVE                                                            
+		AddressPointID: 43174.0, 1306 HUDSON AVE 
+11:57	1:1 Address match error: 
+		ParcelID: 174317, 3822 SHOCCOREE DR                                                               
+		AddressPointID: 41490.0, 3822 SHOCOREE DR 
+11:57	1:1 Address match error: 
+		ParcelID: 174313, 3730 SHOCCOREE DR                                                               
+		AddressPointID: 42110.0, 3730 SHOCOREE DR 
+11:57	1:1 Address match error: 
+		ParcelID: 106298, 1304 EAST HUDSON AVE                                                            
+		AddressPointID: 43173.0, 1304 HUDSON AVE 
+11:57	1:1 Address match error: 
+		ParcelID: 170708, 4215 CHEEK RD                                                                   
+		AddressPointID: 24240.0, 4215 ARDSLEY DR 
+11:57	1:1 Address match error: 
+		ParcelID: 128990, 2816 DOMINION ST                                                                
+		AddressPointID: 42308.0, 2800 DOMINION ST 
+11:57	1:1 Address match error: 
+		ParcelID: 129024, 2815 DOMINION ST                                                                
+		AddressPointID: 42312.0, 2800 DOMINION ST 
+11:57	1:1 Address match error: 
+		ParcelID: 129002, 2809 LINDBERGH ST                                                               
+		AddressPointID: 42359.0, 2800 LINDBERGH ST 
+11:57	1:1 Address match error: 
+		ParcelID: 128992, 2808 DOMINION ST                                                                
+		AddressPointID: 42398.0, 2800 DOMINION ST 
+11:57	1:1 Address match error: 
+		ParcelID: 129022, 2809 DOMINION ST                                                                
+		AddressPointID: 42420.0, 2800 DOMINION ST 
+11:57	1:1 Address match error: 
+		ParcelID: 128986, 2802 LINDBERGH ST                                                               
+		AddressPointID: 42441.0, 2800 LINDBERGH ST 
+11:57	1:1 Address match error: 
+		ParcelID: 129023, 2810 DOMINION ST                                                                
+		AddressPointID: 42337.0, 2800 DOMINION ST 
+11:58	1:1 Address match error: 
+		ParcelID: 106312, 1400 EAST HUDSON AVE                                                            
+		AddressPointID: 43111.0, 1400 HUDSON AVE 
+11:58	1:1 Address match error: 
+		ParcelID: 130062, 1301 E CLUB BLVD                                                                
+		AddressPointID: 98609.0, 1301 CLUB BLVD 
+11:58	1:1 Address match error: 
+		ParcelID: 106290, 1312 EAST HUDSON AVE                                                            
+		AddressPointID: 43139.0, 1312 HUDSON AVE 
+11:58	1:1 Address match error: 
+		ParcelID: 106626, 2519 ACADIA ST                                                                  
+		AddressPointID: 43657.0, 2519 ELGIN ST 
+11:58	1:1 Address match error: 
+		ParcelID: 174419, 4019 NEAL RD                                                                    
+		AddressPointID: 126642.0, 4019 NEAL RD 9999
+11:58	1:X Address match error: 
+		ParcelID: 106396, 1200 LEON ST                                                                    
+		Multiple Address Points. (Count: 63
+11:58	1:1 Address match error: 
+		ParcelID: 119935, 405 E HAMMOND ST                                                                
+		AddressPointID: 43020.0, 405 HAMMOND ST 
+11:58	1:1 Address match error: 
+		ParcelID: 106308, 1418 EAST HUDSON AVE                                                            
+		AddressPointID: 42902.0, 1418 HUDSON AVE 
+11:59	1:1 Address match error: 
+		ParcelID: 120036, 214 N HAMMOND ST                                                                
+		AddressPointID: 217334.0, 214 HAMMOND ST 
+11:59	1:1 Address match error: 
+		ParcelID: 106320, 1401 EAST HUDSON AVE                                                            
+		AddressPointID: 43259.0, 1401 HUDSON AVE 
+11:59	1:1 Address match error: 
+		ParcelID: 129068, 807 E LAVENDER AVE                                                              
+		AddressPointID: 43260.0, 700 E LAVENDER AVE 
+11:59	1:1 Address match error: 
+		ParcelID: 120101, 625 E LAVENDER AVE                                                              
+		AddressPointID: 43338.0, 613 E LAVENDER AVE 
+11:59	1:1 Address match error: 
+		ParcelID: 174421, 4019 NEAL RD                                                                    
+		AddressPointID: 42633.0, 4019 NEAL RD A
+11:59	1:1 Address match error: 
+		ParcelID: 128965, 903 E MAYNARD AVE                                                               
+		AddressPointID: 42039.0, 900 E MAYNARD AVE 
+11:59	1:1 Address match error: 
+		ParcelID: 128973, 811 E MAYNARD AVE                                                               
+		AddressPointID: 42047.0, 800 E MAYNARD AVE 
+11:59	1:1 Address match error: 
+		ParcelID: 129069, 811 E LAVENDAR AVE                                                              
+		AddressPointID: 43155.0, 2600 DOMINION ST 
+11:59	1:1 Address match error: 
+		ParcelID: 106310, 1412 EAST HUDSON AVE                                                            
+		AddressPointID: 43010.0, 1412 HUDSON AVE 
+12:00	1:1 Address match error: 
+		ParcelID: 174665, 78 FOREST OAKS DR                                                               
+		AddressPointID: 126653.0, 78 FOREST OAKS DR 9999
+12:00	1:1 Address match error: 
+		ParcelID: 106306, 1426 EAST HUDSON AVE                                                            
+		AddressPointID: 42770.0, 1426 HUDSON AVE 
+12:00	1:1 Address match error: 
+		ParcelID: 174314, 3726 SHOCCOREE DR                                                               
+		AddressPointID: 42192.0, 3726 SHOCOREE DR 
+12:00	1:1 Address match error: 
+		ParcelID: 129067, 803 E LAVENDER AVE                                                              
+		AddressPointID: 43325.0, 700 E LAVENDER AVE 
+12:00	1:1 Address match error: 
+		ParcelID: 120104, 2609 E LAVENDER AVE                                                             
+		AddressPointID: 43413.0, 800 E LAVENDER AVE 
+12:00	1:1 Address match error: 
+		ParcelID: 129003, 2815 LINDBERGH ST                                                               
+		AddressPointID: 42307.0, 2800 LINDBERGH ST 
+12:01	1:1 Address match error: 
+		ParcelID: 120100, 703 E LAVENDER AVE Unit 00007                                                   
+		AddressPointID: 43485.0, 700 E LAVENDER AVE 7
+12:01	1:1 Address match error: 
+		ParcelID: 106293, 1308 EAST HUDSON AVE                                                            
+		AddressPointID: 43176.0, 1308 HUDSON AVE 
+12:01	1:1 Address match error: 
+		ParcelID: 106289, 1314 EAST HUDSON AVE                                                            
+		AddressPointID: 43240.0, 1314 HUDSON AVE 
+12:01	1:1 Address match error: 
+		ParcelID: 174679, 22 FOREST GREEN DR                                                              
+		AddressPointID: 126657.0, 22 FOREST GREEN DR 9999
+12:01	1:X Address match error: 
+		ParcelID: 160579, 1907 E GEER ST Unit B                                                           
+		Multiple Address Points. (Count: 2
+12:01	1:1 Address match error: 
+		ParcelID: 106309, 1416 EAST HUDSON AVE                                                            
+		AddressPointID: 42964.0, 1416 HUDSON AVE 
+12:02	1:0 Address Point Count Error!
+		ParcelID:106604, 0 W CLUB BLVD                                                                   
+		No Address Point in Parcel.
+12:02	1:1 Address match error: 
+		ParcelID: 160580, 1907 E GEER ST Unit A                                                           
+		AddressPointID: 131620.0, 1907 E GEER ST A
+12:02	1:1 Address match error: 
+		ParcelID: 106299, 1302 EAST HUDSON AVE                                                            
+		AddressPointID: 43172.0, 1302 HUDSON AVE 
+12:02	1:1 Address match error: 
+		ParcelID: 129071, 817 E LAVENDAR AVE                                                              
+		AddressPointID: 43141.0, 900 BISCAYNE RD 
+12:02	1:1 Address match error: 
+		ParcelID: 129070, 815 E LAVENDER AVE                                                              
+		AddressPointID: 43146.0, 700 E LAVENDER AVE 
+12:02	1:1 Address match error: 
+		ParcelID: 108964, 2510 N ROXBORO ST                                                               
+		AddressPointID: 97221.0, 2510 ROXBORO ST 
+12:02	1:1 Address match error: 
+		ParcelID: 106292, 1310 EAST HUDSON AVE                                                            
+		AddressPointID: 43178.0, 1310 HUDSON AVE 
+12:02	1:1 Address match error: 
+		ParcelID: 106460, 806 EAST HUDSON AVE                                                             
+		AddressPointID: 43302.0, 806 HUDSON AVE 
+12:02	1:1 Address match error: 
+		ParcelID: 120147, 708 E LAVENDER AVE                                                              
+		AddressPointID: 43602.0, 700 E LAVENDER AVE 
+12:02	1:1 Address match error: 
+		ParcelID: 120148, 706 E LAVENDER AVE                                                              
+		AddressPointID: 43613.0, 700 E LAVENDER AVE 
+12:02	1:X Address match error: 
+		ParcelID: 174395, 3903 COMFORT LN                                                                 
+		Multiple Address Points. (Count: 8
+12:03	1:0 Address Point Count Error!
+		ParcelID:170537, 0 CHEEK RD                                                                      
+		No Address Point in Parcel.
+12:03	1:X Address match error: 
+		ParcelID: 108939, 2508 SHENANDOAH AVE                                                             
+		Multiple Address Points. (Count: 2
+12:03	1:1 Address match error: 
+		ParcelID: 103708, 2414 W ENGLEWOOD AVE                                                            
+		AddressPointID: 220154.0, 2414 ENGLEWOOD AVE 
+12:03	1:X Address match error: 
+		ParcelID: 100557, 1113 CLARENDON ST                                                               
+		Multiple Address Points. (Count: 2
+12:04	1:0 Address Point Count Error!
+		ParcelID:160524, 0 I-85                                                                          
+		No Address Point in Parcel.
+12:05	1:0 Address Point Count Error!
+		ParcelID:100728, 0 NINTH ST                                                                      
+		No Address Point in Parcel.
+12:05	1:1 Address match error: 
+		ParcelID: 170146, 2126 RODEO DR                                                                   
+		AddressPointID: 100943.0, 2126 RODEO RD 
+12:05	1:X Address match error: 
+		ParcelID: 100860, 1209 SEDGEFIELD ST                                                              
+		Multiple Address Points. (Count: 2
+12:06	1:0 Address Point Count Error!
+		ParcelID:174683, 0 FOREST OAKS DR                                                                
+		No Address Point in Parcel.
+12:06	1:0 Address Point Count Error!
+		ParcelID:174682, 0 FOREST OAKS DR                                                                
+		No Address Point in Parcel.
+12:06	1:1 Address match error: 
+		ParcelID: 130085, 1715 LIGHT ST                                                                   
+		AddressPointID: 24960.0, 1700 LIGHT ST 
+12:06	1:1 Address match error: 
+		ParcelID: 105880, 702 W KNOX ST                                                                   
+		AddressPointID: 101015.0, 702 KNOX ST 
+12:06	1:1 Address match error: 
+		ParcelID: 130063, 1712 LIGHT ST                                                                   
+		AddressPointID: 24936.0, 1700 LIGHT ST 
+12:06	1:X Address match error: 
+		ParcelID: 109057, 108 W CLUB BLVD                                                                 
+		Multiple Address Points. (Count: 2
+12:07	1:0 Address Point Count Error!
+		ParcelID:174661, 0 FOREST GREEN DR                                                               
+		No Address Point in Parcel.
+12:07	1:1 Address match error: 
+		ParcelID: 174707, 28 FOREST OAKS DR                                                               
+		AddressPointID: 45190.0, 28 FOREST GREEN DR
+12:07	1:1 Address match error: 
+		ParcelID: 174684, 67 FOREST OAKS DR                                                               
+		AddressPointID: 126659.0, 67 FOREST OAKS DR 9999
+12:07	1:1 Address match error: 
+		ParcelID: 174685, 79 FOREST OAKS DR                                                               
+		AddressPointID: 126660.0, 79 FOREST OAKS DR 9999
+12:07	1:1 Address match error: 
+		ParcelID: 195312, 4513 REDWOOD RD                                                                 
+		AddressPointID: 101011.0, 3940 FALLS LAKE RD 
+12:07	1:1 Address match error: 
+		ParcelID: 174681, 51 FOREST OAKS DR                                                               
+		AddressPointID: 126658.0, 51 FOREST OAKS DR 9999
+12:09	1:X Address match error: 
+		ParcelID: 103789, 2616 W KNOX ST                                                                  
+		Multiple Address Points. (Count: 2
+12:09	1:1 Address match error: 
+		ParcelID: 169827, 2021 FOLKSTON DR                                                                
+		AddressPointID: 25228.0, 16 FOLKSTON DR 
+12:09	1:0 Address Point Count Error!
+		ParcelID:125247, 0 S LASALLE ST                                                                  
+		No Address Point in Parcel.
+12:10	1:1 Address match error: 
+		ParcelID: 168137, 1100 ARVIN RD                                                                   
+		AddressPointID: 25240.0, 1028 ARVIN RD 
+12:10	1:1 Address match error: 
+		ParcelID: 159673, 2008 WATSON RD                                                                  
+		AddressPointID: 101062.0, 2008 WATSON ST 
+12:11	1:0 Address Point Count Error!
+		ParcelID:190404, 0 FINISH LINE RD                                                                
+		No Address Point in Parcel.
+12:11	1:1 Address match error: 
+		ParcelID: 190527, 12018 N ROXBORO RD                                                              
+		AddressPointID: 97567.0, 12018 ROXBORO RD 
+12:11	1:0 Address Point Count Error!
+		ParcelID:190289, 0 SOUTH LOWELL RD                                                               
+		No Address Point in Parcel.
+12:11	1:1 Address match error: 
+		ParcelID: 174967, 900 CONSTITUTION DR                                                             
+		AddressPointID: 106629.0, 910 CONSTITUTION DR 
+12:12	1:1 Address match error: 
+		ParcelID: 168140, 1110 ARVIN RD                                                                   
+		AddressPointID: 25216.0, 1100 ARVIN RD 
+12:12	1:X Address match error: 
+		ParcelID: 105469, 326 CLARK ST                                                                    
+		Multiple Address Points. (Count: 2
+12:13	1:1 Address match error: 
+		ParcelID: 191068, 2001 BAHAMA RD                                                                  
+		AddressPointID: 222312.0, 8508 STAGVILLE RD 
+12:13	1:1 Address match error: 
+		ParcelID: 191198, 9220 N ROXBORO RD                                                               
+		AddressPointID: 97007.0, 9220 ROXBORO RD 
+12:13	1:1 Address match error: 
+		ParcelID: 190027, 421 NORTH FORK LN                                                               
+		AddressPointID: 99275.0, 421 N NORTH FORK LN 
+12:13	1:0 Address Point Count Error!
+		ParcelID:192785, 0 TREYBURN PKWY                                                                 
+		No Address Point in Parcel.
+12:13	1:X Address match error: 
+		ParcelID: 188030, 108 OLD ORANGE FACTORY RD                                                       
+		Multiple Address Points. (Count: 2
+12:13	1:1 Address match error: 
+		ParcelID: 188729, 6812 CAIN CREEK LN                                                              
+		AddressPointID: 3247.0, 6814 CAIN CREEK LN 
+12:13	1:1 Address match error: 
+		ParcelID: 186936, 7414 RUSSELL RD                                                                 
+		AddressPointID: 128921.0, 7416 RUSSELL RD 
+12:14	1:1 Address match error: 
+		ParcelID: 109254, 200 E KNOX ST                                                                   
+		AddressPointID: 47721.0, 207 E KNOX ST
+12:14	1:X Address match error: 
+		ParcelID: 109603, 1103 CAMDEN AVE                                                                 
+		Multiple Address Points. (Count: 3
+12:15	1:1 Address match error: 
+		ParcelID: 168149, 1151 ARVIN RD                                                                   
+		AddressPointID: 97266.0, 3202 CHEEK RD 
+12:15	1:1 Address match error: 
+		ParcelID: 102311, 1010 WATTS ST                                                                   
+		AddressPointID: 48643.0, 1008 WATTS ST 
+12:16	1:1 Address match error: 
+		ParcelID: 100199, 816 BERKELEY ST Unit D                                                          
+		AddressPointID: 48596.0, 816 BERKELEY ST D
+12:16	1:1 Address match error: 
+		ParcelID: 100198, 816 BERKELEY ST Unit C                                                          
+		AddressPointID: 48591.0, 816 BERKELEY ST C
+12:16	1:X Address match error: 
+		ParcelID: 110799, 1309 TUCKER ST Unit CM001                                                       
+		Multiple Address Points. (Count: 5
+12:16	1:1 Address match error: 
+		ParcelID: 132542, 2746 MANSFIELD AVE                                                              
+		AddressPointID: 113695.0, 2746 MANSFIELD AVE 99999
+12:16	1:0 Address Point Count Error!
+		ParcelID:102703, 906 N GREGSON ST                                                                
+		No Address Point in Parcel.
+12:17	1:0 Address Point Count Error!
+		ParcelID:109689, 0 E MARKHAM AVE                                                                 
+		No Address Point in Parcel.
+12:17	1:1 Address match error: 
+		ParcelID: 102699, 921 GREEN ST                                                                    
+		AddressPointID: 126408.0, 921 GREEN ST 9999
+12:17	1:1 Address match error: 
+		ParcelID: 160952, 2300 MIDLAND TER EXT                                                            
+		AddressPointID: 101123.0, 2300 MIDLAND TERRACE EXT 
+12:17	1:1 Address match error: 
+		ParcelID: 130224, 1921 AIKEN AVE                                                                  
+		AddressPointID: 25555.0, 1900 AIKEN AVE 
+12:18	1:1 Address match error: 
+		ParcelID: 102724, 913 W MARKHAM AVE                                                               
+		AddressPointID: 49103.0, 915 W MARKHAM AVE 
+12:18	1:1 Address match error: 
+		ParcelID: 161019, 2404 MIDLAND TER EXT                                                            
+		AddressPointID: 97817.0, 2404 MIDLAND TERRACE EXT 
+12:18	1:1 Address match error: 
+		ParcelID: 160822, 2551 MIDLAND TER EXT                                                            
+		AddressPointID: 101164.0, 2551 MIDLAND TERRACE EXT 
+12:18	1:1 Address match error: 
+		ParcelID: 102725, 915 W MARKHAM AVE                                                               
+		AddressPointID: 49102.0, 913 W MARKHAM AVE 
+12:19	1:1 Address match error: 
+		ParcelID: 159633, 2123 CHEEK RD Unit 9999                                                         
+		AddressPointID: 126559.0, 2123 CHEEK RD 9999
+12:19	1:1 Address match error: 
+		ParcelID: 105446, 312 W TRINITY AVE                                                               
+		AddressPointID: 126428.0, 312 W TRINITY AVE 9999
+12:19	1:X Address match error: 
+		ParcelID: 120522, 500 MCCALLIE WAY                                                                
+		Multiple Address Points. (Count: 27
+12:19	1:1 Address match error: 
+		ParcelID: 110061, 907 N MANGUM ST                                                                 
+		AddressPointID: 50289.0, 907 N MANGUM ST B
+12:19	1:1 Address match error: 
+		ParcelID: 161073, 100 SEMINOLE ST                                                                 
+		AddressPointID: 101262.0, 106 SEMINOLE ST 
+12:19	1:1 Address match error: 
+		ParcelID: 195302, 4300 BAPTIST RD                                                                 
+		AddressPointID: 98830.0, 4300 BOYCE MILL RD 
+12:20	1:1 Address match error: 
+		ParcelID: 160950, 2500 MIDLAND TER EXT                                                            
+		AddressPointID: 101176.0, 2500 MIDLAND TERRACE EXT 
+12:20	1:X Address match error: 
+		ParcelID: 102079, 916 W TRINITY AVE                                                               
+		Multiple Address Points. (Count: 19
+12:20	1:1 Address match error: 
+		ParcelID: 110062, 907 N MANGUM ST                                                                 
+		AddressPointID: 50290.0, 907 N MANGUM ST C
+12:20	1:1 Address match error: 
+		ParcelID: 110064, 906 GLENDALE AVE                                                                
+		AddressPointID: 50292.0, 906 GLENDALE AVE D
+12:20	1:1 Address match error: 
+		ParcelID: 110066, 906 GLENDALE AVE                                                                
+		AddressPointID: 50294.0, 906 GLENDALE AVE B
+12:20	1:1 Address match error: 
+		ParcelID: 110063, 907 N MANGUM ST                                                                 
+		AddressPointID: 50291.0, 907 N MANGUM ST D
+12:20	1:1 Address match error: 
+		ParcelID: 110065, 906 GLENDALE AVE                                                                
+		AddressPointID: 50293.0, 906 GLENDALE AVE C
+12:20	1:1 Address match error: 
+		ParcelID: 105463, 402 W TRINITY AVE                                                               
+		AddressPointID: 101215.0, 402 TRINITY AVE 
+12:20	1:1 Address match error: 
+		ParcelID: 105448, 308 W TRINITY AVE                                                               
+		AddressPointID: 101216.0, 308 W TRINITY AVE 9999
+12:20	1:1 Address match error: 
+		ParcelID: 110060, 907 N MANGUM ST                                                                 
+		AddressPointID: 50288.0, 907 N MANGUM ST A
+12:21	1:1 Address match error: 
+		ParcelID: 110067, 906 GLENDALE AVE                                                                
+		AddressPointID: 50295.0, 906 GLENDALE AVE A
+12:21	1:1 Address match error: 
+		ParcelID: 109723, 600 E GEER ST                                                                   
+		AddressPointID: 50339.0, 605 E GEER ST
+12:21	1:1 Address match error: 
+		ParcelID: 109721, 600 E GEER ST                                                                   
+		AddressPointID: 50348.0, 601 E GEER ST
+12:21	1:1 Address match error: 
+		ParcelID: 161071, 106 SEMINOLE ST                                                                 
+		AddressPointID: 101264.0, 100 SEMINOLE ST 
+12:21	1:1 Address match error: 
+		ParcelID: 105169, 500 W CORPORATION ST                                                            
+		AddressPointID: 90553.0, 500 CORPORATION ST 
+12:21	1:1 Address match error: 
+		ParcelID: 102216, 308 N BUCHANAN BLVD                                                             
+		AddressPointID: 50147.0, 308 N BUCHANAN BLVD A
+12:21	1:1 Address match error: 
+		ParcelID: 167351, 1540 STALLINGS RD                                                               
+		AddressPointID: 26693.0, 1524 STALLINGS RD 
+12:22	1:X Address match error: 
+		ParcelID: 110589, 1100 HAZEL ST                                                                   
+		Multiple Address Points. (Count: 2
+12:22	1:X Address match error: 
+		ParcelID: 198571, 1505 N HYDE PARK AVE                                                            
+		Multiple Address Points. (Count: 2
+12:22	1:1 Address match error: 
+		ParcelID: 168310, 803 HOUNDS CHASE DR                                                             
+		AddressPointID: 27062.0, 915 ALPHA DR
+12:22	1:1 Address match error: 
+		ParcelID: 110003, 113 SEEMAN ST                                                                   
+		AddressPointID: 49935.0, 113 W SEEMAN ST 
+12:22	1:1 Address match error: 
+		ParcelID: 101939, 223 N GREGSON ST                                                                
+		AddressPointID: 101306.0, 223 GREGSON ST 
+12:23	1:1 Address match error: 
+		ParcelID: 120519, 1200 CASTLEBAY RD                                                               
+		AddressPointID: 26934.0, 1200 CASTLEBAY DR 
+12:23	1:1 Address match error: 
+		ParcelID: 110945, 1005 DREW ST                                                                    
+		AddressPointID: 101307.0, 1005 E DREW ST 
+12:24	1:0 Address Point Count Error!
+		ParcelID:159255, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:24	1:0 Address Point Count Error!
+		ParcelID:161207, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:24	1:0 Address Point Count Error!
+		ParcelID:159252, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:24	1:1 Address match error: 
+		ParcelID: 113505, 1233 WESLEY ST Unit A                                                           
+		AddressPointID: 27586.0, 1233 WESLEY ST
+12:24	1:1 Address match error: 
+		ParcelID: 161090, 713 HEIDELBERG ST                                                               
+		AddressPointID: 101265.0, 713 HEIDLEBERG ST 
+12:24	1:1 Address match error: 
+		ParcelID: 161151, 712 HEIDELBERG ST                                                               
+		AddressPointID: 101266.0, 712 HEIDLEBERG ST 
+12:24	1:X Address match error: 
+		ParcelID: 197966, 422 E GEER ST                                                                   
+		Multiple Address Points. (Count: 3
+12:25	1:0 Address Point Count Error!
+		ParcelID:161210, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:25	1:0 Address Point Count Error!
+		ParcelID:161209, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:25	1:1 Address match error: 
+		ParcelID: 137665, 3217 JENNIFER DR                                                                
+		AddressPointID: 97272.0, 3217 JENNIFER RD 
+12:25	1:0 Address Point Count Error!
+		ParcelID:161206, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:25	1:0 Address Point Count Error!
+		ParcelID:159248, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:25	1:X Address match error: 
+		ParcelID: 110131, 1104 N ROXBORO ST                                                               
+		Multiple Address Points. (Count: 3
+12:25	1:0 Address Point Count Error!
+		ParcelID:159249, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:25	1:0 Address Point Count Error!
+		ParcelID:159247, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:25	1:1 Address match error: 
+		ParcelID: 113893, 907 BURCH AVE                                                                   
+		AddressPointID: 51851.0, 907 BURCH AVE 9999
+12:25	1:0 Address Point Count Error!
+		ParcelID:159259, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:26	1:0 Address Point Count Error!
+		ParcelID:161201, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:26	1:0 Address Point Count Error!
+		ParcelID:159265, 0 FOREST DR                                                                     
+		No Address Point in Parcel.
+12:26	1:0 Address Point Count Error!
+		ParcelID:159257, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:26	1:0 Address Point Count Error!
+		ParcelID:111112, 0 CALVIN ST                                                                     
+		No Address Point in Parcel.
+12:26	1:0 Address Point Count Error!
+		ParcelID:159251, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:26	1:0 Address Point Count Error!
+		ParcelID:161199, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:26	1:0 Address Point Count Error!
+		ParcelID:159204, 0 FORREST DR                                                                    
+		No Address Point in Parcel.
+12:27	1:0 Address Point Count Error!
+		ParcelID:159201, 0 WESTWOOD DR                                                                   
+		No Address Point in Parcel.
+12:27	1:0 Address Point Count Error!
+		ParcelID:161202, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:27	1:X Address match error: 
+		ParcelID: 159448, 322 JUNCTION RD Unit CM1                                                        
+		Multiple Address Points. (Count: 8
+12:27	1:0 Address Point Count Error!
+		ParcelID:159205, 0 FORREST DR                                                                    
+		No Address Point in Parcel.
+12:28	1:1 Address match error: 
+		ParcelID: 132456, 417 FERNANDO ST                                                                 
+		AddressPointID: 101445.0, 421 FERNANDO ST 
+12:28	1:0 Address Point Count Error!
+		ParcelID:159253, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:28	1:0 Address Point Count Error!
+		ParcelID:161200, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:29	1:1 Address match error: 
+		ParcelID: 159532, 411 N HOOVER RD Unit 00                                                         
+		AddressPointID: 28132.0, 411 N HOOVER RD 
+12:29	1:X Address match error: 
+		ParcelID: 159332, 322 JUNCTION RD                                                                 
+		Multiple Address Points. (Count: 5
+12:29	1:0 Address Point Count Error!
+		ParcelID:159199, 0 WESTWOOD DR                                                                   
+		No Address Point in Parcel.
+12:29	1:X Address match error: 
+		ParcelID: 113192, 1217 N HOLLOWAY ST                                                              
+		Multiple Address Points. (Count: 3
+12:29	1:X Address match error: 
+		ParcelID: 111286, 1018 HOLLOWAY ST                                                                
+		Multiple Address Points. (Count: 4
+12:29	1:1 Address match error: 
+		ParcelID: 161228, 725 N MINERAL SPRINGS RD                                                        
+		AddressPointID: 101435.0, 725 MINERAL SPRINGS RD 
+12:29	1:1 Address match error: 
+		ParcelID: 167644, 917 N MINERAL SPRINGS RD                                                        
+		AddressPointID: 101407.0, 917 MINERAL SPRINGS RD 
+12:30	1:0 Address Point Count Error!
+		ParcelID:159225, 0 FORREST DR                                                                    
+		No Address Point in Parcel.
+12:30	1:0 Address Point Count Error!
+		ParcelID:159203, 0 FORREST DR                                                                    
+		No Address Point in Parcel.
+12:30	1:1 Address match error: 
+		ParcelID: 159511, 201 SOUTHERLAND DR                                                              
+		AddressPointID: 29185.0, 201 SOUTHERLAND ST 
+12:30	1:X Address match error: 
+		ParcelID: 112853, 804 N GUTHRIE AVE                                                               
+		Multiple Address Points. (Count: 4
+12:30	1:0 Address Point Count Error!
+		ParcelID:159224, 0 FORREST DR                                                                    
+		No Address Point in Parcel.
+12:31	1:X Address match error: 
+		ParcelID: 112854, 1501 LATHROP ST                                                                 
+		Multiple Address Points. (Count: 2
+12:31	1:X Address match error: 
+		ParcelID: 112855, 1503 LATHROP ST                                                                 
+		Multiple Address Points. (Count: 2
+12:31	1:1 Address match error: 
+		ParcelID: 113695, 1615 BUNN TER                                                                   
+		AddressPointID: 126439.0, 1615 BUNN TER 9999
+12:31	1:0 Address Point Count Error!
+		ParcelID:159202, 0 WESTWOOD DR                                                                   
+		No Address Point in Parcel.
+12:31	1:1 Address match error: 
+		ParcelID: 131332, 206 S ADAMS ST                                                                  
+		AddressPointID: 31414.0, 206 ADAMS RD 
+12:31	1:1 Address match error: 
+		ParcelID: 131711, 113 S ADAMS ST                                                                  
+		AddressPointID: 31297.0, 113 ADAMS RD 
+12:32	1:X Address match error: 
+		ParcelID: 112749, 519 PARK AVE                                                                    
+		Multiple Address Points. (Count: 4
+12:32	1:X Address match error: 
+		ParcelID: 111748, 734 N HOPKINS ST                                                                
+		Multiple Address Points. (Count: 3
+12:32	1:1 Address match error: 
+		ParcelID: 131372, 213 N ADAMS ST                                                                  
+		AddressPointID: 30004.0, 213 ADAMS RD 
+12:32	1:X Address match error: 
+		ParcelID: 102894, 601 E MAIN ST                                                                   
+		Multiple Address Points. (Count: 22
+12:32	1:1 Address match error: 
+		ParcelID: 131370, 207 N ADAMS ST                                                                  
+		AddressPointID: 30124.0, 207 ADAMS RD 
+12:32	1:1 Address match error: 
+		ParcelID: 131368, 201 N ADAMS ST                                                                  
+		AddressPointID: 30256.0, 201 N ADAMS RD 
+12:33	1:1 Address match error: 
+		ParcelID: 131407, 115 N ADAMS ST                                                                  
+		AddressPointID: 30494.0, 115 ADAMS RD 
+12:33	1:X Address match error: 
+		ParcelID: 113789, 808 N BRIGGS AVE                                                                
+		Multiple Address Points. (Count: 2
+12:33	1:1 Address match error: 
+		ParcelID: 131601, 202 N ADAMS ST                                                                  
+		AddressPointID: 30250.0, 202 ADAMS RD 
+12:33	1:1 Address match error: 
+		ParcelID: 131617, 122 N ADAMS ST                                                                  
+		AddressPointID: 30395.0, 122 ADAMS RD 
+12:33	1:1 Address match error: 
+		ParcelID: 131406, 111 N ADAMS ST                                                                  
+		AddressPointID: 30535.0, 111 ADAMS RD 
+12:33	1:1 Address match error: 
+		ParcelID: 131621, 112 N ADAMS ST                                                                  
+		AddressPointID: 30643.0, 112 ADAMS RD 
+12:34	1:1 Address match error: 
+		ParcelID: 161763, 414 GLAIVE DR                                                                   
+		AddressPointID: 30645.0, 413 GLAIVE DR 
+12:34	1:1 Address match error: 
+		ParcelID: 161762, 413 GLAIVE DR                                                                   
+		AddressPointID: 30644.0, 414 GLAIVE DR 
+12:34	1:1 Address match error: 
+		ParcelID: 131374, 221 N ADAMS ST                                                                  
+		AddressPointID: 29818.0, 221 ADAMS RD 
+12:34	1:1 Address match error: 
+		ParcelID: 115146, 1213 CORNELL ST                                                                 
+		AddressPointID: 54682.0, 1213 CORNELL ST 9999
+12:34	1:1 Address match error: 
+		ParcelID: 112536, 1908 TAYLOR ST                                                                  
+		AddressPointID: 101532.0, 1908 N TAYLOR ST 
+12:34	1:1 Address match error: 
+		ParcelID: 131371, 211 N ADAMS ST                                                                  
+		AddressPointID: 30053.0, 211 ADAMS RD 
+12:34	1:1 Address match error: 
+		ParcelID: 131714, 207 S ADAMS ST                                                                  
+		AddressPointID: 31488.0, 207 ADAMS RD 
+12:35	1:X Address match error: 
+		ParcelID: 115142, 1205 CORNELL ST                                                                 
+		Multiple Address Points. (Count: 4
+12:35	1:1 Address match error: 
+		ParcelID: 131713, 203 S ADAMS ST                                                                  
+		AddressPointID: 31423.0, 203 ADAMS RD 
+12:35	1:1 Address match error: 
+		ParcelID: 131689, 305 S ADAMS ST                                                                  
+		AddressPointID: 31793.0, 305 ADAMS RD 
+12:35	1:X Address match error: 
+		ParcelID: 108255, 2206 PIKE ST Unit A                                                             
+		Multiple Address Points. (Count: 2
+12:35	1:1 Address match error: 
+		ParcelID: 131408, 117 N ADAMS ST                                                                  
+		AddressPointID: 30433.0, 117 ADAMS RD 
+12:35	1:0 Address Point Count Error!
+		ParcelID:114107, 1806 LIBERTY ST                                                                 
+		No Address Point in Parcel.
+12:36	1:1 Address match error: 
+		ParcelID: 108036, 1303 ROSEDALE AVE                                                               
+		AddressPointID: 55288.0, 1312 ROSEDALE AVE
+12:36	1:1 Address match error: 
+		ParcelID: 108074, 2021 BIVINS ST                                                                  
+		AddressPointID: 55035.0, 2000 BIVINS ST 
+12:36	1:1 Address match error: 
+		ParcelID: 158875, 3014 HOLLOWAY ST                                                                
+		AddressPointID: 31677.0, 3012 HOLLOWAY ST
+12:36	1:1 Address match error: 
+		ParcelID: 158872, 3016 HOLLOWAY ST                                                                
+		AddressPointID: 31681.0, 3014 HOLLOWAY ST
+12:37	1:1 Address match error: 
+		ParcelID: 183367, 5124 LAZYWOOD LN                                                                
+		AddressPointID: 7659.0, 5124 LAZY WOOD LN 
+12:37	1:1 Address match error: 
+		ParcelID: 112089, 1315 S MORVEN PL                                                                
+		AddressPointID: 133952.0, 1315 MORVEN PL 
+12:37	1:1 Address match error: 
+		ParcelID: 131706, 402 S ADAMS ST                                                                  
+		AddressPointID: 31950.0, 402 ADAMS RD 
+12:37	1:1 Address match error: 
+		ParcelID: 131705, 404 S ADAMS ST                                                                  
+		AddressPointID: 31994.0, 404 ADAMS RD 
+12:37	1:1 Address match error: 
+		ParcelID: 131691, 403 S ADAMS ST                                                                  
+		AddressPointID: 31875.0, 403 ADAMS RD 
+12:37	1:1 Address match error: 
+		ParcelID: 131707, 400 S ADAMS ST                                                                  
+		AddressPointID: 31900.0, 400 ADAMS RD 
+12:38	1:1 Address match error: 
+		ParcelID: 195303, 4100 BAPTIST RD                                                                 
+		AddressPointID: 101205.0, 4100 BOYCE MILL RD 
+12:38	1:1 Address match error: 
+		ParcelID: 167395, 605 PATTERSON RD Unit 0000A                                                     
+		AddressPointID: 32221.0, 605 PATTERSON RD 
+12:38	1:1 Address match error: 
+		ParcelID: 121039, 2903 SATER ST                                                                   
+		AddressPointID: 32258.0, 2900 SATER ST 
+12:38	1:1 Address match error: 
+		ParcelID: 158857, 120 BEASLEY AVE                                                                 
+		AddressPointID: 219632.0, 122 BEASLEY AVE 
+12:38	1:1 Address match error: 
+		ParcelID: 161150, 716 HEIDELBERG ST                                                               
+		AddressPointID: 101253.0, 716 HEIDLEBERG ST 
+12:38	1:X Address match error: 
+		ParcelID: 112047, 206 S PLUM ST                                                                   
+		Multiple Address Points. (Count: 2
+12:39	1:1 Address match error: 
+		ParcelID: 193836, 619 SANTEE RD                                                                   
+		AddressPointID: 101290.0, 709 SANTEE RD 
+12:39	1:0 Address Point Count Error!
+		ParcelID:161205, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:39	1:0 Address Point Count Error!
+		ParcelID:159254, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:39	1:1 Address match error: 
+		ParcelID: 132544, 2742 MANSFIELD AVE                                                              
+		AddressPointID: 101374.0, 2742 MANSFIELD DR 
+12:40	1:1 Address match error: 
+		ParcelID: 183296, 5103 LAZYWOOD LN                                                                
+		AddressPointID: 7832.0, 5103 LAZY WOOD LN 
+12:40	1:1 Address match error: 
+		ParcelID: 183295, 5019 LAZYWOOD LN                                                                
+		AddressPointID: 7923.0, 5019 LAZY WOOD LN 
+12:40	1:1 Address match error: 
+		ParcelID: 183540, 5436 N ROXBORO RD                                                               
+		AddressPointID: 7970.0, 5436 N ROXBORO ST 
+12:40	1:0 Address Point Count Error!
+		ParcelID:161203, 0 SEFORD DR                                                                     
+		No Address Point in Parcel.
+12:40	1:0 Address Point Count Error!
+		ParcelID:159258, 0 LAKECREST DR                                                                  
+		No Address Point in Parcel.
+12:40	1:0 Address Point Count Error!
+		ParcelID:159223, 0 FORREST DR                                                                    
+		No Address Point in Parcel.
+12:40	1:X Address match error: 
+		ParcelID: 159412, 322 JUNCTION RD Unit CM2                                                        
+		Multiple Address Points. (Count: 5
+12:40	1:X Address match error: 
+		ParcelID: 111366, 722 HOLLOWAY ST                                                                 
+		Multiple Address Points. (Count: 2
+12:41	1:1 Address match error: 
+		ParcelID: 114782, 905 S BUCHANAN BLVD                                                             
+		AddressPointID: 116626.0, 904 S BUCHANAN BLVD 
+12:41	1:1 Address match error: 
+		ParcelID: 131373, 215 N ADAMS ST                                                                  
+		AddressPointID: 29937.0, 215 ADAMS RD 
+12:41	1:1 Address match error: 
+		ParcelID: 131369, 203 N ADAMS ST                                                                  
+		AddressPointID: 30207.0, 203 ADAMS RD 
+12:41	1:X Address match error: 
+		ParcelID: 112818, 2110 SOUTHGATE ST                                                               
+		Multiple Address Points. (Count: 2
+12:41	1:1 Address match error: 
+		ParcelID: 131619, 118 N ADAMS ST                                                                  
+		AddressPointID: 30498.0, 118 ADAMS RD 
+12:41	1:1 Address match error: 
+		ParcelID: 131325, 106 S ADAMS ST                                                                  
+		AddressPointID: 31132.0, 106 ADAMS RD 
+12:42	1:1 Address match error: 
+		ParcelID: 131692, 405 S ADAMS ST                                                                  
+		AddressPointID: 31901.0, 405 ADAMS RD 
+12:42	1:1 Address match error: 
+		ParcelID: 131698, 409 S ADAMS ST                                                                  
+		AddressPointID: 32002.0, 409 ADAMS RD 
+12:42	1:1 Address match error: 
+		ParcelID: 112300, 2103 HART ST                                                                    
+		AddressPointID: 32141.0, 119 S DRIVER ST 
+12:42	1:X Address match error: 
+		ParcelID: 112417, 1907 ASHE ST                                                                    
+		Multiple Address Points. (Count: 4
+12:42	1:X Address match error: 
+		ParcelID: 112045, 210 S PLUM ST                                                                   
+		Multiple Address Points. (Count: 2
+12:42	1:1 Address match error: 
+		ParcelID: 119299, 315 E UMSTEAD ST                                                                
+		AddressPointID: 98622.0, 315 UMSTEAD ST 
+12:43	1:1 Address match error: 
+		ParcelID: 101105, 2636 WOODBURN RD                                                                
+		AddressPointID: 56679.0, 1402 WOODBURN RD 
+12:43	1:1 Address match error: 
+		ParcelID: 115435, 100 W FOREST HILLS BLVD                                                         
+		AddressPointID: 130088.0, 1145 W FOREST HILLS BLVD 
+12:43	1:1 Address match error: 
+		ParcelID: 180618, 4904 FOX HUNT ST                                                                
+		AddressPointID: 10615.0, 4904 FOX HUNT  
+12:43	1:X Address match error: 
+		ParcelID: 112747, 513 PARK AVE                                                                    
+		Multiple Address Points. (Count: 2
+12:44	1:1 Address match error: 
+		ParcelID: 131620, 114 N ADAMS ST                                                                  
+		AddressPointID: 30545.0, 114 ADAMS RD 
+12:44	1:1 Address match error: 
+		ParcelID: 112200, 1912 CARDENS LN                                                                 
+		AddressPointID: 32964.0, 1912 CARDEN LN 
+12:44	1:1 Address match error: 
+		ParcelID: 112212, 310 CARDENS LN                                                                  
+		AddressPointID: 57144.0, 310 CARDEN ALY 
+12:44	1:X Address match error: 
+		ParcelID: 162422, 3600 WILLOW SPRINGS RD                                                          
+		Multiple Address Points. (Count: 128
+12:44	1:0 Address Point Count Error!
+		ParcelID:158688, 0 HURSEY ST                                                                     
+		No Address Point in Parcel.
+12:44	1:X Address match error: 
+		ParcelID: 119076, 424 LAKELAND ST                                                                 
+		Multiple Address Points. (Count: 2
+12:44	1:X Address match error: 
+		ParcelID: 118911, 616 MIDDLE ST                                                                   
+		Multiple Address Points. (Count: 2
+12:44	1:1 Address match error: 
+		ParcelID: 131600, 204 N ADAMS ST                                                                  
+		AddressPointID: 30181.0, 204 ADAMS RD 
+12:45	1:X Address match error: 
+		ParcelID: 114389, 2513 ASHE ST                                                                    
+		Multiple Address Points. (Count: 2
+12:45	1:1 Address match error: 
+		ParcelID: 112197, 1909 CARDENS LN                                                                 
+		AddressPointID: 32839.0, 1909 CARDEN LN 
+12:45	1:X Address match error: 
+		ParcelID: 131645, 2808 ROCHELLE ST                                                                
+		Multiple Address Points. (Count: 4
+12:45	1:1 Address match error: 
+		ParcelID: 131622, 108 N ADAMS ST                                                                  
+		AddressPointID: 30723.0, 108 ADAMS RD 
+12:45	1:X Address match error: 
+		ParcelID: 107931, 1603 GUNTER ST                                                                  
+		Multiple Address Points. (Count: 6
+12:45	1:1 Address match error: 
+		ParcelID: 132200, 3006 HOLLOWAY ST                                                                
+		AddressPointID: 31219.0, 3006 CHARLESTOWN RD 
+12:45	1:1 Address match error: 
+		ParcelID: 131715, 209 S ADAMS ST                                                                  
+		AddressPointID: 31541.0, 209 ADAMS ST
+12:45	1:1 Address match error: 
+		ParcelID: 108037, 1323 ROSEDALE AVE                                                               
+		AddressPointID: 55487.0, 1318 ROSEDALE AVE
+12:46	1:1 Address match error: 
+		ParcelID: 131704, 406 S ADAMS ST                                                                  
+		AddressPointID: 32051.0, 406 ADAMS RD 
+12:46	1:1 Address match error: 
+		ParcelID: 137362, 12 CREEKVIEW LN                                                                 
+		AddressPointID: 126507.0, 12 CREEKVIEW LN 9999
+12:46	1:1 Address match error: 
+		ParcelID: 112198, 1911 CARDENS LN                                                                 
+		AddressPointID: 32867.0, 1911 CARDEN LN 
+12:46	1:1 Address match error: 
+		ParcelID: 112201, 1910 CARDENS LN                                                                 
+		AddressPointID: 32946.0, 1910 CARDEN LN 
+12:46	1:1 Address match error: 
+		ParcelID: 115509, 1620 UNIVERSITY DR                                                              
+		AddressPointID: 56969.0, 1626 UNIVERSITY DR 
+12:47	1:0 Address Point Count Error!
+		ParcelID:162453, 3724 WAKE FOREST HWY                                                            
+		No Address Point in Parcel.
+12:47	1:1 Address match error: 
+		ParcelID: 115507, 1626 UNIVERSITY DR                                                              
+		AddressPointID: 57145.0, 1620 UNIVERSITY DR 
+12:47	1:1 Address match error: 
+		ParcelID: 112210, 404 CARDENS LN                                                                  
+		AddressPointID: 57261.0, 404 CARDEN ALY 
+12:47	1:X Address match error: 
+		ParcelID: 112213, 309 CARDENS LN                                                                  
+		Multiple Address Points. (Count: 3
+12:47	1:0 Address Point Count Error!
+		ParcelID:158694, 0 HURSEY ST                                                                     
+		No Address Point in Parcel.
+12:48	1:1 Address match error: 
+		ParcelID: 137316, 74 STONERIDGE RD                                                                
+		AddressPointID: 126501.0, 74 STONERIDGE RD 9999
+12:48	1:1 Address match error: 
+		ParcelID: 137351, 1 CREEKVIEW LN                                                                  
+		AddressPointID: 126506.0, 1 CREEKVIEW LN 9999
+12:48	1:0 Address Point Count Error!
+		ParcelID:158697, 0 HURSEY ST                                                                     
+		No Address Point in Parcel.
+12:48	1:0 Address Point Count Error!
+		ParcelID:158699, 0 HURSEY ST                                                                     
+		No Address Point in Parcel.
+12:48	1:0 Address Point Count Error!
+		ParcelID:114573, 630 S BRIGGS AVE                                                                
+		No Address Point in Parcel.
+12:48	1:1 Address match error: 
+		ParcelID: 137369, 6 CREEKVIEW LN                                                                  
+		AddressPointID: 126508.0, 6 CREEKVIEW LN 9999
+12:49	1:0 Address Point Count Error!
+		ParcelID:162444, 0 S MINERAL SPRINGS RD                                                          
+		No Address Point in Parcel.
+12:49	1:1 Address match error: 
+		ParcelID: 137315, 82 STONERIDGE RD                                                                
+		AddressPointID: 126500.0, 82 STONERIDGE RD 9999
+12:49	1:0 Address Point Count Error!
+		ParcelID:158706, 0 HURSEY ST                                                                     
+		No Address Point in Parcel.
+12:49	1:X Address match error: 
+		ParcelID: 162446, 200 S MINERAL SPRINGS RD                                                        
+		Multiple Address Points. (Count: 2
+12:49	1:0 Address Point Count Error!
+		ParcelID:117960, 0 SMITH ST                                                                      
+		No Address Point in Parcel.
+12:49	1:1 Address match error: 
+		ParcelID: 137375, 11 PINNACLE RD                                                                  
+		AddressPointID: 126509.0, 11 PINNACLE RD 9999
+12:49	1:0 Address Point Count Error!
+		ParcelID:162425, 0 S MINERAL SPRINGS RD                                                          
+		No Address Point in Parcel.
+12:49	1:X Address match error: 
+		ParcelID: 118534, 1412 SOUTH ST                                                                   
+		Multiple Address Points. (Count: 2
+12:50	1:0 Address Point Count Error!
+		ParcelID:158702, 0 HURSEY ST                                                                     
+		No Address Point in Parcel.
+12:50	1:1 Address match error: 
+		ParcelID: 137332, 87 STONERIDGE RD                                                                
+		AddressPointID: 126503.0, 87 STONERIDGE RD 9999
+12:50	1:X Address match error: 
+		ParcelID: 119051, 417 LAKELAND ST                                                                 
+		Multiple Address Points. (Count: 2
+12:50	1:1 Address match error: 
+		ParcelID: 137322, 78 STONERIDGE RD                                                                
+		AddressPointID: 126502.0, 78 STONERIDGE RD 9999
+12:50	1:0 Address Point Count Error!
+		ParcelID:158693, 0 HURSEY ST                                                                     
+		No Address Point in Parcel.
+12:50	1:1 Address match error: 
+		ParcelID: 131409, 121 N ADAMS ST                                                                  
+		AddressPointID: 30369.0, 121 ADAMS RD 
+12:51	1:1 Address match error: 
+		ParcelID: 131716, 211 S ADAMS ST                                                                  
+		AddressPointID: 31602.0, 211 ADAMS RD 
+12:52	1:1 Address match error: 
+		ParcelID: 167396, 601 PATTERSON RD Unit 0000B                                                     
+		AddressPointID: 101651.0, 601 PATTERSON RD 0000B
+12:52	1:1 Address match error: 
+		ParcelID: 112202, 1906 CARDENS LN                                                                 
+		AddressPointID: 56938.0, 1906 CARDEN LN 
+12:52	1:1 Address match error: 
+		ParcelID: 112199, 1914 CARDENS LN                                                                 
+		AddressPointID: 32973.0, 1914 CARDEN LN 
+12:52	1:1 Address match error: 
+		ParcelID: 115428, 1000 WESTWOOD DR                                                                
+		AddressPointID: 57097.0, 1023 WESTWOOD DR 
+12:52	1:1 Address match error: 
+		ParcelID: 112211, 400 CARDENS LN                                                                  
+		AddressPointID: 57112.0, 400 CARDEN ALY 
+12:52	1:X Address match error: 
+		ParcelID: 198512, 2824 ASHE ST                                                                    
+		Multiple Address Points. (Count: 3
+12:52	1:X Address match error: 
+		ParcelID: 119064, 417 EUGENE ST                                                                   
+		Multiple Address Points. (Count: 2
+12:52	1:1 Address match error: 
+		ParcelID: 137269, 70 STONERIDGE RD                                                                
+		AddressPointID: 126498.0, 70 STONERIDGE RD 9999
+12:52	1:1 Address match error: 
+		ParcelID: 118047, 907 COLFAX ST                                                                   
+		AddressPointID: 101717.0, 907 HICKORY ST 
+12:53	1:1 Address match error: 
+		ParcelID: 193795, 5583 WAKE FOREST HWY                                                            
+		AddressPointID: 129795.0, 5583 NC 98 HWY 
+12:53	1:1 Address match error: 
+		ParcelID: 132111, 702 LINDLEY DR                                                                  
+		AddressPointID: 33652.0, 704 LINDLEY DR 
+12:53	1:1 Address match error: 
+		ParcelID: 132110, 704 LINDLEY DR                                                                  
+		AddressPointID: 33696.0, 702 LINDLEY DR 
+12:53	1:0 Address Point Count Error!
+		ParcelID:171571, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+12:53	1:0 Address Point Count Error!
+		ParcelID:166230, 0 HOCUTT RD                                                                     
+		No Address Point in Parcel.
+12:54	1:0 Address Point Count Error!
+		ParcelID:165668, 0 SHERRON RD                                                                    
+		No Address Point in Parcel.
+12:54	1:1 Address match error: 
+		ParcelID: 165400, 1315 PENNOCK RD                                                                 
+		AddressPointID: 36304.0, 4200 PENNOCK RD 
+12:54	1:X Address match error: 
+		ParcelID: 117461, 906 S ALSTON AVE                                                                
+		Multiple Address Points. (Count: 4
+12:54	1:X Address match error: 
+		ParcelID: 118915, 1908 BOWEN ST                                                                   
+		Multiple Address Points. (Count: 4
+12:54	1:0 Address Point Count Error!
+		ParcelID:166332, 0 STALLINGS RD                                                                  
+		No Address Point in Parcel.
+12:54	1:X Address match error: 
+		ParcelID: 162520, 3609 WILLOW SPRINGS RD                                                          
+		Multiple Address Points. (Count: 2
+12:54	1:1 Address match error: 
+		ParcelID: 117433, 411 MOLINE ST                                                                   
+		AddressPointID: 130573.0, 411 MOLINE ST A
+12:54	1:1 Address match error: 
+		ParcelID: 166306, 4804 WAKE FOREST HWY                                                            
+		AddressPointID: 33818.0, 4802 WAKE FOREST HWY 
+12:55	1:1 Address match error: 
+		ParcelID: 118812, 2527 E PETTIGREW ST                                                             
+		AddressPointID: 33859.0, 2526 E PETTIGREW ST 
+12:55	1:1 Address match error: 
+		ParcelID: 137253, 35 STONERIDGE PL                                                                
+		AddressPointID: 66071.0, 35 STONERIDGE CIR 
+12:55	1:0 Address Point Count Error!
+		ParcelID:166345, 0 STALLINGS RD                                                                  
+		No Address Point in Parcel.
+12:55	1:X Address match error: 
+		ParcelID: 118914, 1910 BOWEN ST                                                                   
+		Multiple Address Points. (Count: 2
+12:56	1:1 Address match error: 
+		ParcelID: 117189, 201 BELL ST                                                                     
+		AddressPointID: 126445.0, 201 BELL ST 9999
+12:56	1:1 Address match error: 
+		ParcelID: 173231, 2100 PEPPERTREE ST Unit 62                                                      
+		AddressPointID: 123971.0, 2100 PEPPERTREE ST 62
+12:56	1:1 Address match error: 
+		ParcelID: 173229, 2100 PEPPERTREE ST Unit 60                                                      
+		AddressPointID: 123043.0, 2100 PEPPERTREE ST 60
+12:56	1:1 Address match error: 
+		ParcelID: 173246, 2100 PEPPERTREE ST Unit 49                                                      
+		AddressPointID: 124431.0, 2100 PEPPERTREE ST 49
+12:56	1:1 Address match error: 
+		ParcelID: 173219, 2100 PEPPERTREE ST Unit 57                                                      
+		AddressPointID: 121913.0, 2100 PEPPERTREE ST 57
+12:56	1:1 Address match error: 
+		ParcelID: 173256, 3775 GUESS RD Unit 24                                                           
+		AddressPointID: 113778.0, 3775 GUESS RD 24
+12:56	1:1 Address match error: 
+		ParcelID: 173242, 2100 PEPPERTREE ST Unit 54                                                      
+		AddressPointID: 121801.0, 2100 PEPPERTREE ST 54
+12:56	1:1 Address match error: 
+		ParcelID: 173245, 2100 PEPPERTREE ST Unit 51                                                      
+		AddressPointID: 123626.0, 2100 PEPPERTREE ST 51
+12:56	1:1 Address match error: 
+		ParcelID: 173271, 3775 GUESS RD Unit 3                                                            
+		AddressPointID: 112878.0, 3775 GUESS RD 3
+12:56	1:X Address match error: 
+		ParcelID: 127319, 1915 PEPPERTREE ST                                                              
+		Multiple Address Points. (Count: 2
+12:56	1:0 Address Point Count Error!
+		ParcelID:171566, 0 ELECTRA RD                                                                    
+		No Address Point in Parcel.
+12:56	1:1 Address match error: 
+		ParcelID: 127249, 2504 STADIUM DR                                                                 
+		AddressPointID: 15253.0, 2504 STADIUM DR D
+12:56	1:1 Address match error: 
+		ParcelID: 127231, 2408 STADIUM DR                                                                 
+		AddressPointID: 15631.0, 2408 STADIUM DR E
+12:56	1:1 Address match error: 
+		ParcelID: 127226, 2402 STADIUM DR                                                                 
+		AddressPointID: 15698.0, 2402 STADIUM DR C
+12:56	1:1 Address match error: 
+		ParcelID: 173764, 9 MOOREFIELD CT                                                                 
+		AddressPointID: 113916.0, 9 MOREFIELD CT 
+12:56	1:1 Address match error: 
+		ParcelID: 173721, 10 JUSTIN CT                                                                    
+		AddressPointID: 126618.0, 10 JUSTIN CT 9999
+12:56	1:X Address match error: 
+		ParcelID: 196374, 4210 N ROXBORO ST                                                               
+		Multiple Address Points. (Count: 7
+12:57	1:1 Address match error: 
+		ParcelID: 170227, 3812 WILDROSE DR                                                                
+		AddressPointID: 98114.0, 3812 WILDROSE RD 
+12:57	1:1 Address match error: 
+		ParcelID: 107546, 2392 S ROXBORO ST                                                               
+		AddressPointID: 61420.0, 2300 PINECREST RD 
+12:58	1:0 Address Point Count Error!
+		ParcelID:118808, 0 S BRIGGS AVE                                                                  
+		No Address Point in Parcel.
+12:58	1:1 Address match error: 
+		ParcelID: 138893, 3136 PICKETT RD                                                                 
+		AddressPointID: 59542.0, 3120 PICKETT RD 
+12:58	1:0 Address Point Count Error!
+		ParcelID:117014, 0 S ROXBORO ST                                                                  
+		No Address Point in Parcel.
+12:58	1:0 Address Point Count Error!
+		ParcelID:166229, 0 HOCUTT RD                                                                     
+		No Address Point in Parcel.
+12:59	1:1 Address match error: 
+		ParcelID: 130961, 214 EAST END AVE                                                                
+		AddressPointID: 34084.0, 3000 ROWENA AVE 
+12:59	1:1 Address match error: 
+		ParcelID: 129818, 702 USHER ST                                                                    
+		AddressPointID: 20156.0, 700 USHER ST 
+12:59	1:1 Address match error: 
+		ParcelID: 162488, 225 S NORTHVALE LN                                                              
+		AddressPointID: 218414.0, 225 NORTHVALE LN 
+13:00	1:1 Address match error: 
+		ParcelID: 117654, 908 E LAWSON ST                                                                 
+		AddressPointID: 126448.0, 908 LAWSON ST 
+13:00	1:0 Address Point Count Error!
+		ParcelID:166237, 0 HOCUTT RD                                                                     
+		No Address Point in Parcel.
+13:00	1:0 Address Point Count Error!
+		ParcelID:166238, 0 HOCUTT RD                                                                     
+		No Address Point in Parcel.
+13:00	1:1 Address match error: 
+		ParcelID: 162492, 226 S NORTHVALE LN                                                              
+		AddressPointID: 218418.0, 226 NORTHVALE LN 
+13:01	1:1 Address match error: 
+		ParcelID: 118809, 1852 E LAWSON ST                                                                
+		AddressPointID: 34547.0, 2702 NC 147 HWY 
+13:01	1:1 Address match error: 
+		ParcelID: 166089, 505 VAN DR                                                                      
+		AddressPointID: 129674.0, 505 VAN ST 
+13:01	1:1 Address match error: 
+		ParcelID: 158434, 3308 GIBSON RD                                                                  
+		AddressPointID: 130607.0, 3308 GIBSON BLVD 
+13:01	1:1 Address match error: 
+		ParcelID: 162556, 228 S NORTHVALE LN                                                              
+		AddressPointID: 218419.0, 228 NORTHVALE LN 
+13:01	1:0 Address Point Count Error!
+		ParcelID:162545, 0 GIBSON RD                                                                     
+		No Address Point in Parcel.
+13:02	1:1 Address match error: 
+		ParcelID: 130980, 3118 ROWENA AVE                                                                 
+		AddressPointID: 34628.0, 100 DRAYMORE ST 
+13:02	1:0 Address Point Count Error!
+		ParcelID:162610, 0 S MINERAL SPRINGS RD                                                          
+		No Address Point in Parcel.
+13:02	1:1 Address match error: 
+		ParcelID: 121259, 111 W WOODRIDGE DR                                                              
+		AddressPointID: 60406.0, 111 WOODRIDGE DR 
+13:02	1:X Address match error: 
+		ParcelID: 117672, 1102 DAYTON ST                                                                  
+		Multiple Address Points. (Count: 11
+13:02	1:0 Address Point Count Error!
+		ParcelID:162546, 0 GIBSON RD                                                                     
+		No Address Point in Parcel.
+13:04	1:1 Address match error: 
+		ParcelID: 116950, 520 MARTHA ST                                                                   
+		AddressPointID: 61504.0, 522 MARTHA ST 
+13:04	1:1 Address match error: 
+		ParcelID: 106982, 2148 CHARLES ST                                                                 
+		AddressPointID: 61653.0, 2146 CHARLES ST 
+13:04	1:1 Address match error: 
+		ParcelID: 106992, 2146 CHARLES ST Unit 11                                                         
+		AddressPointID: 61727.0, 2146 CHARLES ST 11
+13:04	1:1 Address match error: 
+		ParcelID: 106994, 2146 CHARLES ST Unit 13                                                         
+		AddressPointID: 61744.0, 2146 CHARLES ST 13
+13:05	1:0 Address Point Count Error!
+		ParcelID:166157, 0 KEITH ST                                                                      
+		No Address Point in Parcel.
+13:05	1:1 Address match error: 
+		ParcelID: 116934, 2200 LINCOLN ST                                                                 
+		AddressPointID: 91710.0, 700 CECIL ST 
+13:05	1:1 Address match error: 
+		ParcelID: 139052, 4002 PEACHWAY DR                                                                
+		AddressPointID: 61591.0, 4002 PEACHWAY CT 
+13:05	1:0 Address Point Count Error!
+		ParcelID:165702, 0 VESTRIAL LN                                                                   
+		No Address Point in Parcel.
+13:05	1:1 Address match error: 
+		ParcelID: 106998, 2146 CHARLES ST Unit 17                                                         
+		AddressPointID: 61784.0, 2146 CHARLES ST 17
+13:05	1:1 Address match error: 
+		ParcelID: 106991, 2146 CHARLES ST Unit 10                                                         
+		AddressPointID: 61808.0, 2146 CHARLES ST 10
+13:05	1:1 Address match error: 
+		ParcelID: 106989, 2146 CHARLES ST Unit 08                                                         
+		AddressPointID: 61846.0, 2146 CHARLES ST 8
+13:05	1:X Address match error: 
+		ParcelID: 116916, 515 MARTHA ST                                                                   
+		Multiple Address Points. (Count: 2
+13:05	1:1 Address match error: 
+		ParcelID: 133307, 822 JOE LOUIS BLVD                                                              
+		AddressPointID: 65033.0, 800 JOE LOUIS BLVD 
+13:05	1:1 Address match error: 
+		ParcelID: 107036, 2146 CHARLES ST Unit 19                                                         
+		AddressPointID: 61890.0, 2146 CHARLES ST 19
+13:05	1:1 Address match error: 
+		ParcelID: 116119, 2501 FAYETTEVILLE ST                                                            
+		AddressPointID: 61914.0, 2521 FAYETTEVILLE ST 
+13:05	1:X Address match error: 
+		ParcelID: 116711, 508 BURLINGTON AVE                                                              
+		Multiple Address Points. (Count: 2
+13:05	1:1 Address match error: 
+		ParcelID: 106984, 2146 CHARLES ST Unit 03                                                         
+		AddressPointID: 62006.0, 2146 CHARLES ST 3
+13:05	1:1 Address match error: 
+		ParcelID: 107027, 2146 CHARLES ST Unit 28                                                         
+		AddressPointID: 62027.0, 2146 CHARLES ST 28
+13:06	1:1 Address match error: 
+		ParcelID: 107007, 2146 CHARLES ST Unit 48                                                         
+		AddressPointID: 62063.0, 2146 CHARLES ST 48
+13:06	1:1 Address match error: 
+		ParcelID: 107009, 2146 CHARLES ST Unit 46                                                         
+		AddressPointID: 62088.0, 2146 CHARLES ST 46
+13:06	1:1 Address match error: 
+		ParcelID: 107014, 2146 CHARLES ST Unit 41                                                         
+		AddressPointID: 62125.0, 2146 CHARLES ST 41
+13:06	1:1 Address match error: 
+		ParcelID: 106996, 2146 CHARLES ST Unit 15                                                         
+		AddressPointID: 61761.0, 2146 CHARLES ST 15
+13:06	1:1 Address match error: 
+		ParcelID: 106988, 2146 CHARLES ST Unit 07                                                         
+		AddressPointID: 61860.0, 2146 CHARLES ST 7
+13:06	1:1 Address match error: 
+		ParcelID: 107034, 2146 CHARLES ST Unit 21                                                         
+		AddressPointID: 61935.0, 2146 CHARLES ST 21
+13:06	1:1 Address match error: 
+		ParcelID: 107000, 2146 CHARLES ST Unit 51                                                         
+		AddressPointID: 61942.0, 2146 CHARLES ST 55
+13:06	1:1 Address match error: 
+		ParcelID: 106986, 2146 CHARLES ST Unit 05                                                         
+		AddressPointID: 61954.0, 2146 CHARLES ST 5
+13:06	1:1 Address match error: 
+		ParcelID: 106997, 2146 CHARLES ST Unit 16                                                         
+		AddressPointID: 61777.0, 2146 CHARLES ST 16
+13:06	1:1 Address match error: 
+		ParcelID: 106990, 2146 CHARLES ST Unit 09                                                         
+		AddressPointID: 61837.0, 2146 CHARLES ST 9
+13:06	1:1 Address match error: 
+		ParcelID: 139049, 4003 PEACHWAY DR                                                                
+		AddressPointID: 61783.0, 4003 PEACHWAY CT 
+13:06	1:1 Address match error: 
+		ParcelID: 107035, 2146 CHARLES ST Unit 20                                                         
+		AddressPointID: 61902.0, 2146 CHARLES ST 20
+13:07	1:1 Address match error: 
+		ParcelID: 133320, 819 ARMSTRONG AVE                                                               
+		AddressPointID: 65245.0, 800 ARMSTRONG AVE 
+13:07	1:1 Address match error: 
+		ParcelID: 106987, 2146 CHARLES ST Unit 06                                                         
+		AddressPointID: 61886.0, 2146 CHARLES ST 6
+13:07	1:1 Address match error: 
+		ParcelID: 107033, 2146 CHARLES ST Unit 22                                                         
+		AddressPointID: 61946.0, 2146 CHARLES ST 22
+13:07	1:1 Address match error: 
+		ParcelID: 107001, 2146 CHARLES ST Unit 52                                                         
+		AddressPointID: 61968.0, 2146 CHARLES ST 54
+13:07	1:1 Address match error: 
+		ParcelID: 107002, 2146 CHARLES ST Unit 53                                                         
+		AddressPointID: 61990.0, 2146 CHARLES ST 53
+13:07	1:1 Address match error: 
+		ParcelID: 107023, 2146 CHARLES ST Unit 32                                                         
+		AddressPointID: 62084.0, 2146 CHARLES ST 32
+13:07	1:1 Address match error: 
+		ParcelID: 107021, 2146 CHARLES ST Unit 34                                                         
+		AddressPointID: 62128.0, 2146 CHARLES ST 34
+13:07	1:1 Address match error: 
+		ParcelID: 107032, 2146 CHARLES ST Unit 23                                                         
+		AddressPointID: 61956.0, 2146 CHARLES ST 23
+13:07	1:1 Address match error: 
+		ParcelID: 165531, 4206 SHERRON RD                                                                 
+		AddressPointID: 35726.0, 4206 HOLDER RD 
+13:07	1:1 Address match error: 
+		ParcelID: 162787, 926 ALLISTER RD                                                                 
+		AddressPointID: 35913.0, 929 ALLISTER RD 
+13:07	1:1 Address match error: 
+		ParcelID: 107003, 2146 CHARLES ST Unit 54                                                         
+		AddressPointID: 62011.0, 2146 CHARLES ST 52
+13:07	1:1 Address match error: 
+		ParcelID: 107006, 2146 CHARLES ST Unit 49                                                         
+		AddressPointID: 62053.0, 2146 CHARLES ST 49
+13:07	1:1 Address match error: 
+		ParcelID: 107008, 2146 CHARLES ST Unit 47                                                         
+		AddressPointID: 62078.0, 2146 CHARLES ST 47
+13:07	1:1 Address match error: 
+		ParcelID: 106995, 2146 CHARLES ST Unit 14                                                         
+		AddressPointID: 61746.0, 2146 CHARLES ST 14
+13:07	1:1 Address match error: 
+		ParcelID: 121908, 3100 UNIVERSITY DR                                                              
+		AddressPointID: 61804.0, 3100 UNIVERSITY RD 
+13:07	1:1 Address match error: 
+		ParcelID: 196818, 4123 BRANCHWOOD DR                                                              
+		AddressPointID: 101882.0, 4123 BRANCHWOOD RD 
+13:07	1:1 Address match error: 
+		ParcelID: 106985, 2146 CHARLES ST Unit 04                                                         
+		AddressPointID: 61983.0, 2146 CHARLES ST 4
+13:07	1:1 Address match error: 
+		ParcelID: 107028, 2146 CHARLES ST Unit 27                                                         
+		AddressPointID: 62015.0, 2146 CHARLES ST 27
+13:07	1:1 Address match error: 
+		ParcelID: 107004, 2146 CHARLES ST Unit 55                                                         
+		AddressPointID: 62034.0, 2146 CHARLES ST 51
+13:07	1:1 Address match error: 
+		ParcelID: 107024, 2146 CHARLES ST Unit 31                                                         
+		AddressPointID: 62067.0, 2146 CHARLES ST 31
+13:07	1:1 Address match error: 
+		ParcelID: 107016, 2146 CHARLES ST Unit 39                                                         
+		AddressPointID: 62227.0, 2146 CHARLES ST 39
+13:07	1:1 Address match error: 
+		ParcelID: 107543, 2372 S ROXBORO ST                                                               
+		AddressPointID: 62047.0, 2300 PINECREST RD 
+13:07	1:1 Address match error: 
+		ParcelID: 138919, 3903 COTTONWOOD DR                                                              
+		AddressPointID: 62108.0, 4102 HULON DR 
+13:07	1:1 Address match error: 
+		ParcelID: 107011, 2146 CHARLES ST Unit 44                                                         
+		AddressPointID: 62162.0, 2146 CHARLES ST 44
+13:07	1:1 Address match error: 
+		ParcelID: 107012, 2146 CHARLES ST Unit 43                                                         
+		AddressPointID: 62153.0, 2146 CHARLES ST 43
+13:07	1:1 Address match error: 
+		ParcelID: 107010, 2146 CHARLES ST Unit 45                                                         
+		AddressPointID: 62168.0, 2146 CHARLES ST 45
+13:08	1:1 Address match error: 
+		ParcelID: 107030, 2146 CHARLES ST Unit 25                                                         
+		AddressPointID: 61991.0, 2146 CHARLES ST 25
+13:08	1:1 Address match error: 
+		ParcelID: 107029, 2146 CHARLES ST Unit 26                                                         
+		AddressPointID: 62004.0, 2146 CHARLES ST 26
+13:08	1:1 Address match error: 
+		ParcelID: 107026, 2146 CHARLES ST Unit 29                                                         
+		AddressPointID: 62023.0, 2146 CHARLES ST 29
+13:08	1:1 Address match error: 
+		ParcelID: 107020, 2146 CHARLES ST Unit 35                                                         
+		AddressPointID: 62161.0, 2146 CHARLES ST 35
+13:08	1:1 Address match error: 
+		ParcelID: 116792, 2405 CHAPIN ST                                                                  
+		AddressPointID: 62286.0, 2405 CHAPIN AVE 
+13:08	1:1 Address match error: 
+		ParcelID: 193434, 427 OLIVE BRANCH RD                                                             
+		AddressPointID: 35920.0, 421 OLIVE BRANCH RD 
+13:08	1:1 Address match error: 
+		ParcelID: 107022, 2146 CHARLES ST Unit 33                                                         
+		AddressPointID: 62113.0, 2146 CHARLES ST 33
+13:08	1:1 Address match error: 
+		ParcelID: 122085, 400 BROOKWOOD DR                                                                
+		AddressPointID: 62133.0, 400 WOODRIDGE DR 
+13:08	1:1 Address match error: 
+		ParcelID: 107015, 2146 CHARLES ST Unit 40                                                         
+		AddressPointID: 62114.0, 2146 CHARLES ST 40
+13:08	1:1 Address match error: 
+		ParcelID: 107019, 2146 CHARLES ST Unit 36                                                         
+		AddressPointID: 62179.0, 2146 CHARLES ST 36
+13:08	1:0 Address Point Count Error!
+		ParcelID:166063, 0 VAN DR                                                                        
+		No Address Point in Parcel.
+13:08	1:1 Address match error: 
+		ParcelID: 107031, 2146 CHARLES ST Unit 24                                                         
+		AddressPointID: 61976.0, 2146 CHARLES ST 24
+13:09	1:1 Address match error: 
+		ParcelID: 132721, 1900 GILMORE AVE                                                                
+		AddressPointID: 62495.0, 1910 GILMORE AVE 
+13:09	1:1 Address match error: 
+		ParcelID: 122078, 300 BROOKWOOD DR                                                                
+		AddressPointID: 62432.0, 300 WOODRIDGE DR 
+13:09	1:1 Address match error: 
+		ParcelID: 132720, 1906 GILMORE AVE                                                                
+		AddressPointID: 62447.0, 1900 GILMORE AVE 
+13:09	1:1 Address match error: 
+		ParcelID: 122086, 300 BROOKWOOD DR                                                                
+		AddressPointID: 62553.0, 300 WOODRIDGE DR 
+13:10	1:1 Address match error: 
+		ParcelID: 106983, 2146 CHARLES ST Unit 02                                                         
+		AddressPointID: 62029.0, 2146 CHARLES ST 2
+13:10	1:1 Address match error: 
+		ParcelID: 107025, 2146 CHARLES ST Unit 30                                                         
+		AddressPointID: 62048.0, 2146 CHARLES ST 30
+13:10	1:1 Address match error: 
+		ParcelID: 107018, 2146 CHARLES ST Unit 37                                                         
+		AddressPointID: 62197.0, 2146 CHARLES ST 37
+13:10	1:X Address match error: 
+		ParcelID: 156684, 1222 HEARTHSIDE ST                                                              
+		Multiple Address Points. (Count: 4
+13:10	1:1 Address match error: 
+		ParcelID: 122087, 400 BROOKWOOD DR                                                                
+		AddressPointID: 62354.0, 400 WOODRIDGE DR 
+13:10	1:1 Address match error: 
+		ParcelID: 116817, 617 NASH ST                                                                     
+		AddressPointID: 131636.0, 2420 CHAPIN ST 
+13:10	1:1 Address match error: 
+		ParcelID: 132734, 1910 GILMORE AVE                                                                
+		AddressPointID: 62446.0, 1906 GILMORE AVE 
+13:10	1:X Address match error: 
+		ParcelID: 156635, 1207 HEARTHSIDE ST                                                              
+		Multiple Address Points. (Count: 5
+13:10	1:X Address match error: 
+		ParcelID: 123153, 3505 UNIVERSITY DR                                                              
+		Multiple Address Points. (Count: 3
+13:11	1:1 Address match error: 
+		ParcelID: 128672, 3400 N ROXBORO ST                                                               
+		AddressPointID: 100636.0, 3400 ROXBORO ST 
+13:11	1:1 Address match error: 
+		ParcelID: 168596, 3309 GLENN RD                                                                   
+		AddressPointID: 100690.0, 3309 GLEN RD 
+13:11	1:1 Address match error: 
+		ParcelID: 129440, 1008 DA VINCI ST                                                                
+		AddressPointID: 126398.0, 1008 DA VINCI ST A
+13:11	1:X Address match error: 
+		ParcelID: 128735, 3012 BANNER ST                                                                  
+		Multiple Address Points. (Count: 2
+13:11	1:1 Address match error: 
+		ParcelID: 128985, 2804 LINDBERGH ST                                                               
+		AddressPointID: 42369.0, 2800 LINDBERGH ST 
+13:12	1:1 Address match error: 
+		ParcelID: 130058, 1317 E CLUB BLVD                                                                
+		AddressPointID: 24026.0, 1363 E CLUB BLVD 
+13:12	1:1 Address match error: 
+		ParcelID: 174422, 4019 NEAL RD                                                                    
+		AddressPointID: 42641.0, 4019 NEAL RD B
+13:12	1:1 Address match error: 
+		ParcelID: 129072, 821 E LAVENDER AVE                                                              
+		AddressPointID: 43115.0, 900 E LAVENDER AVE 
+13:12	1:1 Address match error: 
+		ParcelID: 100956, 2117 GUESS RD                                                                   
+		AddressPointID: 43524.0, 2101 GUESS RD
+13:12	1:1 Address match error: 
+		ParcelID: 193941, 1923 SHAW RD                                                                    
+		AddressPointID: 24374.0, 1923 SANTEE RD 
+13:12	1:1 Address match error: 
+		ParcelID: 120146, 712 E LAVENDER AVE                                                              
+		AddressPointID: 43582.0, 700 E LAVENDER AVE 
+13:12	1:X Address match error: 
+		ParcelID: 109061, 100 W CLUB BLVD                                                                 
+		Multiple Address Points. (Count: 2
+13:12	1:1 Address match error: 
+		ParcelID: 174663, 28 FOREST GREEN DR                                                              
+		AddressPointID: 126652.0, 28 FOREST GREEN DR 9999
+13:12	1:1 Address match error: 
+		ParcelID: 174678, 25 FOREST GREEN DR                                                              
+		AddressPointID: 126656.0, 25 FOREST GREEN DR 9999
+13:13	1:1 Address match error: 
+		ParcelID: 159781, 1717 E GEER ST                                                                  
+		AddressPointID: 126562.0, 1717 E GEER ST 9999
+13:13	1:1 Address match error: 
+		ParcelID: 123328, 2721 BEXLEY AVE                                                                 
+		AddressPointID: 62912.0, 2700 BEXLEY AVE 
+13:13	1:1 Address match error: 
+		ParcelID: 116251, 2506 LANE ST                                                                    
+		AddressPointID: 63086.0, 2504 LANE ST 
+13:14	1:1 Address match error: 
+		ParcelID: 116252, 2552 LANE ST                                                                    
+		AddressPointID: 63120.0, 2506 LANE ST 
+13:15	1:1 Address match error: 
+		ParcelID: 122288, 109 PARQUET ST                                                                  
+		AddressPointID: 101997.0, 109 E PARQUET ST 
+13:15	1:1 Address match error: 
+		ParcelID: 137091, 3524 UNIVERSITY DR                                                              
+		AddressPointID: 63892.0, 4200 UNIVERSITY DR 
+13:16	1:1 Address match error: 
+		ParcelID: 123663, 19 GLENMORE DR                                                                  
+		AddressPointID: 64101.0, 19 GLENMORE DR A
+13:16	1:1 Address match error: 
+		ParcelID: 133243, 815 RED OAK AVE                                                                 
+		AddressPointID: 64197.0, 800 RED OAK AVE 
+13:16	1:1 Address match error: 
+		ParcelID: 133239, 821 RED OAK AVE                                                                 
+		AddressPointID: 64306.0, 800 RED OAK AVE 
+13:16	1:1 Address match error: 
+		ParcelID: 133337, 720 MCLAURIN AVE                                                                
+		AddressPointID: 64485.0, 700 MCLAURIN AVE 
+13:16	1:1 Address match error: 
+		ParcelID: 133334, 719 JOE LOUIS BLVD                                                              
+		AddressPointID: 64499.0, 700 JOE LOUIS BLVD 
+13:16	1:1 Address match error: 
+		ParcelID: 133274, 802 MCLAURIN AVE                                                                
+		AddressPointID: 64593.0, 800 MCLAURIN AVE 
+13:16	1:1 Address match error: 
+		ParcelID: 133348, 718 JOE LOUIS BLVD                                                              
+		AddressPointID: 64620.0, 700 JOE LOUIS BLVD 
+13:16	1:1 Address match error: 
+		ParcelID: 133342, 715 MILLBROOK AVE                                                               
+		AddressPointID: 64635.0, 700 MILLBROOK AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133265, 819 MCLAURIN AVE                                                                
+		AddressPointID: 64728.0, 800 MCLAURIN AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133287, 812 MCLAURIN AVE                                                                
+		AddressPointID: 64779.0, 800 MCLAURIN AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133294, 803 MILLBROOK AVE                                                               
+		AddressPointID: 64899.0, 800 MILLBROOK AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133338, 718 MCLAURIN AVE                                                                
+		AddressPointID: 64443.0, 700 MCLAURIN AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133309, 814 JOE LOUIS BLVD                                                              
+		AddressPointID: 64944.0, 800 JOE LOUIS BLVD 
+13:17	1:1 Address match error: 
+		ParcelID: 133299, 813 MILLBROOK AVE                                                               
+		AddressPointID: 65010.0, 800 MILLBROOK AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133336, 723 JOE LOUIS BLVD                                                              
+		AddressPointID: 64591.0, 700 JOE LOUIS BLVD 
+13:17	1:1 Address match error: 
+		ParcelID: 133341, 713 MILLBROOK AVE                                                               
+		AddressPointID: 64612.0, 700 MILLBROOK AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133359, 702 MILLBROOK AVE                                                               
+		AddressPointID: 64475.0, 700 MILLBROOK AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133350, 714 JOE LOUIS BLVD                                                              
+		AddressPointID: 64516.0, 700 JOE LOUIS BLVD 
+13:17	1:0 Address Point Count Error!
+		ParcelID:116377, 700 MILLBROOK AVE                                                               
+		No Address Point in Parcel.
+13:17	1:1 Address match error: 
+		ParcelID: 133326, 820 MILLBROOK AVE                                                               
+		AddressPointID: 65166.0, 800 MILLBROOK AVE 
+13:17	1:1 Address match error: 
+		ParcelID: 133322, 823 ARMSTRONG AVE                                                               
+		AddressPointID: 65280.0, 800 ARMSTRONG AVE 
+13:18	1:1 Address match error: 
+		ParcelID: 133263, 701 HEMLOCK AVE                                                                 
+		AddressPointID: 64807.0, 900 HEMLOCK AVE 
+13:18	1:1 Address match error: 
+		ParcelID: 133347, 720 JOE LOUIS BLVD                                                              
+		AddressPointID: 64664.0, 700 JOE LOUIS BLVD 
+13:18	1:1 Address match error: 
+		ParcelID: 133358, 706 MILLBROOK AVE                                                               
+		AddressPointID: 64494.0, 700 MILLBROOK AVE 
+13:18	1:1 Address match error: 
+		ParcelID: 133335, 721 JOE LOUIS BLVD                                                              
+		AddressPointID: 64563.0, 700 JOE LOUIS BLVD 
+13:18	1:1 Address match error: 
+		ParcelID: 133291, 804 MCLAURIN AVE                                                                
+		AddressPointID: 64628.0, 800 MCLAURIN AVE 
+13:18	1:0 Address Point Count Error!
+		ParcelID:133580, 2251 WISE PL                                                                    
+		No Address Point in Parcel.
+13:18	1:1 Address match error: 
+		ParcelID: 133280, 817 JOE LOUIS BLVD                                                              
+		AddressPointID: 64858.0, 810 JOE LOUIS BLVD 
+13:18	1:1 Address match error: 
+		ParcelID: 133240, 819 RED OAK AVE                                                                 
+		AddressPointID: 64267.0, 800 RED OAK AVE 
+13:18	1:1 Address match error: 
+		ParcelID: 133289, 808 MCLAURIN AVE                                                                
+		AddressPointID: 64724.0, 800 JOE LOUIS BLVD 
+13:18	1:1 Address match error: 
+		ParcelID: 133244, 810 RED OAK AVE                                                                 
+		AddressPointID: 64256.0, 800 RED OAK AVE 
+13:18	1:1 Address match error: 
+		ParcelID: 132892, 2000 S ALSTON AVE                                                               
+		AddressPointID: 64271.0, 2019 S ALSTON AVE A
+13:18	1:1 Address match error: 
+		ParcelID: 133344, 719 MILLBROOK AVE                                                               
+		AddressPointID: 64684.0, 700 MILLBROOK AVE 
+13:18	1:1 Address match error: 
+		ParcelID: 163060, 1455 RURITAN RD                                                                 
+		AddressPointID: 130045.0, 1455 RURITAN DR 
+13:18	1:1 Address match error: 
+		ParcelID: 116477, 3307 FAYETTEVILLE ST                                                            
+		AddressPointID: 65505.0, 3309 FAYETTEVILLE ST 
+13:18	1:1 Address match error: 
+		ParcelID: 133302, 819 MILLBROOK AVE                                                               
+		AddressPointID: 65076.0, 800 MILLBROOK AVE 
+13:18	1:1 Address match error: 
+		ParcelID: 133303, 821 MILLBROOK AVE                                                               
+		AddressPointID: 65116.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133311, 808 JOE LOUIS BLVD                                                              
+		AddressPointID: 64853.0, 800 JOE LOUIS BLVD 
+13:19	1:1 Address match error: 
+		ParcelID: 133310, 812 JOE LOUIS BLVD                                                              
+		AddressPointID: 64904.0, 800 JOE LOUIS BLVD 
+13:19	1:1 Address match error: 
+		ParcelID: 133296, 807 MILLBROOK AVE                                                               
+		AddressPointID: 64937.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133373, 702 HEMLOCK AVE                                                                 
+		AddressPointID: 64993.0, 1000 HEMLOCK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133131, 706 ALEXANDER AVE                                                               
+		AddressPointID: 64629.0, 706 GASTON AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133332, 806 MILLBROOK AVE                                                               
+		AddressPointID: 65012.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133316, 807 ARMSTRONG AVE                                                               
+		AddressPointID: 65112.0, 800 ARMSTRONG AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 124079, 232 BARNHILL ST                                                                 
+		AddressPointID: 102155.0, 232 BARNHILL AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133339, 709 MILLBROOK AVE                                                               
+		AddressPointID: 64504.0, 100 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133349, 716 JOE LOUIS BLVD                                                              
+		AddressPointID: 64581.0, 700 JOE LOUIS BLVD 
+13:19	1:1 Address match error: 
+		ParcelID: 133357, 710 MILLBROOK AVE                                                               
+		AddressPointID: 64653.0, 700 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133290, 806 MCLAURIN AVE                                                                
+		AddressPointID: 64677.0, 800 MCLAURIN AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133292, 802 JOE LOUIS BLVD                                                              
+		AddressPointID: 64763.0, 800 JOE LOUIS BLVD 
+13:19	1:1 Address match error: 
+		ParcelID: 133284, 827 JOE LOUIS BLVD                                                              
+		AddressPointID: 64979.0, 800 JOE LOUIS BLVD 
+13:19	1:1 Address match error: 
+		ParcelID: 133313, 2917 GADDY ST                                                                   
+		AddressPointID: 64948.0, 2700 GADDY ST 
+13:19	1:1 Address match error: 
+		ParcelID: 133297, 809 MILLBROOK AVE                                                               
+		AddressPointID: 64970.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133298, 811 MILLBROOK AVE                                                               
+		AddressPointID: 64985.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133301, 817 MILLBROOK AVE                                                               
+		AddressPointID: 65056.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133321, 821 ARMSTRONG AVE                                                               
+		AddressPointID: 65274.0, 800 ARMSTRONG AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133323, 825 ARMSTRONG AVE                                                               
+		AddressPointID: 65297.0, 800 ARMSTRONG AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133356, 712 MILLBROOK AVE                                                               
+		AddressPointID: 64698.0, 700 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133355, 714 MILLBROOK AVE                                                               
+		AddressPointID: 64721.0, 700 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133346, 723 MILLBROOK AVE                                                               
+		AddressPointID: 64784.0, 700 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 134679, 227 NORTH REYNOLDS AVE                                                          
+		AddressPointID: 66830.0, 227 REYNOLDS AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133300, 815 MILLBROOK AVE                                                               
+		AddressPointID: 65047.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133315, 805 ARMSTRONG AVE                                                               
+		AddressPointID: 65093.0, 800 ARMSTRONG AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133330, 810 MILLBROOK AVE                                                               
+		AddressPointID: 65099.0, 800 MILLBROOK AVE 
+13:19	1:1 Address match error: 
+		ParcelID: 133372, 614 HEMLOCK AVE                                                                 
+		AddressPointID: 65125.0, 1000 HEMLOCK AVE 
+13:20	1:1 Address match error: 
+		ParcelID: 133262, 708 HEMLOCK AVE                                                                 
+		AddressPointID: 97954.0, 708 HEMLOCK ST 
+13:20	1:1 Address match error: 
+		ParcelID: 133308, 818 JOE LOUIS BLVD                                                              
+		AddressPointID: 64975.0, 800 JOE LOUIS BLVD 
+13:20	1:1 Address match error: 
+		ParcelID: 133283, 825 JOE LOUIS BLVD                                                              
+		AddressPointID: 64951.0, 816 JOE LOUIS BLVD 
+13:20	1:1 Address match error: 
+		ParcelID: 124092, 2507 WILLOWDALE DR                                                              
+		AddressPointID: 65622.0, 700 WILLOWDALE DR 
+13:20	1:1 Address match error: 
+		ParcelID: 134668, 109 NORTH REYNOLDS AVE                                                          
+		AddressPointID: 66418.0, 109 REYNOLDS AVE 
+13:20	1:0 Address Point Count Error!
+		ParcelID:124049, 290 ARCHDALE DR                                                                 
+		No Address Point in Parcel.
+13:20	1:X Address match error: 
+		ParcelID: 109763, 1407 AVONDALE DR                                                                
+		Multiple Address Points. (Count: 5
+13:20	1:X Address match error: 
+		ParcelID: 110770, 1411 GEARWOOD AVE                                                               
+		Multiple Address Points. (Count: 2
+13:20	1:1 Address match error: 
+		ParcelID: 110959, 808 LEE ST                                                                      
+		AddressPointID: 50849.0, 808 DREW ST 
+13:20	1:1 Address match error: 
+		ParcelID: 134569, 2637 OAK RIDGE BLVD                                                             
+		AddressPointID: 66734.0, 700 WILLOWDALE DR 
+13:20	1:1 Address match error: 
+		ParcelID: 134670, 201 N REYNOLDS AVE                                                              
+		AddressPointID: 66484.0, 201 REYNOLDS AVE 
+13:20	1:1 Address match error: 
+		ParcelID: 133324, 824 MILLBROOK AVE                                                               
+		AddressPointID: 65232.0, 800 MILLBROOK AVE 
+13:20	1:0 Address Point Count Error!
+		ParcelID:163166, 3650 RIGSBEE RD                                                                 
+		No Address Point in Parcel.
+13:20	1:1 Address match error: 
+		ParcelID: 133374, 616 HEMLOCK AVE                                                                 
+		AddressPointID: 65069.0, 1000 HEMLOCK AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 133317, 809 ARMSTRONG AVE                                                               
+		AddressPointID: 65146.0, 800 ARMSTRONG AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 133318, 811 ARMSTRONG AVE                                                               
+		AddressPointID: 65161.0, 800 ARMSTRONG AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 133388, 1028 MCLAURIN AVE                                                               
+		AddressPointID: 65648.0, 1000 MCLAURIN AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 133325, 822 MILLBROOK AVE                                                               
+		AddressPointID: 65218.0, 800 MILLBROOK AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 134686, 317 N REYNOLDS AVE                                                              
+		AddressPointID: 67219.0, 317 REYNOLDS AVE 
+13:21	1:0 Address Point Count Error!
+		ParcelID:158155, 2488 GLOVER RD                                                                  
+		No Address Point in Parcel.
+13:21	1:1 Address match error: 
+		ParcelID: 133083, 1319 MCLAURIN AVE                                                               
+		AddressPointID: 66895.0, 1300 MCLAURIN AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 163059, 1459 RURITAN RD                                                                 
+		AddressPointID: 130046.0, 1459 RURITAN DR 
+13:21	1:1 Address match error: 
+		ParcelID: 134814, 304 N REYNOLDS AVE                                                              
+		AddressPointID: 67062.0, 304 REYNOLDS AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 163186, 3674 RIGSBEE RD                                                                 
+		AddressPointID: 96065.0, 3624 ANGIER AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 134801, 226 NORTH REYNOLDS AVE                                                          
+		AddressPointID: 66901.0, 226 REYNOLDS AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 163058, 1465 RURITAN RD                                                                 
+		AddressPointID: 130047.0, 1465 RURITAN DR 
+13:21	1:1 Address match error: 
+		ParcelID: 134685, 315 N REYNOLDS AVE                                                              
+		AddressPointID: 67151.0, 315 REYNOLDS AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 133540, 1754 COLLIER RD                                                                 
+		AddressPointID: 65696.0, 2300 CHICAGO ST 
+13:21	1:1 Address match error: 
+		ParcelID: 163185, 3676 RIGSBEE RD                                                                 
+		AddressPointID: 96066.0, 3652 ANGIER AVE 
+13:21	1:1 Address match error: 
+		ParcelID: 163175, 3626 RIGSBEE RD                                                                 
+		AddressPointID: 36801.0, 3630 ANGIER AVE 
+13:22	1:1 Address match error: 
+		ParcelID: 124035, 304 ARCHDALE DR                                                                 
+		AddressPointID: 65713.0, 300 ARCHDALE DR 
+13:22	1:1 Address match error: 
+		ParcelID: 163176, 3630 RIGSBEE RD                                                                 
+		AddressPointID: 36831.0, 3517 ANGIER AVE 
+13:26	1:1 Address match error: 
+		ParcelID: 190698, 108 EQUESTRIAN CHASE                                                            
+		AddressPointID: 97863.0, 108 EQUESTRIAN CHASE N/A 
+13:26	1:1 Address match error: 
+		ParcelID: 190790, 317 SHETLAND RD                                                                 
+		AddressPointID: 156.0, 13301 QUARTERHORSE RUN 
+13:26	1:1 Address match error: 
+		ParcelID: 190740, 403 LOOKOUT PT                                                                  
+		AddressPointID: 281.0, 403 LOOKOUT POINT  
+13:26	1:1 Address match error: 
+		ParcelID: 191517, 7513 STAGVILLE RD Unit 00000                                                    
+		AddressPointID: 89615.0, 7513 STAGVILLE RD 
+13:26	1:1 Address match error: 
+		ParcelID: 191650, 6815 WILEY MANGUM RD                                                            
+		AddressPointID: 2290.0, 7322 STAGVILLE RD 
+13:26	1:1 Address match error: 
+		ParcelID: 189629, 205 RED MOUNTAIN RD Unit A                                                      
+		AddressPointID: 224870.0, 205 RED MOUNTAIN RD A
+13:26	1:1 Address match error: 
+		ParcelID: 190734, 402 LOOKOUT PT                                                                  
+		AddressPointID: 295.0, 402 LOOKOUT POINT  
+13:26	1:1 Address match error: 
+		ParcelID: 189582, 111 HARRIS MILL RD                                                              
+		AddressPointID: 102.0, 111 HARRIS RD 
+13:26	1:1 Address match error: 
+		ParcelID: 190735, 408 LOOKOUT PT                                                                  
+		AddressPointID: 317.0, 408 LOOKOUT POINT  
+13:26	1:1 Address match error: 
+		ParcelID: 189697, 2859 RED VALLEY DR                                                              
+		AddressPointID: 99048.0, 206 RED MOUNTAIN RD 
+13:26	1:1 Address match error: 
+		ParcelID: 205206, 2307 MOORES MILL RD                                                             
+		AddressPointID: 595.0, 1807 MOORES MILL RD 
+13:26	1:1 Address match error: 
+		ParcelID: 190256, 10221 OLD ROXBORO RD                                                            
+		AddressPointID: 1089.0, 10221 N OLD ROXBORO RD 
+13:26	1:1 Address match error: 
+		ParcelID: 189653, 13105 N ROXBORO RD                                                              
+		AddressPointID: 98131.0, 13105 ROXBORO RD 
+13:26	1:1 Address match error: 
+		ParcelID: 191262, 8711 N ROXBORO RD                                                               
+		AddressPointID: 97055.0, 8711 ROXBORO RD 
+13:26	1:1 Address match error: 
+		ParcelID: 191833, 9827 WILKINS RD                                                                 
+		AddressPointID: 1090.0, 1827 WILKINS RD 
+13:26	1:1 Address match error: 
+		ParcelID: 191931, 11436 HAMPTON RD                                                                
+		AddressPointID: 786.0, 11536 HAMPTON RD 
+13:26	1:1 Address match error: 
+		ParcelID: 189503, 1307 BILL POOLE RD                                                              
+		AddressPointID: 830.0, 1307 HILLSBOROUGH RD 
+13:26	1:1 Address match error: 
+		ParcelID: 193164, 3204 ELLIS CHAPEL RD                                                            
+		AddressPointID: 1351.0, 3204 BUREN RD 
+13:26	1:0 Address Point Count Error!
+		ParcelID:190200, 0 US 501 HWY                                                                    
+		No Address Point in Parcel.
