@@ -23,7 +23,7 @@ def addressCheck():
                                       "OR PIN LIKE '%.DW' OR PIN LIKE '%.DG' OR PIN LIKE '%.SPL'")
     totalParcels = int(arcpy.GetCount_management("parcelLyr")[0])
     i = 0  # i is used in the progress bar to keep track of the number of '.' following "WORKING"
-    n = 0  # n is number of parcels checked, this is for the percentage in progress bar
+    n = 0  # n is number of parcels checked, this is for the percentage in progress bar in console
     for parcel in parcelCursor:
         # logmessage(parcel)
         n+=1
@@ -32,7 +32,8 @@ def addressCheck():
 
         # sys.stdout is the low-level print function that allows you to have more control of the output
         # as a result, it is able to write a line without moving to the next line.
-        # In all cases this is used for the progress bar or to operate around it.
+        # In all cases this is used for the progress bar and to move it after an update.
+        # The progressbar is useful to indicate it is running over it's 2+ hours of runtime.
         sys.stdout.write("\r[" + str(round(100 * float(n)/float(totalParcels), 2)) + "%]\tWorking" + "%s" % '.' * i)
         sys.stdout.flush()
         arcpy.SelectLayerByLocation_management("addressLyr", "INTERSECT", parcel[2], "", "NEW_SELECTION")
