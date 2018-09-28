@@ -1,0 +1,4 @@
+15:27	Error: IA/Address Point Mismatch, ParcelID: 177348
+15:34	Error: IA/Address Point Mismatch, ParcelID: 127351
+15:35	Error: IA/Address Point Mismatch, ParcelID: 127785
+15:42	Error: IA/Address Point Mismatch, ParcelID: 172366
