@@ -99,6 +99,10 @@ def main():
                         # print "\tError: IA/Address Point Mismatch, ParcelID: " + parcel[0]
                         transcribe("Error: IA/Address Point Mismatch, ParcelID: " + parcel[0])
                         break
+            # This portion checks to verify that the IA polygon's Parcel ID matches the PARCEL_ID for the parcel it is
+            # sitting on. This requires a duplicate of the IACursor SearchCursor in order to check each IA against the
+            # currently selected parcel.
+
             IACursor = arcpy.da.SearchCursor("Implyr", ['PARCELID', 'ADDRESSPOINT'])
             print "\tIA/PARCEL ID Check:"
             for IA in IACursor:
