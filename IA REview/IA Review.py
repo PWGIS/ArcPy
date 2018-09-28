@@ -15,7 +15,7 @@ def main():
     arcpy.MakeFeatureLayer_management(connection + "/GIS_Data.A1.AddressFeatures/GIS_Data.A1.ActiveAddressPoints", "APlyr")
     print "AP Layer"
     arcpy.MakeFeatureLayer_management(connection + "/GIS_Data.A1.TaxData/GIS_Data.A1.Parcels", "Parcellyr",
-                                      'PIN NOT LIKE \'%.%\'OR PIN LIKE \'%.000\' OR PIN LIKE \'%.L00\' OR PIN LIKE \'%.DO\' OR PIN LIKE \'%.DW\' OR PIN LIKE \'%.DG\' OR PIN LIKE \'%.SPL\'')
+                                      'PIN NOT LIKE \'%.%\'OR PIN LIKE \'%.000\' OR PIN LIKE \'%.L00\' OR PIN LIKE \'%.DO\' OR PIN LIKE \'%.DW\' OR PIN LIKE \'%.DG\' OR PIN LIKE \'%.SPL\' OR PIN LIKE \'%.DUR\'')
     print "Parcel Layer"
     totalParcels = int(arcpy.GetCount_management("parcelLyr")[0])
     print totalParcels
@@ -68,7 +68,7 @@ def main():
             #
             #       ELSE i++
             for ap in APCursor:
-                print "\t AP: " + str(ap[0]), i
+                print "\tAP: " + str(ap[0]), i
                 if ap[0] == IACursor[1]:
                     APID = ap[0]
                     print "\tmatch found AP\ID " + str(APID) + ", IA\APID " + str(IACursor[1])
@@ -92,12 +92,20 @@ def main():
                 #           ERROR: Parcel Contains incorrect AP : IMP assignmentgn
                 #           Break
                 IACursor = arcpy.da.SearchCursor("Implyr", ['PARCELID', 'ADDRESSPOINT'])
+                print "\tIA/APID Check:"
                 for IA in IACursor:
                     print "\t" + str(IA[1]), str(APID)
                     if str(IA[1]) != str(APID):
                         # print "\tError: IA/Address Point Mismatch, ParcelID: " + parcel[0]
                         transcribe("Error: IA/Address Point Mismatch, ParcelID: " + parcel[0])
                         break
+            IACursor = arcpy.da.SearchCursor("Implyr", ['PARCELID', 'ADDRESSPOINT'])
+            print "\tIA/PARCEL ID Check:"
+            for IA in IACursor:
+                print "\t" + str(IA[0]), str(parcel[0])
+                if str(IA[0]) != str(parcel[0]):
+                    transcribe("Error: IA/Parcel ID Mismatch, ParcelID: " + parcel[0])
+                    break
 
 
 if __name__ == "__main__":
